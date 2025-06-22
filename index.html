@@ -1,24 +1,246 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Logo</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    img {
-      width: 50vw;
-      height: 50vh;
-      object-fit: contain;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centre for Credible AI – Centrum Wiarygodnej Sztucznej Inteligencji</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <img src="logo.png" alt="credibleai.eu">
+<body class="bg-black text-white font-sans">
+  <!-- Language Switcher -->
+  <div class="fixed top-4 right-4 z-50">
+    <button id="pl-btn" class="px-4 py-1 bg-white text-black mr-2 font-semibold">PL</button>
+    <button id="en-btn" class="px-4 py-1 bg-white text-black font-semibold">EN</button>
+  </div>
+
+  <!-- Content Wrapper -->
+  <div id="content">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-black text-center p-4 scroll-mt-20 lang-en">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+          We decode <span class="text-red-500">AI</span>.
+        </h1>
+        <p class="text-xl md:text-2xl font-light max-w-xl mx-auto">
+          Centre for Credible Artificial Intelligence <br/> Warsaw University of Technology
+        </p>
+      </div>
+    </section>
+    <section class="min-h-screen flex items-center justify-center bg-black text-center p-4 scroll-mt-20 lang-pl hidden">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+          Rozgryzamy <span class="text-red-500">AI</span>.
+        </h1>
+        <p class="text-xl md:text-2xl font-light max-w-xl mx-auto">
+          Centrum Wiarygodnej Sztucznej Inteligencji <br/> Politechnika Warszawska
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 px-6 bg-white text-black scroll-mt-20 lang-en">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Mission</h2>
+        <p class="text-xl md:text-2xl">
+          Our mission is to make artificial intelligence truly  <strong>verifiable</strong>, <strong>explainable</strong>,and <strong>controllable</strong>.
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          In a world dominated by algorithms that operate like “black boxes” — so complex that even their creators can’t fully explain how or why they make decisions — the Centre for Credible AI (CCAI) was founded.
+          <strong>This is a centre that isn’t afraid to question prevailing paradigms</strong>, with a clear mission:
+          to make artificial intelligence truly verifiable, explainable, and controllable.
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          We specialize in Explainable Artificial Intelligence (XAI) — a field that keeps asking questions where most have already accepted the answers. We’re not just interested in building bigger and faster models. We care about whether they can be understood and improved — because understanding is the foundation of trust, and trust is the prerequisite for progress.
+        </p>
+      </div>
+    </section>
+    <section class="py-20 px-6 bg-white text-black scroll-mt-20 lang-pl hidden">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Misja</h2>
+        <p class="text-xl md:text-2xl">
+          Naszą misją jest uczynienie AI <strong>weryfikowalną</strong>, <strong>zrozumiałą</strong> i <strong>możliwą do kontrolowania</strong>.
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          W świecie zdominowanym przez algorytmy, które działają jak „czarne skrzynki” – tak złożone, że nawet ich twórcy nie potrafią wyjaśnić, jak i dlaczego podejmują decyzje – powstało Centre for Credible AI (CCAI). <strong>To centrum, które nie boi się kwestionować obowiązujących paradygmatów</strong>, z jasną misją: uczynić sztuczną inteligencję naprawdę weryfikowalną, zrozumiałą i możliwą do kontrolowania. 
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          Specjalizujemy się w Explainable Artificial Intelligence (XAI) – dziedzinie, która stawia pytania tam, gdzie większość się już zadowoliła odpowiedzią. Nie interesuje nas tylko budowa większych i szybszych modeli. Interesuje nas, czy da się je zrozumieć i udoskonalić. Bo zrozumienie to fundament zaufania, a zaufanie to warunek rozwoju.
+        </p>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 px-6 bg-black text-white scroll-mt-20 lang-en">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12">Values</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-3">Integrity</h3>
+            <p>We are transparent and act consistently with ethical principles.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-3">Excellence</h3>
+            <p>We pursue excellence in every aspect of our work.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-3">Impact</h3>
+            <p>We create AI solutions that make a real difference.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 px-6 bg-black text-white scroll-mt-20 lang-pl hidden">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12">Wartości</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-3">Integrity</h3>
+            <p>Jesteśmy transparentni, spójni z tym, co deklarujemy i z tym, co robimy. Nie ukrywamy wniosków, nawet jeśli są niewygodne.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-3">Excellence</h3>
+            <p>Dążymy do doskonałości w każdym aspekcie naszej pracy. Nie akceptujemy przeciętności. Potrzebne są środowiska, w których można uprawiać naukę bez autocenzury, kopiowania i produkcji punktów.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-3">Impact</h3>
+            <p>Tworzymy rozwiązania AI o realnym wpływie na świat. Zmieniamy rzeczywistość: od diagnostyki po cyfrowe bezpieczeństwo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="py-20 px-6 bg-white text-black scroll-mt-20 lang-en">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Teams</h2>
+        <p class="text-lg mb-4">Research groups led by:</p>
+        <ul class="list-disc list-inside space-y-2 text-lg md:text-xl">
+          TODO
+        </ul>
+      </div>
+    </section>
+    <section class="py-20 px-6 bg-white text-black scroll-mt-20 lang-pl hidden">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Zespoły</h2>
+        <p class="text-lg mb-4">Zespoły badawcze kierowane przez:</p>
+        <ul class="list-disc list-inside space-y-2 text-lg md:text-xl">
+          TODO
+        </ul>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-20 px-6 bg-black text-white scroll-mt-20 lang-en">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Strategic Partners</h2>
+        <p class="text-xl md:text-2xl">Fraunhofer Heinrich-Hertz-Institut</p>
+      </div>
+    </section>
+    <section class="py-20 px-6 bg-black text-white scroll-mt-20 lang-pl hidden">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Strategiczny partner</h2>
+        <p class="text-xl md:text-2xl">Fraunhofer Heinrich-Hertz-Institut</p>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="py-20 px-6 bg-white text-black scroll-mt-20 lang-en">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Vision</h2>
+        <p class="text-xl md:text-2xl">
+          We imagine a world where AI is fully <strong>credible</strong> and <strong>understandable</strong>. We develop the technology and culture to make that future possible.
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          AI models are often trained on a single, static dataset and then deployed into a dynamic, unpredictable reality.
+          They optimize a single value, but fail when the environment shifts.
+          <strong>We do not accept this technological mediocrity.</strong>
+          Our ambition is to expose the internal logic of such systems, highlight their limitations, and provide real tools for control.
+          To us, explainability is not a “feature” — it’s a means to improve models and a gateway to new scientific knowledge.
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          Our specialization is in combining <strong>explainability and controlability of AI systems used in high-stakes, socially responsible domains </strong> — such as medicine, education, and bioinformatics.
+          Where prediction alone isn’t enough, and decisions must be grounded in knowledge that can be trusted.
+        </p>
+
+      </div>
+    </section>
+    <section class="py-20 px-6 bg-white text-black scroll-mt-20 lang-pl hidden">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Wizja</h2>
+        <p class="text-xl md:text-2xl">
+          Wyobrażamy sobie świat, w którym AI jest w pełni <strong>wiarygodna</strong> i <strong>zrozumiała</strong>. Tworzymy technologię i kulturę, które umożliwią tę przyszłość.
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          Modele AI często są trenowane na jednym, statycznym zestawie danych, a następnie wdrażane w dynamicznej i nieprzewidywalnej rzeczywistości. Optymalizują jedną wartość, ale zawodzą, gdy otoczenie się zmienia. 
+          <strong>Nie godzimy się na tę technologiczną bylejakość.</strong> Naszą ambicją jest ujawnianie logiki takich systemów, wskazywanie ich ograniczeń i oferowanie realnych narzędzi kontroli. Wyjaśnialność to dla nas nie "feature", ale narzędzie poprawy modeli i szansa na zdobywanie nowej wiedzy naukowej.
+        </p>
+        <br/>
+        <p class="text-xl md:text-2xl">
+          Naszą specjalizacją jest łączenie <strong>wyjaśnialności i controli systemów AI wykorzystywanych w obszarach kluczowych</strong> – takich jak medycyna, edukacja, bioinformatyka. Tam, gdzie predykcja to za mało i potrzebne są decyzje oparte na wiedzy, której można zaufać.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-6 bg-black text-white scroll-mt-20 lang-en">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Contact</h2>
+        <p class="text-lg md:text-xl mb-1"><strong>Centre for Credible AI</strong></p>
+        <p class="text-lg md:text-xl">Warsaw University of Technology</p>
+        <p class="text-lg md:text-xl">Pl. Politechniki 1, 00-661 Warsaw, Poland</p>
+        <p class="text-lg md:text-xl mt-4">
+          E-mail: <a href="mailto:contact@credible-ai.org" class="text-red-500 hover:underline">contact@credible-ai.org</a>
+        </p>
+      </div>
+    </section>
+    <section class="py-20 px-6 bg-black text-white scroll-mt-20 lang-pl hidden">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">Kontakt</h2>
+        <p class="text-lg md:text-xl mb-1"><strong>Centrum Wiarygodnej Sztucznej Inteligencji</strong></p>
+        <p class="text-lg md:text-xl">Politechnika Warszawska</p>
+        <p class="text-lg md:text-xl">Pl. Politechniki 1, 00-661 Warszawa, Polska</p>
+        <p class="text-lg md:text-xl mt-4">
+          E-mail: <a href="mailto:contact@credible-ai.org" class="text-red-500 hover:underline">contact@credible-ai.org</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-black text-white">
+    <p>&copy; 2025 Centre for Credible AI. All rights reserved.</p>
+  </footer>
+
+  <!-- Language Toggle Script -->
+  <script>
+    const plBtn = document.getElementById('pl-btn');
+    const enBtn = document.getElementById('en-btn');
+    const plSections = document.querySelectorAll('.lang-pl');
+    const enSections = document.querySelectorAll('.lang-en');
+
+    function showLang(lang) {
+      if (lang === 'pl') {
+        plSections.forEach(s => s.classList.remove('hidden'));
+        enSections.forEach(s => s.classList.add('hidden'));
+      } else {
+        enSections.forEach(s => s.classList.remove('hidden'));
+        plSections.forEach(s => s.classList.add('hidden'));
+      }
+    }
+
+    plBtn.addEventListener('click', () => showLang('pl'));
+    enBtn.addEventListener('click', () => showLang('en'));
+
+    // Default to English
+    showLang('en');
+  </script>
 </body>
 </html>
