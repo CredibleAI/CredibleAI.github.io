@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { ArticleBlock } from "@/types/article";
 
@@ -11,7 +12,7 @@ export default function ArticleBuilder({ blocks }: ArticleBuilderProps) {
       {blocks.map((block) => {
         switch (block.type) {
           case "heading":
-            const HeadingTag = `h${block.level}` as keyof JSX.IntrinsicElements;
+            const HeadingTag = `h${block.level}` as keyof React.JSX.IntrinsicElements;
             const headingClasses = {
               1: "font-sans text-[48px] font-normal leading-[1.1] tracking-[-0.96px] text-[#001f33]",
               2: "font-sans text-[36px] font-normal leading-[1.1] tracking-[-0.72px] text-[#001f33]",
