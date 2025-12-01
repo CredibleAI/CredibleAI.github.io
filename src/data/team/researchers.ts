@@ -7,6 +7,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-1.jpg",
     imageAlt: "prof. Jan Kowalski",
     tags: ["neural networks"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "researcher-2",
@@ -14,6 +21,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-2.jpg",
     imageAlt: "prof. Przemysław Biecek",
     tags: ["XAI", "LLM", "analytics"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "researcher-3",
@@ -21,6 +35,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-3.jpg",
     imageAlt: "prof. Katarzyna Budzyńska",
     tags: ["psychology", "sociology"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "researcher-4",
@@ -28,6 +49,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-4.jpg",
     imageAlt: "prof. Dariusz Plewczyński",
     tags: ["bioinformatics", "medicine"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "researcher-5",
@@ -35,6 +63,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-5.jpg",
     imageAlt: "prof. Jan Kowalski",
     tags: ["neural networks"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "researcher-6",
@@ -42,6 +77,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-6.jpg",
     imageAlt: "prof. Przemysław Biecek",
     tags: ["XAI", "LLM", "analytics"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "researcher-7",
@@ -49,6 +91,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-7.jpg",
     imageAlt: "prof. Katarzyna Budzyńska",
     tags: ["psychology", "sociology"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "researcher-8",
@@ -56,6 +105,13 @@ export const researchers: TeamMember[] = [
     imageUrl: "/images/team/researcher-8.jpg",
     imageAlt: "prof. Dariusz Plewczyński",
     tags: ["bioinformatics", "medicine"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
 ];
 

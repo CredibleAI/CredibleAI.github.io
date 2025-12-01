@@ -4,40 +4,7 @@ import Footer from "@/components/Footer";
 import TeamSection from "@/components/TeamSection";
 import Image from "next/image";
 import { teamSections } from "@/data/team";
-
-const navigationItems = [
-  { label: "about", href: "/about" },
-  { label: "news", href: "/news" },
-  { label: "opportunities", href: "/opportunities" },
-  { label: "projects", href: "/projects" },
-  { label: "Contact", href: "/contact" },
-];
-
-const spotlightLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "News", href: "/news" },
-  { label: "Opportunities", href: "/opportunities" },
-  { label: "Projects", href: "/projects" },
-  { label: "Contact", href: "/contact" },
-];
-
-const socialLinks = [
-  { platform: "LinkedIn", href: "#" },
-  { platform: "Facebook", href: "#" },
-  { platform: "Twitter", href: "#" },
-  { platform: "YouTube", href: "#" },
-];
-
-const partners = [
-  "Warsaw University of Technology",
-  "Polish Science Foundation",
-];
-
-const legalLinks = [
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Terms and Conditions", href: "/terms" },
-];
+import { navigationItems } from "@/constants/navigation";
 
 export default function AboutPage() {
   return (
@@ -46,78 +13,88 @@ export default function AboutPage() {
       
       {/* Main Content */}
       <div className="pt-20">
-        <Section className="py-[180px]">
-          <div className="flex flex-col gap-[180px] items-start max-w-[1200px] mx-auto">
+        <Section className="py-20 md:py-32 lg:py-[180px]">
+          <div className="flex flex-col gap-[90px] md:gap-32 lg:gap-[180px] items-start max-w-[1200px] mx-auto px-5 md:px-10 lg:px-0">
             {/* Header Section */}
-            <div className="flex flex-col gap-12 items-start text-[#001f33] w-full">
-              <div className="flex flex-col gap-[19px] items-start leading-[1.1] w-full">
-                <p className="font-mono text-lg font-normal uppercase">
-                  our team
-                </p>
-                <p className="font-sans text-[48px] font-normal leading-[1.1] tracking-[-0.96px]">
-                  We are an interdisciplinary team – because algorithmic
-                  knowledge without domain knowledge leads nowhere.
-                </p>
-              </div>
-              <div className="font-sans text-2xl font-normal leading-[1.4] tracking-[-0.24px] w-[606px]">
-                <p className="mb-0">
-                  CCAI consists of four research teams and around 20 scientists
-                  – and this is just the beginning. Our ambitions are
-                  international, and recruitment is open to bold minds from
-                  around the world.
-                </p>
-                <p>
-                  We are joined by experts in fields such as physics, chemistry,
-                  psychology, and law – because algorithmic knowledge without
-                  domain knowledge leads nowhere.
-                </p>
-              </div>
+            <div className="flex flex-col gap-0 items-start text-[#001f33] w-full">
+              <p className="font-mono text-base md:text-lg font-normal uppercase mb-[10px] md:mb-[28px] tracking-[0.32px]">
+                our team
+              </p>
+              <p className="font-sans text-4xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.72px] md:tracking-[-0.96px]">
+                We are an interdisciplinary team – because algorithmic
+                knowledge without domain knowledge leads nowhere.
+              </p>
             </div>
 
             {/* Team Sections */}
-            <div className="flex flex-col gap-20 items-start w-full">
-              {teamSections.map((section, index) => (
-                <TeamSection
-                  key={section.title}
-                  section={section}
-                  isWrapped={index >= 2} // Leaders (index 2) and Researchers (index 3) use wrapped layout
-                />
-              ))}
+            <div className="flex flex-col gap-[80px] items-start w-full">
+              {/* Team Leaders - First */}
+              {teamSections
+                .filter((section) => section.title === "leaders")
+                .map((section) => (
+                  <TeamSection
+                    key={section.title}
+                    section={section}
+                    isLeaders={true}
+                  />
+                ))}
+              
+              {/* Directors - Second */}
+              {teamSections
+                .filter((section) => section.title === "directors")
+                .map((section) => (
+                  <TeamSection
+                    key={section.title}
+                    section={section}
+                    isWrapped={true}
+                  />
+                ))}
+              
+              {/* Researchers - Third */}
+              {teamSections
+                .filter((section) => section.title === "researchers")
+                .map((section) => (
+                  <TeamSection
+                    key={section.title}
+                    section={section}
+                    isWrapped={true}
+                  />
+                ))}
             </div>
 
             {/* Partners Section */}
-            <div className="flex flex-col gap-20 items-start w-full">
+            <div className="flex flex-col gap-10 md:gap-20 items-start w-full">
               <div className="flex flex-col gap-[19px] items-start leading-[1.1] text-[#001f33] w-full">
-                <p className="font-mono text-lg font-normal uppercase">
+                <p className="font-mono text-base md:text-lg font-normal uppercase">
                   our partners
                 </p>
-                <p className="font-sans text-[48px] font-normal leading-[1.1] tracking-[-0.48px]">
+                <p className="font-sans text-4xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.72px] md:tracking-[-0.48px]">
                   We build cross-institutional connections.
                 </p>
               </div>
-              <div className="flex gap-12 lg:gap-[102px] items-center w-full flex-wrap justify-between">
-                <div className="relative h-[103.93px] w-full sm:w-auto sm:flex-1 sm:min-w-[200px] sm:max-w-[360.852px]">
+              <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-[102px] items-start md:items-center w-full md:flex-wrap md:justify-between">
+                <div className="relative h-[80px] md:h-[103.93px] w-[278.32px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[360.852px]">
                   <Image
                     src="/images/partners/partner-1.png"
                     alt="Partner logo 1"
                     fill
-                    className="object-contain"
+                    className="object-contain object-left"
                   />
                 </div>
-                <div className="relative h-[44.023px] w-full sm:w-auto sm:flex-1 sm:min-w-[200px] sm:max-w-[258px]">
+                <div className="relative h-[45px] md:h-[44.023px] w-[263.5px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[258px]">
                   <Image
                     src="/images/partners/partner-2.png"
                     alt="Partner logo 2"
                     fill
-                    className="object-contain"
+                    className="object-contain object-left"
                   />
                 </div>
-                <div className="relative h-[103.93px] w-full sm:w-auto sm:flex-1 sm:min-w-[200px] sm:max-w-[364.621px]">
+                <div className="relative h-[80px] md:h-[103.93px] w-[269.11px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[364.621px]">
                   <Image
                     src="/images/partners/partner-3.png"
                     alt="Partner logo 3"
                     fill
-                    className="object-contain"
+                    className="object-contain object-left"
                   />
                 </div>
               </div>
@@ -127,12 +104,7 @@ export default function AboutPage() {
       </div>
 
       {/* Footer */}
-      <Footer
-        spotlightLinks={spotlightLinks}
-        socialLinks={socialLinks}
-        partners={partners}
-        legalLinks={legalLinks}
-      />
+      <Footer />
     </div>
   );
 }

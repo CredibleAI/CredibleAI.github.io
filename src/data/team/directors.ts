@@ -7,6 +7,13 @@ export const directors: TeamMember[] = [
     imageUrl: "/images/team/przemyslaw-biecek.jpg",
     imageAlt: "prof. Przemysław Biecek",
     tags: ["XAI", "LLM", "analytics"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "katarzyna-budzynska",
@@ -14,6 +21,13 @@ export const directors: TeamMember[] = [
     imageUrl: "/images/team/katarzyna-budzynska.jpg",
     imageAlt: "prof. Katarzyna Budzyńska",
     tags: ["psychology", "sociology"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "dariusz-plewczynski",
@@ -21,6 +35,13 @@ export const directors: TeamMember[] = [
     imageUrl: "/images/team/dariusz-plewczynski.jpg",
     imageAlt: "prof. Dariusz Plewczyński",
     tags: ["bioinformatics", "medicine"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
 ];
 

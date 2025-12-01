@@ -1,0 +1,216 @@
+import Navbar from "@/components/Navbar";
+import Section from "@/components/Section";
+import Footer from "@/components/Footer";
+import ArticleBuilder from "@/components/ArticleBuilder";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { news } from "@/data/news";
+import { getNewsArticleById } from "@/data/news-articles";
+import { navigationItems } from "@/constants/navigation";
+
+interface NewsArticlePageProps {
+  params: Promise<{ id: string }>;
+}
+
+export default async function NewsArticlePage({
+  params,
+}: NewsArticlePageProps) {
+  const { id } = await params;
+  const newsItem = news.find((n) => n.id === id);
+  const article = getNewsArticleById(id);
+
+  // If no article exists, create a basic one from the news item data
+  if (!newsItem) {
+    notFound();
+  }
+
+  // Use article if available, otherwise create a basic structure from newsItem
+  const articleData = article || {
+    id: newsItem.id,
+    title: newsItem.title,
+    subtitle: newsItem.subtitle,
+    description: newsItem.description,
+    heroImage: {
+      src: newsItem.imageUrl,
+      alt: newsItem.imageAlt,
+    },
+    author: newsItem.author,
+    category: newsItem.category,
+    content: [
+      {
+        id: "description",
+        type: "paragraph" as const,
+        text: newsItem.description,
+      },
+    ],
+  };
+
+  return (
+    <div className="relative min-h-screen bg-white">
+      <Navbar items={navigationItems} activeItem="/news" />
+
+      {/* Main Content */}
+      <div className="pt-[64px]">
+        {/* Back Button - Top */}
+        <div className="px-5 md:px-8 md:px-16 lg:px-[120px] py-6">
+          <Link
+            href="/news"
+            className="inline-flex items-center gap-2 font-mono text-sm font-normal text-[#001f33] uppercase hover:opacity-80 transition-opacity"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              className="rotate-180"
+            >
+              <path
+                d="M6 12L10 8L6 4"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            Back to News
+          </Link>
+        </div>
+
+        {/* Mobile: Article Card */}
+        <div className="md:hidden border-b border-[#a3a3a3] bg-white">
+          <div className="flex flex-col gap-8 px-5 py-10">
+            {/* Hero Image */}
+            <div className="relative w-full aspect-[335/189]">
+              <Image
+                src={articleData.heroImage.src}
+                alt={articleData.heroImage.alt}
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-col gap-3">
+              {/* Header */}
+              <div className="flex flex-col gap-[10px] text-[#001f33]">
+                <p className="font-mono text-base font-normal leading-[1.1] tracking-[0.32px] uppercase">
+                  {articleData.subtitle}
+                </p>
+                <h1 className="font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px]">
+                  {articleData.title}
+                </h1>
+              </div>
+
+              {/* Description */}
+              {articleData.description && (
+                <p className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33]">
+                  {articleData.description}
+                </p>
+              )}
+
+              {/* Read Publication Button */}
+              <a
+                href="#"
+                className="bg-[#001f33] flex gap-[10px] items-center justify-center w-fit pl-[5px] pr-[7px] py-[3px] hover:bg-opacity-90 transition-colors"
+              >
+                <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
+                  read publication
+                </p>
+                <Image
+                  src="/images/icons/arrow-icon.svg"
+                  alt=""
+                  width={10}
+                  height={10}
+                  className="shrink-0"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop: Header Section - Two Column Layout */}
+        <div className="hidden md:block border-b border-[#a3a3a3] px-4 sm:px-8 md:px-16 lg:px-[120px] py-10">
+          <div className="flex flex-col lg:flex-row gap-6 items-start max-w-[1440px] mx-auto">
+            <div className="flex flex-col gap-[22px] items-start w-full lg:w-[588px]">
+              <div className="flex flex-col gap-[10px] items-start leading-[1.1] text-[#001f33] w-full">
+                <p className="font-mono text-base font-normal tracking-[0.32px] uppercase">
+                  {articleData.subtitle}
+                </p>
+                <h1 className="font-sans text-2xl md:text-3xl lg:text-[36px] font-normal leading-[1.1] tracking-[-0.72px]">
+                  {articleData.title}
+                </h1>
+              </div>
+              {articleData.description && (
+                <p className="font-sans text-lg font-normal leading-[1.6] text-[#001f33]">
+                  {articleData.description}
+                </p>
+              )}
+              {/* Read Publication Button */}
+              <a
+                href="#"
+                className="bg-[#001f33] flex gap-[10px] items-center justify-center pl-[5px] pr-[7px] py-[3px] hover:bg-opacity-90 transition-colors"
+              >
+                <p className="font-mono text-base font-normal leading-[1.1] text-white tracking-[0.32px] uppercase">
+                  read publication
+                </p>
+                <Image
+                  src="/images/icons/arrow-icon.svg"
+                  alt=""
+                  width={10}
+                  height={10}
+                  className="shrink-0"
+                />
+              </a>
+            </div>
+            {/* Hero Image */}
+            <div className="relative h-[332px] w-full lg:w-[589px] shrink-0">
+              <Image
+                src={articleData.heroImage.src}
+                alt={articleData.heroImage.alt}
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Article Content */}
+        <div className="flex flex-col gap-12 items-center px-5 md:px-8 md:px-16 lg:px-[120px] py-8 md:py-20">
+          <div className="max-w-[996px] w-full">
+            <ArticleBuilder blocks={articleData.content} />
+          </div>
+        </div>
+
+        {/* Back Button - Bottom */}
+        <div className="px-5 md:px-8 md:px-16 lg:px-[120px] py-6 border-t border-[#a3a3a3]">
+          <Link
+            href="/news"
+            className="inline-flex items-center gap-2 font-mono text-sm font-normal text-[#001f33] uppercase hover:opacity-80 transition-opacity"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              className="rotate-180"
+            >
+              <path
+                d="M6 12L10 8L6 4"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            Back to News
+          </Link>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+}
+

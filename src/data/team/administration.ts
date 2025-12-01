@@ -7,6 +7,13 @@ export const administration: TeamMember[] = [
     imageUrl: "/images/team/admin-1.jpg",
     imageAlt: "prof. Przemysław Biecek",
     tags: ["XAI", "LLM", "analytics"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "admin-2",
@@ -14,6 +21,13 @@ export const administration: TeamMember[] = [
     imageUrl: "/images/team/admin-2.jpg",
     imageAlt: "prof. Katarzyna Budzyńska",
     tags: ["psychology", "sociology"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
   {
     id: "admin-3",
@@ -21,6 +35,13 @@ export const administration: TeamMember[] = [
     imageUrl: "/images/team/admin-3.jpg",
     imageAlt: "prof. Jan Kowalski",
     tags: ["neural networks"],
+    socialLinks: {
+      linkedin: "#",
+      googleScholar: "#",
+      twitter: "#",
+      email: "#",
+      website: "#",
+    },
   },
 ];
 

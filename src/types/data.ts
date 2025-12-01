@@ -22,9 +22,9 @@ export interface NewsData extends BaseContentItem {
   category?: string;
 }
 
-// Opportunity-specific interface
+// Opportunity-specific interface (for join-us positions)
 export interface OpportunityData extends BaseContentItem {
-  // Opportunities can have additional fields if needed
+  // Join-us positions can have additional fields if needed
   type?: string; // e.g., "PhD", "Postdoc", "Internship"
   deadline?: string;
   location?: string;

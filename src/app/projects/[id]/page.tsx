@@ -7,39 +7,7 @@ import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 import { getArticleById } from "@/data/articles";
 
-const navigationItems = [
-  { label: "about", href: "/about" },
-  { label: "news", href: "/news" },
-  { label: "opportunities", href: "/opportunities" },
-  { label: "projects", href: "/projects" },
-  { label: "Contact", href: "/contact" },
-];
-
-const spotlightLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "News", href: "/news" },
-  { label: "Opportunities", href: "/opportunities" },
-  { label: "Projects", href: "/projects" },
-  { label: "Contact", href: "/contact" },
-];
-
-const socialLinks = [
-  { platform: "LinkedIn", href: "#" },
-  { platform: "Facebook", href: "#" },
-  { platform: "Twitter", href: "#" },
-  { platform: "YouTube", href: "#" },
-];
-
-const partners = [
-  "Warsaw University of Technology",
-  "Polish Science Foundation",
-];
-
-const legalLinks = [
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Terms and Conditions", href: "/terms" },
-];
+import { navigationItems } from "@/constants/navigation";
 
 interface ProjectArticlePageProps {
   params: Promise<{ id: string }>;
@@ -127,12 +95,7 @@ export default async function ProjectArticlePage({
       </div>
 
       {/* Footer */}
-      <Footer
-        spotlightLinks={spotlightLinks}
-        socialLinks={socialLinks}
-        partners={partners}
-        legalLinks={legalLinks}
-      />
+      <Footer />
     </div>
   );
 }

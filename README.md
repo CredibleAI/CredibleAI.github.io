@@ -29,7 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - `src/app/` - Next.js app router pages
 - `src/components/` - Reusable React components
-- `src/data/` - Content data (projects, news, opportunities, team)
+- `src/data/` - Content data (projects, news, join-us positions, team)
 - `src/types/` - TypeScript type definitions
 - `public/images/` - Static images and assets
 

@@ -16,7 +16,7 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   const baseClasses =
-    "inline-flex items-center justify-center gap-2.5 px-5 py-3 font-mono text-sm font-normal leading-[1.1] transition-colors";
+    "inline-flex items-center justify-center gap-2 font-mono font-normal leading-[1.1] transition-colors";
   
   const variantClasses = {
     primary: "bg-[#001f33] text-white hover:bg-opacity-90",
