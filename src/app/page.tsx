@@ -58,7 +58,7 @@ export default function Home() {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-[120px] md:mt-0">
+      <div className="mt-[120px] md:mt-[180px]">
         <CTASection />
       </div>
 

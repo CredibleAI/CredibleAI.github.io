@@ -36,7 +36,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
       </div>
       {member.socialLinks && (
         <div className="flex gap-3 items-center">
-          {member.socialLinks.linkedin && (
+          {member.socialLinks.linkedin && member.socialLinks.linkedin.trim() !== "" && (
             <Link
               href={member.socialLinks.linkedin}
               target="_blank"
@@ -52,7 +52,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               />
             </Link>
           )}
-          {member.socialLinks.googleScholar && (
+          {member.socialLinks.googleScholar && member.socialLinks.googleScholar.trim() !== "" && (
             <Link
               href={member.socialLinks.googleScholar}
               target="_blank"
@@ -68,7 +68,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               />
             </Link>
           )}
-          {member.socialLinks.twitter && (
+          {member.socialLinks.twitter && member.socialLinks.twitter.trim() !== "" && (
             <Link
               href={member.socialLinks.twitter}
               target="_blank"
@@ -84,7 +84,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               />
             </Link>
           )}
-          {member.socialLinks.email && (
+          {member.socialLinks.email && member.socialLinks.email.trim() !== "" && (
             <Link
               href={`mailto:${member.socialLinks.email}`}
               className="w-6 h-6 relative shrink-0"
@@ -98,7 +98,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               />
             </Link>
           )}
-          {member.socialLinks.website && (
+          {member.socialLinks.website && member.socialLinks.website.trim() !== "" && (
             <Link
               href={member.socialLinks.website}
               target="_blank"

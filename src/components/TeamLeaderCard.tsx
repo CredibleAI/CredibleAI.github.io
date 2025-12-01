@@ -48,7 +48,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
           </div>
         {leader.socialLinks && (
           <div className="flex gap-3 items-center">
-            {leader.socialLinks.linkedin && (
+            {leader.socialLinks.linkedin && leader.socialLinks.linkedin.trim() !== "" && (
               <Link
                 href={leader.socialLinks.linkedin}
                 target="_blank"
@@ -64,7 +64,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                 />
               </Link>
             )}
-            {leader.socialLinks.googleScholar && (
+            {leader.socialLinks.googleScholar && leader.socialLinks.googleScholar.trim() !== "" && (
               <Link
                 href={leader.socialLinks.googleScholar}
                 target="_blank"
@@ -80,7 +80,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                 />
               </Link>
             )}
-            {leader.socialLinks.twitter && (
+            {leader.socialLinks.twitter && leader.socialLinks.twitter.trim() !== "" && (
               <Link
                 href={leader.socialLinks.twitter}
                 target="_blank"
@@ -96,7 +96,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                 />
               </Link>
             )}
-            {leader.socialLinks.email && (
+            {leader.socialLinks.email && leader.socialLinks.email.trim() !== "" && (
               <Link
                 href={`mailto:${leader.socialLinks.email}`}
                 className="w-6 h-6 relative shrink-0"
@@ -110,7 +110,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                 />
               </Link>
             )}
-            {leader.socialLinks.website && (
+            {leader.socialLinks.website && leader.socialLinks.website.trim() !== "" && (
               <Link
                 href={leader.socialLinks.website}
                 target="_blank"
