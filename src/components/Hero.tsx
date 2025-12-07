@@ -16,7 +16,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-full md:h-[760px] w-full overflow-hidden" data-hero-container>
+    <div className="relative h-full w-full overflow-hidden" data-hero-container>
       {/* Background Video */}
       <div className="absolute inset-0">
         {isMobile ? (

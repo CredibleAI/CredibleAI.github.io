@@ -17,16 +17,16 @@ export default function Home() {
     <div className="relative min-h-screen bg-white">
       <Navbar items={navigationItems} activeItem="/" />
       
-      {/* Hero + Partner Logos - 100vh on mobile */}
-      <div className="flex flex-col h-[100vh] md:h-auto">
+      {/* Hero + Partner Logos - always fits viewport */}
+      <div className="flex flex-col h-[100svh]">
         {/* Hero Section */}
-        <div className="flex-1 md:flex-none pt-[48px] md:pt-[64px] min-h-0">
+        <div className="flex-1 pt-[48px] md:pt-[64px] min-h-0">
           <Hero />
         </div>
 
         {/* Partner Logos Section */}
-        <div className="flex items-center justify-center py-7 bg-white z-10 relative">
-          <div className="relative h-[35px] md:h-[66px] w-full max-w-[713px] mx-auto px-4">
+        <div className="flex items-center justify-center py-3 md:py-4 bg-white z-10 relative shrink-0">
+          <div className="relative h-[28px] md:h-[50px] w-full max-w-[600px] mx-auto px-4">
             <Image
               src="/images/partner-logos.jpg"
               alt="Partner and sponsor logos"

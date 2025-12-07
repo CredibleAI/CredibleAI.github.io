@@ -8,13 +8,12 @@ export const navigationItems: NavigationItem[] = [
   { label: "CONTACT", href: "/contact" },
 ];
 
-// Footer links - shared across all pages
+// Footer links - shared across all pages (synced with navbar)
 export const spotlightLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "Team", href: "/about" },
   { label: "News", href: "/news" },
   { label: "Join Us", href: "/join-us" },
-  { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ];
 
