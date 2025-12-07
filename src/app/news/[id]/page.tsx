@@ -1,12 +1,11 @@
 import Navbar from "@/components/Navbar";
-import Section from "@/components/Section";
 import Footer from "@/components/Footer";
 import ArticleBuilder from "@/components/ArticleBuilder";
+import Gallery from "@/components/Gallery";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { news } from "@/data/news";
-import { getNewsArticleById } from "@/data/news-articles";
+import { getNewsById } from "@/data/news";
 import { navigationItems } from "@/constants/navigation";
 
 interface NewsArticlePageProps {
@@ -17,34 +16,11 @@ export default async function NewsArticlePage({
   params,
 }: NewsArticlePageProps) {
   const { id } = await params;
-  const newsItem = news.find((n) => n.id === id);
-  const article = getNewsArticleById(id);
+  const article = getNewsById(id);
 
-  // If no article exists, create a basic one from the news item data
-  if (!newsItem) {
+  if (!article) {
     notFound();
   }
-
-  // Use article if available, otherwise create a basic structure from newsItem
-  const articleData = article || {
-    id: newsItem.id,
-    title: newsItem.title,
-    subtitle: newsItem.subtitle,
-    description: newsItem.description,
-    heroImage: {
-      src: newsItem.imageUrl,
-      alt: newsItem.imageAlt,
-    },
-    author: newsItem.author,
-    category: newsItem.category,
-    content: [
-      {
-        id: "description",
-        type: "paragraph" as const,
-        text: newsItem.description,
-      },
-    ],
-  };
 
   return (
     <div className="relative min-h-screen bg-white">
@@ -83,8 +59,8 @@ export default async function NewsArticlePage({
             {/* Hero Image */}
             <div className="relative w-full aspect-[335/189]">
               <Image
-                src={articleData.heroImage.src}
-                alt={articleData.heroImage.alt}
+                src={article.heroImage.src}
+                alt={article.heroImage.alt}
                 fill
                 className="object-cover"
               />
@@ -95,17 +71,17 @@ export default async function NewsArticlePage({
               {/* Header */}
               <div className="flex flex-col gap-[10px] text-[#001f33]">
                 <p className="font-mono text-base font-normal leading-[1.1] tracking-[0.32px] uppercase">
-                  {articleData.subtitle}
+                  {article.subtitle}
                 </p>
                 <h1 className="font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px]">
-                  {articleData.title}
+                  {article.title}
                 </h1>
               </div>
 
               {/* Description */}
-              {articleData.description && (
+              {article.description && (
                 <p className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33]">
-                  {articleData.description}
+                  {article.description}
                 </p>
               )}
 
@@ -135,15 +111,15 @@ export default async function NewsArticlePage({
             <div className="flex flex-col gap-[22px] items-start w-full lg:w-[588px]">
               <div className="flex flex-col gap-[10px] items-start leading-[1.1] text-[#001f33] w-full">
                 <p className="font-mono text-base font-normal tracking-[0.32px] uppercase">
-                  {articleData.subtitle}
+                  {article.subtitle}
                 </p>
                 <h1 className="font-sans text-2xl md:text-3xl lg:text-[36px] font-normal leading-[1.1] tracking-[-0.72px]">
-                  {articleData.title}
+                  {article.title}
                 </h1>
               </div>
-              {articleData.description && (
+              {article.description && (
                 <p className="font-sans text-lg font-normal leading-[1.6] text-[#001f33]">
-                  {articleData.description}
+                  {article.description}
                 </p>
               )}
               {/* Read Publication Button */}
@@ -166,8 +142,8 @@ export default async function NewsArticlePage({
             {/* Hero Image */}
             <div className="relative h-[332px] w-full lg:w-[589px] shrink-0">
               <Image
-                src={articleData.heroImage.src}
-                alt={articleData.heroImage.alt}
+                src={article.heroImage.src}
+                alt={article.heroImage.alt}
                 fill
                 className="object-cover"
               />
@@ -178,7 +154,14 @@ export default async function NewsArticlePage({
         {/* Article Content */}
         <div className="flex flex-col gap-12 items-center px-5 md:px-8 md:px-16 lg:px-[120px] py-8 md:py-20">
           <div className="max-w-[996px] w-full">
-            <ArticleBuilder blocks={articleData.content} />
+            <ArticleBuilder blocks={article.content} />
+            
+            {/* Gallery */}
+            {article.gallery && article.gallery.length > 0 && (
+              <div className="mt-12 md:mt-16 pt-12 md:pt-16 border-t border-[#a3a3a3]">
+                <Gallery images={article.gallery} title="Photo Gallery" />
+              </div>
+            )}
           </div>
         </div>
 
@@ -213,4 +196,3 @@ export default async function NewsArticlePage({
     </div>
   );
 }
-

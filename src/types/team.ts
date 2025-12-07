@@ -4,6 +4,7 @@ export interface TeamMember {
   imageUrl: string;
   imageAlt: string;
   tags: string[];
+  isUnannounced?: boolean;
   socialLinks?: {
     linkedin?: string;
     googleScholar?: string;
@@ -29,6 +30,7 @@ export interface TeamLeader {
   description: string;
   teamName: string;
   teamDescription: string;
+  isUnannounced?: boolean;
   socialLinks?: {
     linkedin?: string;
     googleScholar?: string;

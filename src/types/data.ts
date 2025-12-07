@@ -15,13 +15,6 @@ export interface ProjectData extends BaseContentItem {
   tags?: string[];
 }
 
-// News-specific interface
-export interface NewsData extends BaseContentItem {
-  // News can have additional fields if needed
-  author?: string;
-  category?: string;
-}
-
 // Opportunity-specific interface (for join-us positions)
 export interface OpportunityData extends BaseContentItem {
   // Join-us positions can have additional fields if needed
@@ -29,4 +22,3 @@ export interface OpportunityData extends BaseContentItem {
   deadline?: string;
   location?: string;
 }
-

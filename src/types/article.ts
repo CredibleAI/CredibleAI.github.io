@@ -73,6 +73,15 @@ export type ArticleBlock =
   | CodeBlock
   | DividerBlock;
 
+// Gallery image interface
+export interface GalleryImage {
+  id: string;
+  thumbnailSrc: string; // Low quality for tiles
+  fullSrc: string; // High quality for preview
+  alt: string;
+  caption?: string;
+}
+
 // Full article structure
 export interface Article {
   id: string;
@@ -87,6 +96,7 @@ export interface Article {
   category?: string;
   tags?: string[];
   content: ArticleBlock[];
+  gallery?: GalleryImage[];
   publishedDate?: string;
   updatedDate?: string;
 }

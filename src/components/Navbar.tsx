@@ -146,7 +146,7 @@ export default function Navbar({ items, activeItem }: NavbarProps) {
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-5 py-5 h-[48px] border-b border-[rgba(255,255,255,0.2)] flex-shrink-0">
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-              <Logo className="h-[20px]" variant="white" />
+              <Logo className="h-[20px]" variant="white" variantMobile="short" />
             </Link>
             <button
               onClick={() => setIsMobileMenuOpen(false)}

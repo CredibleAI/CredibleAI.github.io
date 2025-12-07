@@ -12,6 +12,7 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
   // Format section title for display
   const formatTitle = (title: string) => {
     if (title === "leaders") return "Team Leaders";
+    if (title === "administration") return "Administration";
     return title.charAt(0).toUpperCase() + title.slice(1);
   };
 
@@ -32,7 +33,7 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
         </div>
       ) : (
         <div
-          className={`flex items-center w-full mt-[30px] ${
+          className={`flex items-start w-full mt-[30px] ${
             isWrapped
               ? "flex-wrap content-start gap-x-6 gap-y-[60px]"
               : "gap-6"
@@ -46,4 +47,3 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
     </div>
   );
 }
-

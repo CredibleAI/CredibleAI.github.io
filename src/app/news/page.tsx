@@ -1,9 +1,7 @@
 import Navbar from "@/components/Navbar";
-import Section from "@/components/Section";
 import Footer from "@/components/Footer";
 import NewsCard from "@/components/NewsCard";
 import { news } from "@/data/news";
-
 import { navigationItems } from "@/constants/navigation";
 
 export default function NewsPage() {
@@ -35,4 +33,3 @@ export default function NewsPage() {
     </div>
   );
 }
-

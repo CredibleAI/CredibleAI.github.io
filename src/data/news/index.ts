@@ -1,14 +1,12 @@
-import { newCallForPapersImageRecognitionMedical } from "./new-call-for-papers-image-recognition-medical";
-import { ccaiLaunchesNewResearchProgram } from "./ccai-launches-new-research-program";
-import { NewsData } from "@/types/data";
+import { Article } from "@/types/article";
+import { grandOpeningCcai } from "./grand-opening-ccai";
 
-export const news: NewsData[] = [
-  newCallForPapersImageRecognitionMedical,
-  ccaiLaunchesNewResearchProgram,
+export const news: Article[] = [
+  grandOpeningCcai,
 ];
 
-// Export individual news items for direct imports if needed
-export {
-  newCallForPapersImageRecognitionMedical,
-  ccaiLaunchesNewResearchProgram,
-};
+export function getNewsById(id: string): Article | undefined {
+  return news.find((article) => article.id === id);
+}
+
+export { grandOpeningCcai };

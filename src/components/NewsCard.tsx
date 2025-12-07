@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { NewsData } from "@/types/data";
+import { Article } from "@/types/article";
 
 interface NewsCardProps {
-  news: NewsData;
+  news: Article;
 }
 
 export default function NewsCard({ news }: NewsCardProps) {
@@ -15,8 +15,8 @@ export default function NewsCard({ news }: NewsCardProps) {
       {/* Mobile: Image first, Desktop: Content first */}
       <div className="block md:hidden relative w-full aspect-[589/332]">
         <Image
-          src={news.imageUrl}
-          alt={news.imageAlt}
+          src={news.heroImage.src}
+          alt={news.heroImage.alt}
           fill
           className="object-cover"
         />
@@ -55,8 +55,8 @@ export default function NewsCard({ news }: NewsCardProps) {
       {/* Desktop: Image on right */}
       <div className="hidden md:block relative h-[332px] w-full md:w-[400px] lg:w-[589px] shrink-0">
         <Image
-          src={news.imageUrl}
-          alt={news.imageAlt}
+          src={news.heroImage.src}
+          alt={news.heroImage.alt}
           fill
           className="object-cover"
         />
@@ -64,4 +64,3 @@ export default function NewsCard({ news }: NewsCardProps) {
     </Link>
   );
 }
-

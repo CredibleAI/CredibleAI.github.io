@@ -7,34 +7,47 @@ interface TeamMemberProps {
 }
 
 export default function TeamMemberCard({ member }: TeamMemberProps) {
+  const isHannaGozdz = member.id === "hanna-gozdz";
+  const isUnannounced = member.isUnannounced;
+  
   return (
     <div className="flex flex-col gap-[17px] items-start w-full sm:w-[282px]">
-      <div className="relative h-[226px] w-[204px]">
-        <Image
-          src={member.imageUrl}
-          alt={member.imageAlt}
-          fill
-          className="object-cover"
-        />
-      </div>
+      {isUnannounced ? (
+        <div className="h-[280px] w-[204px] bg-[#f5f5f5] flex items-center justify-center">
+          <span className="text-[100px] font-sans text-[#a3a3a3] select-none">?</span>
+        </div>
+      ) : (
+        <div 
+          className={`relative h-[280px] w-[204px] ${isHannaGozdz ? "shadow-[0_0_10px_rgba(255,105,180,0.1)]" : ""}`}
+        >
+          <Image
+            src={member.imageUrl}
+            alt={member.imageAlt}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
       <div className="flex flex-col gap-2 items-start text-[#001f33] w-full sm:w-[282px]">
-        <p className="font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px]">
+        <p className={`font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px] ${isUnannounced ? "text-[#a3a3a3] italic" : ""}`}>
           {member.name}
         </p>
       </div>
-      <div className="flex gap-1 items-center flex-wrap">
-        {member.tags.map((tag, index) => (
-          <div
-            key={index}
-            className="bg-[#001f33] flex gap-[10px] items-center justify-center px-[5px] py-[3px]"
-          >
-            <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
-              {tag}
-            </p>
-          </div>
-        ))}
-      </div>
-      {member.socialLinks && (
+      {!isUnannounced && member.tags.length > 0 && (
+        <div className="flex gap-1 items-center flex-wrap">
+          {member.tags.map((tag, index) => (
+            <div
+              key={index}
+              className="bg-[#001f33] flex gap-[10px] items-center justify-center px-[5px] py-[3px]"
+            >
+              <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
+                {tag}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
+      {!isUnannounced && member.socialLinks && (
         <div className="flex gap-3 items-center">
           {member.socialLinks.linkedin && member.socialLinks.linkedin.trim() !== "" && (
             <Link
@@ -119,4 +132,3 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
     </div>
   );
 }
-

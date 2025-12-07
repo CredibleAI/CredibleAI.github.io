@@ -60,6 +60,17 @@ export default function AboutPage() {
                     isWrapped={true}
                   />
                 ))}
+              
+              {/* Administration - Fourth */}
+              {teamSections
+                .filter((section) => section.title === "administration")
+                .map((section) => (
+                  <TeamSection
+                    key={section.title}
+                    section={section}
+                    isWrapped={true}
+                  />
+                ))}
             </div>
 
             {/* Partners Section */}
