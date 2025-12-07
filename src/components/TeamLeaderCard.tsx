@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { TeamLeader } from "@/types/team";
+import { useState } from "react";
 
 interface TeamLeaderCardProps {
   leader: TeamLeader;
@@ -8,6 +11,7 @@ interface TeamLeaderCardProps {
 }
 
 export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeaderCardProps) {
+  const [imageError, setImageError] = useState(false);
   const isUnannounced = leader.isUnannounced;
 
   return (
@@ -25,6 +29,13 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
             <div className="h-[280px] w-[204px] bg-[#f5f5f5] flex items-center justify-center">
               <span className="text-[120px] font-sans text-[#a3a3a3] select-none">?</span>
             </div>
+          ) : imageError ? (
+            <div className="h-[280px] w-[204px] bg-[#f5f5f5] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="w-24 h-24 text-[#a3a3a3]">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M20 21a8 8 0 0 0-16 0"/>
+              </svg>
+            </div>
           ) : (
             <div className="relative h-[280px] w-[204px]">
               <Image
@@ -32,6 +43,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                 alt={leader.imageAlt}
                 fill
                 className="object-cover"
+                onError={() => setImageError(true)}
               />
             </div>
           )}
