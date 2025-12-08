@@ -9,6 +9,12 @@ import { getArticleById } from "@/data/articles";
 
 import { navigationItems } from "@/constants/navigation";
 
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id,
+  }));
+}
+
 interface ProjectArticlePageProps {
   params: Promise<{ id: string }>;
 }

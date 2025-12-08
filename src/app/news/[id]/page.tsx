@@ -5,8 +5,14 @@ import Gallery from "@/components/Gallery";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getNewsById } from "@/data/news";
+import { getNewsById, news } from "@/data/news";
 import { navigationItems } from "@/constants/navigation";
+
+export async function generateStaticParams() {
+  return news.map((article) => ({
+    id: article.id,
+  }));
+}
 
 interface NewsArticlePageProps {
   params: Promise<{ id: string }>;
