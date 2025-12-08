@@ -36,6 +36,8 @@ jobs:
 
       - name: Build Next.js
         run: npm run build
+        env:
+          NEXT_PUBLIC_BLOB_URL: ${{ secrets.NEXT_PUBLIC_BLOB_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
