@@ -124,9 +124,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "tomasz-wekslej",
-    name: "Tomasz Wekslej",
+    name: "Tomek Weksej",
     imageUrl: "/images/team/wekslej.webp",
-    imageAlt: "Tomasz Wekslej",
+    imageAlt: "Tomek Weksej",
     tags: [],
     socialLinks: {},
   },

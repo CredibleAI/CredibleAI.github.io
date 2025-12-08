@@ -2,6 +2,7 @@ import { directors } from "./directors";
 import { administration } from "./administration";
 import { leaders } from "./leaders";
 import { researchers } from "./researchers";
+import { supporters } from "./supporters";
 import { TeamSection } from "@/types/team";
 
 export const teamSections: TeamSection[] = [
@@ -21,7 +22,11 @@ export const teamSections: TeamSection[] = [
     title: "researchers",
     members: researchers,
   },
+  {
+    title: "supporters",
+    members: supporters,
+  },
 ];
 
-export { directors, administration, leaders, researchers };
+export { directors, administration, leaders, researchers, supporters };
 

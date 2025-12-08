@@ -14,11 +14,11 @@ export const leaders: TeamLeader[] = [
     teamDescription:
       "We focus on developing innovative methods and tools to improve the explainability, reliability, and controllability of multimodal AI systems. Our goal is to challenge the status quo in the formal analysis, exploration, and testing of foundation models that integrate diverse data types—including text, images, and structured data.",
     socialLinks: {
-      linkedin: "#",
-      googleScholar: "#",
-      twitter: "#",
-      email: "#",
-      website: "#",
+      linkedin: "https://www.linkedin.com/in/pbiecek/",
+      googleScholar: "https://scholar.google.pl/citations?user=Af0O75cAAAAJ&hl=en",
+      twitter: "https://x.com/PrzeBiec",
+      email: "mailto:przemyslaw.biecek@pw.edu.pl",
+      website: "http://biecek.pl/",
     },
   },
   {

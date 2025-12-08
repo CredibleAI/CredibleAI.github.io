@@ -20,7 +20,7 @@ export default function AboutPage() {
               <p className="font-mono text-base md:text-lg font-normal uppercase mb-[10px] md:mb-[28px] tracking-[0.32px]">
                 our team
               </p>
-              <p className="font-sans text-4xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.72px] md:tracking-[-0.96px]">
+              <p className="font-sans text-[28px] sm:text-4xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.56px] sm:tracking-[-0.72px] md:tracking-[-0.96px]">
                 We are an interdisciplinary team – because algorithmic
                 knowledge without domain knowledge leads nowhere.
               </p>
@@ -71,6 +71,17 @@ export default function AboutPage() {
                     isWrapped={true}
                   />
                 ))}
+              
+              {/* Supporters - Fifth */}
+              {teamSections
+                .filter((section) => section.title === "supporters")
+                .map((section) => (
+                  <TeamSection
+                    key={section.title}
+                    section={section}
+                    isWrapped={true}
+                  />
+                ))}
             </div>
 
             {/* Partners Section */}
@@ -79,7 +90,7 @@ export default function AboutPage() {
                 <p className="font-mono text-base md:text-lg font-normal uppercase">
                   our partners
                 </p>
-                <p className="font-sans text-4xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.72px] md:tracking-[-0.48px]">
+                <p className="font-sans text-[28px] sm:text-4xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.56px] sm:tracking-[-0.72px] md:tracking-[-0.48px]">
                   We build cross-institutional connections.
                 </p>
               </div>

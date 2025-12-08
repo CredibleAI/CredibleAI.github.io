@@ -18,7 +18,7 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
 
   return (
     <div className="flex flex-col gap-0 items-start w-full">
-      <p className="font-sans text-2xl md:text-[48px] font-normal leading-[1.4] md:leading-[1.1] tracking-[-0.24px] md:tracking-[-0.96px] text-[#001f33] w-full md:h-[53px] flex items-center">
+      <p className="font-sans text-[32px] md:text-[48px] font-normal leading-[1.2] md:leading-[1.1] tracking-[-0.32px] md:tracking-[-0.96px] text-[#001f33] w-full md:h-[53px] flex items-center">
         {formatTitle(section.title)}
       </p>
       {isLeaders ? (
@@ -35,7 +35,7 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
         <div
           className={`w-full mt-[30px] ${
             isWrapped
-              ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 lg:gap-x-6 gap-y-[60px]"
+              ? "grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] max-lg:grid-cols-[repeat(auto-fill,minmax(200px,1fr))] lg:grid-cols-4 gap-x-10 gap-y-16"
               : "flex gap-6"
           }`}
         >

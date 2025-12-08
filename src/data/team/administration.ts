@@ -33,12 +33,4 @@ export const administration: TeamMember[] = [
     tags: [],
     socialLinks: {},
   },
-  {
-    id: "katarzyna-modrzejewska",
-    name: "Katarzyna Modrzejewska",
-    imageUrl: "/images/team/modrzejewska.webp",
-    imageAlt: "Katarzyna Modrzejewska",
-    tags: [],
-    socialLinks: {},
-  },
 ];

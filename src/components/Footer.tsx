@@ -98,7 +98,7 @@ export default function Footer() {
       <div className="hidden md:flex mx-auto max-w-[1440px] gap-10 lg:gap-20 px-5 lg:px-[120px] py-10 lg:py-20 flex-wrap lg:flex-nowrap">
         {/* Left Column - Logo and Copyright */}
         <div className="flex flex-col gap-20 pb-0 pt-1 shrink-0">
-          <Logo className="h-[89px]" />
+          <Logo className="h-[60px]" />
           <div className="font-mono text-base font-normal uppercase leading-[1.1] text-[#001f33]">
             <p className="mb-0">Centre for Credible Artificial Intelligence</p>
             <p className="mb-0">Warsaw University of Technology</p>

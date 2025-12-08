@@ -8,11 +8,11 @@ export const directors: TeamMember[] = [
     imageAlt: "prof. Przemysław Biecek",
     tags: ["XAI", "LLM", "analytics"],
     socialLinks: {
-      linkedin: "#",
-      googleScholar: "#",
-      twitter: "#",
-      email: "#",
-      website: "#",
+      linkedin: "https://www.linkedin.com/in/pbiecek/",
+      googleScholar: "https://scholar.google.pl/citations?user=Af0O75cAAAAJ&hl=en",
+      twitter: "https://x.com/PrzeBiec",
+      email: "mailto:przemyslaw.biecek@pw.edu.pl",
+      website: "http://biecek.pl/",
     },
   },
   {

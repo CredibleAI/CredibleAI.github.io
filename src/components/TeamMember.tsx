@@ -15,13 +15,13 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
   const isUnannounced = member.isUnannounced;
   
   return (
-    <div className="flex flex-col gap-[17px] items-start w-full">
+    <div className="flex flex-col gap-[17px] items-start w-full max-w-[280px]">
       {isUnannounced ? (
-        <div className="h-[280px] w-[204px] bg-[#f5f5f5] flex items-center justify-center">
+        <div className="aspect-[3/4] w-full max-w-[204px] bg-[#f5f5f5] flex items-center justify-center">
           <span className="text-[100px] font-sans text-[#a3a3a3] select-none">?</span>
         </div>
       ) : imageError ? (
-        <div className="h-[280px] w-[204px] bg-[#f5f5f5] flex items-center justify-center">
+        <div className={`aspect-[3/4] w-full max-w-[204px] bg-[#f5f5f5] flex items-center justify-center transition-shadow duration-300 ${isHannaGozdz ? "hover:shadow-[0_0_40px_rgba(255,105,180,0.4)]" : ""}`}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="w-24 h-24 text-[#a3a3a3]">
             <circle cx="12" cy="8" r="4"/>
             <path d="M20 21a8 8 0 0 0-16 0"/>
@@ -29,7 +29,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
         </div>
       ) : (
         <div 
-          className={`relative h-[280px] w-[204px] ${isHannaGozdz ? "shadow-[0_0_10px_rgba(255,105,180,0.1)]" : ""}`}
+          className={`relative aspect-[3/4] w-full max-w-[204px] transition-shadow duration-300 ${isHannaGozdz ? "hover:shadow-[0_0_40px_rgba(255,105,180,0.4)]" : ""}`}
         >
           <Image
             src={member.imageUrl}
@@ -46,13 +46,13 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
         </p>
       </div>
       {!isUnannounced && member.tags.length > 0 && (
-        <div className="flex gap-1 items-center flex-wrap">
+        <div className="flex gap-1 items-center flex-wrap max-w-full">
           {member.tags.map((tag, index) => (
             <div
               key={index}
-              className="bg-[#001f33] flex gap-[10px] items-center justify-center px-[5px] py-[3px]"
+              className="bg-[#001f33] flex gap-[10px] items-center justify-center px-[5px] py-[3px] max-w-full"
             >
-              <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
+              <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase truncate">
                 {tag}
               </p>
             </div>

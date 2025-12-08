@@ -24,7 +24,7 @@ export default function NewsPage() {
       <Navbar items={navigationItems} activeItem="/news" />
       
       {/* Main Content */}
-      <div className="pt-[64px] md:pt-[80px]">
+      <div className="pt-[64px] md:pt-[80px] min-h-[calc(100vh-200px)]">
         {/* News List */}
         <div className="flex flex-col items-center">
           {displayedNews.map((newsItem) => (
