@@ -33,10 +33,10 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
         </div>
       ) : (
         <div
-          className={`flex items-start w-full mt-[30px] ${
+          className={`w-full mt-[30px] ${
             isWrapped
-              ? "flex-wrap content-start gap-x-6 gap-y-[60px]"
-              : "gap-6"
+              ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 lg:gap-x-6 gap-y-[60px]"
+              : "flex gap-6"
           }`}
         >
           {section.members.map((member) => (

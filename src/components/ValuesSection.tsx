@@ -13,7 +13,7 @@ export default function ValuesSection() {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between gap-[60px] md:gap-4 w-full">
         {/* Integrity Box */}
-        <div className="flex flex-col gap-4 items-center px-5 md:px-6 w-full md:w-[383px]">
+        <div className="flex flex-col gap-6 items-center px-5 md:px-6 w-full md:w-[383px]">
           <div className="h-[70px] md:h-[120px] w-[70px] md:w-[120px] relative">
             {/* Integrity Icon - nested squares */}
             <div className="absolute left-[0.417px] md:left-0 top-[0.417px] md:top-0 w-[49.166px] md:w-[84px] h-[49.166px] md:h-[84px] border-[0.875px] md:border-[1.5px] border-[#001f33] rotate-90" />
@@ -29,7 +29,7 @@ export default function ValuesSection() {
         </div>
 
         {/* Excellence Box */}
-        <div className="flex flex-col gap-4 items-center px-5 md:px-6 w-full md:w-[383px]">
+        <div className="flex flex-col gap-6 items-center px-5 md:px-6 w-full md:w-[383px]">
           <div className="h-[70px] md:h-[120px] w-[68.332px] md:w-[117px] relative flex items-center justify-center">
             <Image
               src="/images/icons/excellence-icon.svg"
@@ -47,7 +47,7 @@ export default function ValuesSection() {
         </div>
 
         {/* Impact Box */}
-        <div className="flex flex-col gap-4 items-center px-5 md:px-6 w-full md:w-[383px]">
+        <div className="flex flex-col gap-6 items-center px-5 md:px-6 w-full md:w-[383px]">
           <div className="h-[70px] md:h-[120px] w-[70px] md:w-[120px] relative flex items-center justify-center">
             <Image
               src="/images/icons/impact-icon.svg"

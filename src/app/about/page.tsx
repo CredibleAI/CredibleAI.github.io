@@ -14,7 +14,7 @@ export default function AboutPage() {
       {/* Main Content */}
       <div className="pt-20">
         <Section className="py-20 md:py-32 lg:py-[180px]">
-          <div className="flex flex-col gap-[90px] md:gap-32 lg:gap-[180px] items-start max-w-[1200px] mx-auto px-5 md:px-10 lg:px-0">
+            <div className="flex flex-col gap-[90px] md:gap-32 lg:gap-[180px] items-start max-w-[1200px] mx-auto px-5 md:px-5 lg:px-0">
             {/* Header Section */}
             <div className="flex flex-col gap-0 items-start text-[#001f33] w-full">
               <p className="font-mono text-base md:text-lg font-normal uppercase mb-[10px] md:mb-[28px] tracking-[0.32px]">

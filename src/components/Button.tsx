@@ -19,8 +19,8 @@ export default function Button({
     "inline-flex items-center justify-center gap-2 font-mono font-normal leading-[1.1] transition-colors";
   
   const variantClasses = {
-    primary: "bg-[#001f33] text-white hover:bg-opacity-90",
-    secondary: "border border-[#001f33] text-[#001f33] hover:bg-gray-50",
+    primary: "bg-[#001f33] text-white hover:bg-[#003355]",
+    secondary: "text-[#001f33] hover:bg-gray-100",
   };
 
   const classes = `${baseClasses} ${variantClasses[variant]} ${className}`;

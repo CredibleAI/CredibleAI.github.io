@@ -15,7 +15,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
   const isUnannounced = member.isUnannounced;
   
   return (
-    <div className="flex flex-col gap-[17px] items-start w-full sm:w-[282px]">
+    <div className="flex flex-col gap-[17px] items-start w-full">
       {isUnannounced ? (
         <div className="h-[280px] w-[204px] bg-[#f5f5f5] flex items-center justify-center">
           <span className="text-[100px] font-sans text-[#a3a3a3] select-none">?</span>
@@ -40,7 +40,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
           />
         </div>
       )}
-      <div className="flex flex-col gap-2 items-start text-[#001f33] w-full sm:w-[282px]">
+      <div className="flex flex-col gap-2 items-start text-[#001f33] w-full">
         <p className={`font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px] ${isUnannounced ? "text-[#a3a3a3] italic" : ""}`}>
           {member.name}
         </p>
@@ -66,7 +66,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               href={member.socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 relative shrink-0"
+              className="w-5 h-5 relative shrink-0"
             >
               <span className="sr-only">LinkedIn</span>
               <Image
@@ -82,7 +82,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               href={member.socialLinks.googleScholar}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 relative shrink-0"
+              className="w-5 h-5 relative shrink-0"
             >
               <span className="sr-only">Google Scholar</span>
               <Image
@@ -98,7 +98,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               href={member.socialLinks.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 relative shrink-0"
+              className="w-5 h-5 relative shrink-0"
             >
               <span className="sr-only">Twitter</span>
               <Image
@@ -112,7 +112,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
           {member.socialLinks.email && member.socialLinks.email.trim() !== "" && (
             <Link
               href={`mailto:${member.socialLinks.email}`}
-              className="w-6 h-6 relative shrink-0"
+              className="w-5 h-5 relative shrink-0"
             >
               <span className="sr-only">Email</span>
               <Image
@@ -128,7 +128,7 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               href={member.socialLinks.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 relative shrink-0"
+              className="w-5 h-5 relative shrink-0"
             >
               <span className="sr-only">Website</span>
               <Image

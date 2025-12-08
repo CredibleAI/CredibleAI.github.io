@@ -10,7 +10,7 @@ export default function NewsCard({ news }: NewsCardProps) {
   return (
     <Link
       href={`/news/${news.id}`}
-      className="flex flex-col md:flex-row gap-6 border-b border-[#a3a3a3] px-5 md:px-8 lg:px-[120px] py-10 hover:bg-gray-50 transition-colors group bg-white"
+      className="flex flex-col md:flex-row gap-6 border-b border-[#a3a3a3] px-5 md:px-5 lg:px-[120px] py-10 hover:bg-gray-50 transition-colors group bg-white"
     >
       {/* Mobile: Image first, Desktop: Content first */}
       <div className="block md:hidden relative w-full aspect-[589/332]">
@@ -53,7 +53,7 @@ export default function NewsCard({ news }: NewsCardProps) {
       </div>
 
       {/* Desktop: Image on right */}
-      <div className="hidden md:block relative h-[332px] w-full md:w-[400px] lg:w-[589px] shrink-0">
+      <div className="hidden md:block relative h-[280px] md:h-[250px] lg:h-[332px] w-full md:w-[300px] lg:w-[450px] shrink-0">
         <Image
           src={news.heroImage.src}
           alt={news.heroImage.alt}

@@ -78,7 +78,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                   href={leader.socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-6 h-6 relative shrink-0"
+                  className="w-5 h-5 relative shrink-0"
                 >
                   <span className="sr-only">LinkedIn</span>
                   <Image
@@ -94,7 +94,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                   href={leader.socialLinks.googleScholar}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-6 h-6 relative shrink-0"
+                  className="w-5 h-5 relative shrink-0"
                 >
                   <span className="sr-only">Google Scholar</span>
                   <Image
@@ -110,7 +110,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                   href={leader.socialLinks.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-6 h-6 relative shrink-0"
+                  className="w-5 h-5 relative shrink-0"
                 >
                   <span className="sr-only">Twitter</span>
                   <Image
@@ -124,7 +124,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
               {leader.socialLinks.email && leader.socialLinks.email.trim() !== "" && (
                 <Link
                   href={`mailto:${leader.socialLinks.email}`}
-                  className="w-6 h-6 relative shrink-0"
+                  className="w-5 h-5 relative shrink-0"
                 >
                   <span className="sr-only">Email</span>
                   <Image
@@ -140,7 +140,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                   href={leader.socialLinks.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-6 h-6 relative shrink-0"
+                  className="w-5 h-5 relative shrink-0"
                 >
                   <span className="sr-only">Website</span>
                   <Image
@@ -158,7 +158,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
         {/* Right Column - Description and Team Info */}
         <div className="flex flex-1 flex-col gap-8 items-start">
           <div className="flex flex-col gap-[10px] items-start w-full">
-            <p className={`font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] ${isUnannounced ? "text-[#a3a3a3] italic" : "text-[#001f33]"}`}>
+            <p className={`font-sans text-xl font-normal leading-[1.6] tracking-[-0.2px] ${isUnannounced ? "text-[#a3a3a3] italic" : "text-[#001f33]"}`}>
               {leader.description}
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function TeamLeaderCard({ leader, showBorder = false }: TeamLeade
                 {leader.teamName}
               </p>
             </div>
-            <p className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33]">
+            <p className="font-sans text-xl font-normal leading-[1.6] tracking-[-0.2px] text-[#001f33]">
               {leader.teamDescription}
             </p>
           </div>

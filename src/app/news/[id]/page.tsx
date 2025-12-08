@@ -105,10 +105,10 @@ export default async function NewsArticlePage({
           </div>
         </div>
 
-        {/* Desktop: Header Section - Two Column Layout */}
-        <div className="hidden md:block border-b border-[#a3a3a3] px-4 sm:px-8 md:px-16 lg:px-[120px] py-10">
-          <div className="flex flex-col lg:flex-row gap-6 items-start max-w-[1440px] mx-auto">
-            <div className="flex flex-col gap-[22px] items-start w-full lg:w-[588px]">
+        {/* Desktop: Header Section - Image above text on md/lg, side-by-side on xl */}
+        <div className="hidden md:block border-b border-[#a3a3a3] px-5 lg:px-[120px] py-10">
+          <div className="flex flex-col-reverse xl:flex-row gap-6 items-start max-w-[1440px] mx-auto">
+            <div className="flex flex-col gap-[22px] items-start w-full xl:w-[588px]">
               <div className="flex flex-col gap-[10px] items-start leading-[1.1] text-[#001f33] w-full">
                 <p className="font-mono text-base font-normal tracking-[0.32px] uppercase">
                   {article.subtitle}
@@ -140,7 +140,7 @@ export default async function NewsArticlePage({
               </a>
             </div>
             {/* Hero Image */}
-            <div className="relative h-[332px] w-full lg:w-[589px] shrink-0">
+            <div className="relative w-full xl:w-[589px] shrink-0 aspect-[16/9] xl:aspect-auto xl:h-[332px]">
               <Image
                 src={article.heroImage.src}
                 alt={article.heroImage.alt}

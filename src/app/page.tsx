@@ -38,7 +38,7 @@ export default function Home() {
       </div>
 
       {/* Main Content Container */}
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 md:px-16 lg:px-[120px] mt-[120px] md:mt-[180px]">
+      <div className="mx-auto max-w-[1440px] px-5 md:px-5 lg:px-[120px] mt-[120px] md:mt-[180px]">
         <div className="flex flex-col gap-[120px] md:gap-[180px] items-start w-full max-w-[1200px] mx-auto">
           {/* Our Mission Section */}
           <MissionSection />
