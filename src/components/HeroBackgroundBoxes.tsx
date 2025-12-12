@@ -14,28 +14,8 @@ const WeDecodeAIBlock = ({ viewportSize }: { viewportSize: "sm" | "md" | "lg" | 
   return (
     <div className="h-full w-full flex items-center justify-start px-3.5 py-2.5 overflow-hidden">
       <h1 className={`font-sans ${textSizes[viewportSize]} font-normal leading-[0.9] tracking-[-0.45px] text-[#001f33] whitespace-nowrap`}>
-        We decode AI
+        Decode AI
       </h1>
-    </div>
-  );
-};
-
-// We make AI understandable block content - responsive text size
-const WeMakeAIBlock = ({ viewportSize }: { viewportSize: "sm" | "md" | "lg" | "xl" }) => {
-  const textSizes = {
-    sm: "text-[18px]",
-    md: "text-sm",
-    lg: "text-base",
-    xl: "text-base",
-  };
-
-  return (
-    <div className="h-full w-full flex items-start justify-start px-3.5 py-2.5 overflow-hidden">
-      <p className={`font-mono ${textSizes[viewportSize]} font-normal uppercase leading-[1.1] text-[#001f33] break-words`}>
-        We make AI understandable.
-        <br />
-        And responsible.
-      </p>
     </div>
   );
 };
@@ -360,41 +340,6 @@ const baseBoxes: Box[] = [
       },
     },
   },
-  // We make AI understandable block - responsive positioning and sizing
-  {
-    id: "we-make-ai",
-    width: (450 / BASE_WIDTH) * 100, // Base width (narrower than "We decode AI")
-    height: (78 / BASE_HEIGHT) * 100, // Base height for subtitle
-    left: (120.33 / BASE_WIDTH) * 100, // Same left as "We decode AI"
-    top: ((120 - TOP_OFFSET + 20) / BASE_HEIGHT) * 100 + (89.169 / BASE_HEIGHT) * 100, // Positioned directly below "We decode AI" with no gap
-    content: null, // Will be set dynamically based on viewport
-    responsive: {
-      sm: {
-        width: (335 / 375) * 100, // Same width as "We decode AI" on mobile
-        height: (78 / 667) * 100, // Height
-        left: (20 / 375) * 100, // Same left as "We decode AI"
-        top: (20 / 667) * 100 + (61.144 / 667) * 100, // Directly below "We decode AI" box
-      },
-      md: {
-        width: (380 / 768) * 100, // Narrower than "We decode AI"
-        height: (60 / 1024) * 100,
-        left: (40 / 768) * 100,
-        top: ((90 - 50 + 20) / 1024) * 100 + (75 / 1024) * 100, // Directly below with no gap
-      },
-      lg: {
-        width: (420 / 1024) * 100, // Narrower than "We decode AI"
-        height: (65 / 768) * 100,
-        left: (70 / 1024) * 100,
-        top: ((110 - 60 + 25) / 768) * 100 + (82 / 768) * 100, // Directly below with no gap
-      },
-      xl: {
-        width: (450 / 1440) * 100, // Narrower than "We decode AI"
-        height: (78 / 760) * 100,
-        left: (120.33 / 1440) * 100,
-        top: ((120 - TOP_OFFSET + 20) / 760) * 100 + (89.169 / 760) * 100, // Directly below with no gap
-      },
-    },
-  },
 ];
 
 export default function HeroBackgroundBoxes() {
@@ -444,8 +389,6 @@ export default function HeroBackgroundBoxes() {
         // Get content - for text blocks, render with viewport size
         const content = box.id === "we-decode-ai" ? (
           <WeDecodeAIBlock viewportSize={viewportSize} />
-        ) : box.id === "we-make-ai" ? (
-          <WeMakeAIBlock viewportSize={viewportSize} />
         ) : box.content;
 
         const style: React.CSSProperties = {

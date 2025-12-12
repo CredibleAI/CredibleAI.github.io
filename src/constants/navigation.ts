@@ -18,15 +18,13 @@ export const spotlightLinks = [
 ];
 
 export const socialLinks = [
-  { platform: "LinkedIn", href: "#" },
-  { platform: "Facebook", href: "#" },
-  { platform: "Twitter", href: "#" },
-  { platform: "YouTube", href: "#" },
+  { platform: "LinkedIn", href: "https://www.linkedin.com/company/106999413/admin/dashboard/" },
+  { platform: "Twitter", href: "https://x.com/ccaiwut" },
 ];
 
 export const partners = [
   "Warsaw University of Technology",
-  "Polish Science Foundation",
+  "Foundation for Polish Science",
 ];
 
 export const legalLinks = [

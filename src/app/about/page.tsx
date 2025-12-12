@@ -39,17 +39,6 @@ export default function AboutPage() {
                   />
                 ))}
               
-              {/* Directors - Second */}
-              {teamSections
-                .filter((section) => section.title === "directors")
-                .map((section) => (
-                  <TeamSection
-                    key={section.title}
-                    section={section}
-                    isWrapped={true}
-                  />
-                ))}
-              
               {/* Researchers - Third */}
               {teamSections
                 .filter((section) => section.title === "researchers")
@@ -107,14 +96,6 @@ export default function AboutPage() {
                   <Image
                     src="/images/partners/partner-2.png"
                     alt="Partner logo 2"
-                    fill
-                    className="object-contain object-left"
-                  />
-                </div>
-                <div className="relative h-[80px] md:h-[103.93px] w-[269.11px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[364.621px]">
-                  <Image
-                    src="/images/partners/partner-3.png"
-                    alt="Partner logo 3"
                     fill
                     className="object-contain object-left"
                   />

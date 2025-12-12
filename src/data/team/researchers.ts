@@ -33,8 +33,11 @@ export const researchers: TeamMember[] = [
     name: "dr Jacek Rogala",
     imageUrl: "/images/team/rogala.webp",
     imageAlt: "dr Jacek Rogala",
-    tags: [],
-    socialLinks: {},
+    tags: ["biomedical applications"],
+    socialLinks: {
+      email: "mailto:rogala.jacek@gmail.com",
+      googleScholar: "https://scholar.google.pl/citations?user=nhHy0lUAAAAJ&hl=pl",
+    },
   },
   {
     id: "inez-okulska",
@@ -53,7 +56,7 @@ export const researchers: TeamMember[] = [
     name: "dr Bartosz Naskręcki",
     imageUrl: "/images/team/naskreci.webp",
     imageAlt: "dr Bartosz Naskręcki",
-    tags: ["generative models", "interpretability", "formal methods"],
+    tags: ["generative models", "interpretability", "formal methods in mathematics and programming"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bartosz-naskręcki-60222593",
       website: "https://bnaskrecki.faculty.wmi.amu.edu.pl/",
@@ -78,7 +81,7 @@ export const researchers: TeamMember[] = [
     name: "Hubert Baniecki",
     imageUrl: "/images/team/baniecki.webp",
     imageAlt: "Hubert Baniecki",
-    tags: ["interpretability"],
+    tags: ["interpretability", "tbd"],
     socialLinks: {
       website: "https://hbaniecki.com",
       email: "mailto:h.baniecki@uw.edu.pl",
@@ -90,8 +93,12 @@ export const researchers: TeamMember[] = [
     name: "Vladimir Zaigrajew",
     imageUrl: "/images/team/zaigrajew.webp",
     imageAlt: "Vladimir Zaigrajew",
-    tags: [],
-    socialLinks: {},
+    tags: ["representation learning", "interpretability", "mechanistic interpretability"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/vladimirzaigrajew/",
+      email: "mailto:vladimir.zaigrajew.dokt@pw.edu.pl",
+      googleScholar: "https://scholar.google.com/citations?user=7XKIBvgAAAAJ&hl=en",
+    },
   },
   {
     id: "bartek-sobieski",
@@ -111,8 +118,12 @@ export const researchers: TeamMember[] = [
     name: "Bartek Kochański",
     imageUrl: "/images/team/kochanski.webp",
     imageAlt: "Bartek Kochański",
-    tags: [],
-    socialLinks: {},
+    tags: ["computer-aided diagnosis", "biomarkers", "AI in radiology", "research commercialization"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/bkochanski/",
+      email: "mailto:bartosz.kochanski.dokt@pw.edu.pl",
+      googleScholar: "https://scholar.google.com/citations?hl=en&user=Z2WIOZwAAAAJ",
+    },
   },
   {
     id: "pawel-struski",
@@ -125,17 +136,20 @@ export const researchers: TeamMember[] = [
   {
     id: "tomasz-wekslej",
     name: "Tomek Weksej",
-    imageUrl: "/images/team/wekslej.webp",
+    imageUrl: "/images/team/weksej.webp",
     imageAlt: "Tomek Weksej",
-    tags: [],
-    socialLinks: {},
+    tags: ["mechanistic interpretability", "concept-based interpretability"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/tweks/",
+      email: "mailto:tomek.weksej@gmail.com",
+    },
   },
   {
     id: "jan-piotrowski",
     name: "Jan Piotrowski",
     imageUrl: "/images/team/piotrowski.webp",
     imageAlt: "Jan Piotrowski",
-    tags: ["LLM", "mechanistic interpretability", "AI agents"],
+    tags: ["NLP", "LLM", "mechanistic interpretability", "agentic AI"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/jan-piotrowski-23553719b/",
       website: "https://jfpio.github.io/",
@@ -149,8 +163,12 @@ export const researchers: TeamMember[] = [
     name: "Dawid Płudowski",
     imageUrl: "/images/team/pludowski.webp",
     imageAlt: "Dawid Płudowski",
-    tags: [],
-    socialLinks: {},
+    tags: ["mechanistic interpretability", "time series"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/dawid-płudowski-2a2303256/",
+      email: "mailto:dawid.pludowski@gmail.com",
+      googleScholar: "https://scholar.google.com/citations?user=HewSBiIAAAAJ&hl=pl",
+    },
   },
   {
     id: "agata-kaczmarek",
@@ -165,7 +183,7 @@ export const researchers: TeamMember[] = [
     name: "Michał Włodarczyk",
     imageUrl: "/images/team/wlodarczyk.webp",
     imageAlt: "Michał Włodarczyk",
-    tags: ["representations", "INR", "CV", "robotics"],
+    tags: ["representations", "inr", "computer vision", "robotics"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/michal-jan-wlodarczyk",
       website: "https://mwlodarzc.github.io",
@@ -178,15 +196,32 @@ export const researchers: TeamMember[] = [
     name: "Paweł Gelar",
     imageUrl: "/images/team/gelar.webp",
     imageAlt: "Paweł Gelar",
-    tags: [],
-    socialLinks: {},
+    tags: ["computer vision", "mechanistic interpretability"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/pawel-gelar/",
+      email: "mailto:pawel.gelar@gmail.com",
+    },
   },
   {
     id: "jakub-grzywaczewski",
     name: "Jakub Grzywaczewski",
     imageUrl: "/images/team/grzywaczewski.webp",
     imageAlt: "Jakub Grzywaczewski",
-    tags: [],
-    socialLinks: {},
+    tags: ["generative models", "attributions"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/jakub-grzywaczewski-5b6801236/",
+      email: "mailto:jakubzgrzywaczewski@gmail.com",
+    },
+  },
+  {
+    id: "jakub-rymarski",
+    name: "Jakub Rymarski",
+    imageUrl: "/images/team/rymarski.webp",
+    imageAlt: "Jakub Rymarski",
+    tags: ["generative models", "biomedical applications"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/jakub-rymarski/",
+      email: "mailto:jakub.rymarski.stud@pw.edu.pl",
+    },
   },
 ];
