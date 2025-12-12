@@ -13,7 +13,7 @@ export default function PartnerSection() {
       </div>
       <div className="flex flex-col md:flex-row gap-6 items-start w-full border-t-[0.5px] border-[#a3a3a3] pt-10">
         <div className="flex flex-col gap-[17px] items-start w-full md:w-[485px]">
-          <div className="relative h-[70px] md:h-[90px] w-full md:w-[420px]">
+          <div className="relative h-[70px] md:h-[90px] w-[278.32px] md:w-full md:max-w-[360.852px]">
             <Image
               src="/images/partners/fraunhofer-logo.png"
               alt="Fraunhofer logo"

@@ -83,21 +83,21 @@ export default function AboutPage() {
                   We build cross-institutional connections.
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-[102px] items-start md:items-center w-full md:flex-wrap md:justify-between">
+              <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-[102px] items-center justify-center w-full md:flex-wrap">
                 <div className="relative h-[80px] md:h-[103.93px] w-[278.32px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[360.852px]">
                   <Image
                     src="/images/partners/partner-1.png"
                     alt="Partner logo 1"
                     fill
-                    className="object-contain object-left"
+                    className="object-contain object-center"
                   />
                 </div>
-                <div className="relative h-[45px] md:h-[44.023px] w-[263.5px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[258px]">
+                <div className="relative h-[80px] md:h-[103.93px] w-[263.5px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[258px]">
                   <Image
                     src="/images/partners/partner-2.png"
                     alt="Partner logo 2"
                     fill
-                    className="object-contain object-left"
+                    className="object-contain object-center"
                   />
                 </div>
               </div>
