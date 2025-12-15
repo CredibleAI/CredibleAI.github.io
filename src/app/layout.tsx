@@ -17,6 +17,32 @@ const lexendDeca = Lexend_Deca({
 export const metadata: Metadata = {
   title: "CCAI - Centre for Credible Artificial Intelligence",
   description: "We make AI understandable, verifiable, and controllable.",
+  metadataBase: process.env.NEXT_PUBLIC_SITE_URL
+    ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
+    : undefined,
+  openGraph: {
+    title: "CCAI - Centre for Credible Artificial Intelligence",
+    description: "We make AI understandable, verifiable, and controllable.",
+    images: [
+      {
+        url: "/images/social-preview.png",
+        width: 1336,
+        height: 768,
+        alt: "Decode AI graphic",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CCAI - Centre for Credible Artificial Intelligence",
+    description: "We make AI understandable, verifiable, and controllable.",
+    images: ["/images/social-preview.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

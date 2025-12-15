@@ -50,9 +50,9 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
           {member.tags.map((tag, index) => (
             <div
               key={index}
-              className="bg-[#001f33] flex gap-[10px] items-center justify-center px-[5px] py-[3px] max-w-full"
+              className="bg-[#001f33] inline-flex gap-[10px] items-center justify-start px-[6px] py-[4px] max-w-[220px] w-auto min-w-0"
             >
-              <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase truncate">
+              <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase whitespace-normal break-words text-left min-w-0">
                 {tag}
               </p>
             </div>
