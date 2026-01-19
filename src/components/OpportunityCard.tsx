@@ -24,7 +24,7 @@ export default function OpportunityCard({ opportunity }: OpportunityCardProps) {
   return (
     <Link
       href={`/join-us/${opportunity.id}`}
-      className="flex flex-col md:flex-row gap-4 md:gap-6 border-b border-[#a3a3a3] px-6 md:px-[120px] py-6 md:py-10 hover:bg-gray-50 transition-colors group"
+      className={`flex flex-col ${opportunity.imageUrl ? "md:flex-row" : ""} gap-4 md:gap-6 border-b border-[#a3a3a3] px-6 md:px-[120px] py-6 md:py-10 hover:bg-gray-50 transition-colors group`}
     >
       <div className="flex flex-1 flex-col gap-4 md:gap-6 text-[#001f33]">
         <div className="flex flex-col gap-3 md:gap-[19px] leading-[1.1]">
@@ -61,14 +61,16 @@ export default function OpportunityCard({ opportunity }: OpportunityCardProps) {
           </span>
         </div>
       </div>
-      <div className="relative h-[200px] md:h-[332px] w-full md:w-[589px] shrink-0">
-        <Image
-          src={opportunity.imageUrl}
-          alt={opportunity.imageAlt}
-          fill
-          className="object-cover"
-        />
-      </div>
+      {opportunity.imageUrl && (
+        <div className="relative h-[200px] md:h-[332px] w-full md:w-[589px] shrink-0">
+          <Image
+            src={opportunity.imageUrl}
+            alt={opportunity.imageAlt}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
     </Link>
   );
 }

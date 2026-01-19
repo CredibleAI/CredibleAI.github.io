@@ -6,8 +6,8 @@ export const postdocExplainableAi: OpportunityData = {
   subtitle: "Application deadline: January 26, 2026",
   description:
     "Join the Centre for Credible AI at Warsaw University of Technology to conduct research on new techniques for explaining AI models, including solutions for non-differentiable models and alternatives to backpropagation algorithms.",
-  imageUrl: "/images/project-1.jpg",
-  imageAlt: "Postdoc position in explainable AI at Warsaw University of Technology",
+  imageUrl: "",
+  imageAlt: "",
   type: "Postdoc",
   deadline: "2026-01-26",
   location: "Warsaw, Poland",

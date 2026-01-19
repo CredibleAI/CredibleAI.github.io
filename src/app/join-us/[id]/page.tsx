@@ -134,14 +134,16 @@ export default async function OpportunityPage({
               </div>
 
               <div className="flex flex-col gap-6 w-full md:w-1/3">
-                <div className="relative w-full h-[260px] md:h-[280px]">
-                  <Image
-                    src={opportunity.imageUrl}
-                    alt={opportunity.imageAlt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                {opportunity.imageUrl && (
+                  <div className="relative w-full h-[260px] md:h-[280px]">
+                    <Image
+                      src={opportunity.imageUrl}
+                      alt={opportunity.imageAlt}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
 
                 <div className="border border-[#a3a3a3] p-5 flex flex-col gap-3">
                   <h2 className="font-sans text-lg md:text-xl font-normal leading-[1.2] tracking-[-0.2px] text-[#001f33]">
