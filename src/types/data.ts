@@ -17,8 +17,16 @@ export interface ProjectData extends BaseContentItem {
 
 // Opportunity-specific interface (for join-us positions)
 export interface OpportunityData extends BaseContentItem {
-  // Join-us positions can have additional fields if needed
   type?: string; // e.g., "PhD", "Postdoc", "Internship"
   deadline?: string;
   location?: string;
+  salaryRange?: string;
+  employmentType?: string;
+  workload?: string;
+  contractType?: string;
+  detailedDescription?: string;
+  requirements?: string[];
+  responsibilities?: string[];
+  benefits?: string[];
+  contactEmail?: string;
 }
