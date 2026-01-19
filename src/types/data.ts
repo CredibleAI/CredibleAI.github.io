@@ -29,4 +29,7 @@ export interface OpportunityData extends BaseContentItem {
   responsibilities?: string[];
   benefits?: string[];
   contactEmail?: string;
+  referenceNumber?: string;
+  startDate?: string;
+  organization?: string;
 }

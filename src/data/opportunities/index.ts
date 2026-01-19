@@ -1,10 +1,10 @@
 import { OpportunityData } from "@/types/data";
-import { samplePhdPosition } from "./sample-phd-position";
+import { postdocExplainableAi } from "./postdoc-explainable-ai";
 
 export const opportunities: OpportunityData[] = [
-  samplePhdPosition,
+  postdocExplainableAi,
 ];
 
 export const hasOpportunities = opportunities.length > 0;
 
-export { samplePhdPosition };
+export { postdocExplainableAi };

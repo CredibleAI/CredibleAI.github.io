@@ -15,6 +15,9 @@ export const opportunityTemplate: OpportunityData = {
   employmentType: "Full-time / Part-time / Internship",
   workload: "e.g. 40 hours per week",
   contractType: "e.g. Employment contract / B2B / Scholarship",
+  referenceNumber: "Optional reference number, e.g. CCAI_2025.8",
+  startDate: "2026-01-01",
+  organization: "Organization or institution name",
   detailedDescription:
     "Longer description of the role, research context, responsibilities and collaboration environment.",
   requirements: [

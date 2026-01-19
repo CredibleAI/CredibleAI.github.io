@@ -148,7 +148,13 @@ export default async function OpportunityPage({
                     Position details
                   </h2>
                   <div className="flex flex-col gap-2 font-sans text-sm md:text-base text-[#001f33]">
+                    {opportunity.organization && (
+                      <p className="font-semibold">{opportunity.organization}</p>
+                    )}
                     {opportunity.type && <p>Type: {opportunity.type}</p>}
+                    {opportunity.referenceNumber && (
+                      <p>Reference: {opportunity.referenceNumber}</p>
+                    )}
                     {opportunity.employmentType && (
                       <p>Employment type: {opportunity.employmentType}</p>
                     )}
@@ -159,6 +165,9 @@ export default async function OpportunityPage({
                     {opportunity.location && <p>Location: {opportunity.location}</p>}
                     {opportunity.salaryRange && (
                       <p>Salary range: {opportunity.salaryRange}</p>
+                    )}
+                    {opportunity.startDate && (
+                      <p>Start date: {opportunity.startDate}</p>
                     )}
                     {opportunity.deadline && <p>Deadline: {opportunity.deadline}</p>}
                     {opportunity.contactEmail && (
