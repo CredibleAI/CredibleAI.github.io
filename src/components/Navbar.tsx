@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Logo from "./Logo";
 import { NavigationItem } from "@/types";
 import { useState, useEffect } from "react";
 import { socialLinks } from "@/constants/navigation";
@@ -110,7 +109,11 @@ export default function Navbar({ items, activeItem }: NavbarProps) {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b-[0.5px] border-[#a3a3a3] bg-white">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between pl-5 pr-0 md:px-5 lg:px-[120px] py-0 h-[48px] md:h-[64px]">
           <Link href="/" className="hover:opacity-80 transition-opacity flex items-center">
-            <Logo className="h-[20px] md:h-[22.527px]" variant="default" variantMobile="short" />
+            <img 
+              src="/images/Logo-hor.svg" 
+              alt="CCAI Logo" 
+              className="h-[20px] md:h-[22.527px] w-auto object-contain"
+            />
           </Link>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center h-full">
@@ -146,7 +149,11 @@ export default function Navbar({ items, activeItem }: NavbarProps) {
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-5 py-5 h-[48px] border-b border-[rgba(255,255,255,0.2)] flex-shrink-0">
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-              <Logo className="h-[20px]" variant="white" variantMobile="short" />
+              <img 
+                src="/images/Logo-hor.svg" 
+                alt="CCAI Logo" 
+                className="h-[20px] w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
