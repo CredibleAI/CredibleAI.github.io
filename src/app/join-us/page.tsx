@@ -28,7 +28,7 @@ export default function JoinUsPage() {
     <div className="relative min-h-screen bg-white">
       <Navbar items={navigationItems} activeItem="/join-us" />
 
-      <div className="pt-20">
+      <div className="pt-[64px] md:pt-[80px]">
         {!hasOpportunities ? (
           <Section className="py-20 md:py-32">
             <div className="flex flex-col gap-8 items-center text-center max-w-[800px] mx-auto">
@@ -56,7 +56,7 @@ export default function JoinUsPage() {
           </Section>
         ) : (
           <>
-            <div className="px-6 md:px-[120px] py-12 md:py-20">
+            <Section className="py-12 md:py-20">
               <div className="flex flex-col gap-8 md:gap-12 items-start w-full">
                 <div className="flex flex-col gap-4 md:gap-[19px] items-start leading-[1.1] text-[#001f33] w-full">
                   <p className="font-mono text-base md:text-lg font-normal uppercase">
@@ -101,10 +101,10 @@ export default function JoinUsPage() {
                   </div>
                 )}
               </div>
-            </div>
+            </Section>
 
             {filteredOpportunities.length > 0 ? (
-              <div className="flex flex-col">
+              <div className="mx-auto max-w-[1440px] px-5 lg:px-[120px] flex flex-col">
                 {filteredOpportunities.map((opportunity) => (
                   <OpportunityCard
                     key={opportunity.id}
@@ -123,7 +123,7 @@ export default function JoinUsPage() {
             )}
 
             <Section className="py-12 md:py-20">
-              <div className="bg-[#001f33] px-6 md:px-[120px] py-10 md:py-16 max-w-[1200px] mx-auto">
+              <div className="bg-[#001f33] px-5 lg:px-[120px] py-10 md:py-16 max-w-[1200px] mx-auto">
                 <div className="flex flex-col gap-4 md:gap-6 items-start text-white">
                   <h2 className="font-sans text-2xl md:text-[36px] font-normal leading-[1.1] tracking-[-0.72px]">
                     Don't see a position that fits?

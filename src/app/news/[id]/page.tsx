@@ -68,7 +68,7 @@ export default async function NewsArticlePage({
                 src={article.heroImage.src}
                 alt={article.heroImage.alt}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
 
@@ -92,21 +92,25 @@ export default async function NewsArticlePage({
               )}
 
               {/* Read Publication Button */}
-              <a
-                href="#"
-                className="bg-[#001f33] flex gap-[10px] items-center justify-center w-fit pl-[5px] pr-[7px] py-[3px] hover:bg-opacity-90 transition-colors"
-              >
-                <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
-                  read publication
-                </p>
-                <Image
-                  src="/images/icons/arrow-icon.svg"
-                  alt=""
-                  width={10}
-                  height={10}
-                  className="shrink-0"
-                />
-              </a>
+              {article.paperUrl ? (
+                <a
+                  href={article.paperUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#001f33] flex gap-[10px] items-center justify-center w-fit pl-[5px] pr-[7px] py-[3px] hover:bg-opacity-90 transition-colors"
+                >
+                  <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
+                    read publication
+                  </p>
+                  <Image
+                    src="/images/icons/arrow-icon.svg"
+                    alt=""
+                    width={10}
+                    height={10}
+                    className="shrink-0"
+                  />
+                </a>
+              ) : null}
             </div>
           </div>
         </div>
@@ -129,21 +133,25 @@ export default async function NewsArticlePage({
                 </p>
               )}
               {/* Read Publication Button */}
-              <a
-                href="#"
-                className="bg-[#001f33] flex gap-[10px] items-center justify-center pl-[5px] pr-[7px] py-[3px] hover:bg-opacity-90 transition-colors"
-              >
-                <p className="font-mono text-base font-normal leading-[1.1] text-white tracking-[0.32px] uppercase">
-                  read publication
-                </p>
-                <Image
-                  src="/images/icons/arrow-icon.svg"
-                  alt=""
-                  width={10}
-                  height={10}
-                  className="shrink-0"
-                />
-              </a>
+              {article.paperUrl ? (
+                <a
+                  href={article.paperUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#001f33] flex gap-[10px] items-center justify-center pl-[5px] pr-[7px] py-[3px] hover:bg-opacity-90 transition-colors"
+                >
+                  <p className="font-mono text-base font-normal leading-[1.1] text-white tracking-[0.32px] uppercase">
+                    read publication
+                  </p>
+                  <Image
+                    src="/images/icons/arrow-icon.svg"
+                    alt=""
+                    width={10}
+                    height={10}
+                    className="shrink-0"
+                  />
+                </a>
+              ) : null}
             </div>
             {/* Hero Image */}
             <div className="relative w-full xl:w-[589px] shrink-0 aspect-[16/9] xl:aspect-auto xl:h-[332px]">
@@ -151,7 +159,7 @@ export default async function NewsArticlePage({
                 src={article.heroImage.src}
                 alt={article.heroImage.alt}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>

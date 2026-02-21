@@ -2,20 +2,31 @@
 
 import { useEffect, useState } from "react";
 
-// We decode AI block content - responsive text size
+// We decode AI block content - responsive text size; tagline per design
 const WeDecodeAIBlock = ({ viewportSize }: { viewportSize: "sm" | "md" | "lg" | "xl" }) => {
   const textSizes = {
-    sm: "text-[45px]",
-    md: "text-[45px]",
-    lg: "text-[55px]",
-    xl: "text-[65px]",
+    sm: "text-[38px]",
+    md: "text-[42px]",
+    lg: "text-[52px]",
+    xl: "text-[60px]",
+  };
+  const taglineSizes = {
+    sm: "text-xs",
+    md: "text-sm",
+    lg: "text-base",
+    xl: "text-base",
   };
 
   return (
-    <div className="h-full w-full flex items-center justify-start px-3.5 py-2.5 overflow-hidden">
+    <div className="h-full w-full flex flex-col justify-center gap-0.5 px-3.5 py-2 overflow-hidden">
       <h1 className={`font-sans ${textSizes[viewportSize]} font-normal leading-[0.9] tracking-[-0.45px] text-[#001f33] whitespace-nowrap`}>
         Decode AI
       </h1>
+      <p className={`font-sans ${taglineSizes[viewportSize]} font-normal leading-[1.2] text-[#001f33] uppercase`}>
+        Peeling off the secrets of AI.
+        <br />
+        Layer by layer.
+      </p>
     </div>
   );
 };
@@ -300,43 +311,38 @@ const baseBoxes: Box[] = [
       },
     },
   },
-  // We decode AI block - responsive positioning and sizing
-  // Values are in percentages relative to container (1440px width, 760px height base)
+  // We decode AI block - same horizontal margins as navbar/content (20px mobile, 120px lg+)
   {
     id: "we-decode-ai",
-    width: (500 / BASE_WIDTH) * 100, // ~34.7% for xl (wider to fit text)
-    height: (89.169 / BASE_HEIGHT) * 100, // ~11.7%
-    left: (120.33 / BASE_WIDTH) * 100, // ~8.4% for xl
-    top: ((120 - TOP_OFFSET + 20) / BASE_HEIGHT) * 100, // Moved down a bit
-    content: null, // Will be set dynamically based on viewport
+    width: (390 / BASE_WIDTH) * 100,
+    height: (130 / BASE_HEIGHT) * 100,
+    left: (120 / BASE_WIDTH) * 100,
+    top: ((120 - TOP_OFFSET + 20) / BASE_HEIGHT) * 100,
+    content: null,
     responsive: {
       sm: {
-        // Mobile: 375px - positioned near top with slight margin
-        width: (335 / 375) * 100, // 335px width
-        height: (61.144 / 667) * 100, // Height
-        left: (20 / 375) * 100, // 20px from left
-        top: (20 / 667) * 100, // 20px from top (slight margin)
+        width: (255 / 375) * 100,
+        height: (100 / 667) * 100,
+        left: (20 / 375) * 100,
+        top: (20 / 667) * 100,
       },
       md: {
-        // Tablet: 768px
-        width: (420 / 768) * 100, // ~55% of tablet width (wider)
-        height: (75 / 1024) * 100,
-        left: (40 / 768) * 100, // ~5.2% from left
-        top: ((90 - 50 + 20) / 1024) * 100, // Moved down a bit
+        width: (360 / 768) * 100,
+        height: (128 / 1024) * 100,
+        left: (20 / 768) * 100,
+        top: ((90 - 50 + 20) / 1024) * 100,
       },
       lg: {
-        // Desktop: 1024px
-        width: (460 / 1024) * 100, // ~45% of desktop width (wider)
-        height: (82 / 768) * 100,
-        left: (70 / 1024) * 100, // ~6.8% from left
-        top: ((110 - 60 + 25) / 768) * 100, // Moved down a bit
+        width: (360 / 1024) * 100,
+        height: (120 / 768) * 100,
+        left: (120 / 1024) * 100,
+        top: ((110 - 60 + 25) / 768) * 100,
       },
       xl: {
-        // Large Desktop: 1440px+
-        width: (500 / 1440) * 100, // ~34.7% of xl width (wider)
-        height: (89.169 / 760) * 100, // ~11.7%
-        left: (120.33 / 1440) * 100, // ~8.4% from left
-        top: ((120 - TOP_OFFSET + 20) / 760) * 100, // Moved down a bit
+        width: (390 / 1440) * 100,
+        height: (130 / 760) * 100,
+        left: (120 / 1440) * 100,
+        top: ((120 - TOP_OFFSET + 20) / 760) * 100,
       },
     },
   },

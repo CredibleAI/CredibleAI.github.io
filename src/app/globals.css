@@ -10,6 +10,7 @@
   /* Layout */
   --max-width: 1440px;
   --horizontal-padding: 120px;
+  --horizontal-padding-mobile: 20px;
 }
 
 @theme inline {

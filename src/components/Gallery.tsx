@@ -81,7 +81,7 @@ export default function Gallery({ images, title = "Gallery" }: GalleryProps) {
               src={image.thumbnailSrc}
               alt={image.alt}
               fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
               sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
             />
             {/* Hover overlay */}

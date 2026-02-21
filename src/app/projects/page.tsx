@@ -11,7 +11,7 @@ export default function ProjectsPage() {
       <Navbar items={navigationItems} activeItem="/projects" />
       
       {/* Main Content */}
-      <div className="pt-20">
+      <div className="pt-[64px] md:pt-[80px]">
         {/* Header Section */}
         <Section className="py-20">
           <div className="flex flex-col gap-[19px] items-start leading-[1.1] text-[#001f33] w-full">

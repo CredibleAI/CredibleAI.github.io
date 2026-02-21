@@ -31,8 +31,8 @@ export default async function OpportunityPage({
     <div className="relative min-h-screen bg-white">
       <Navbar items={navigationItems} activeItem="/join-us" />
 
-      <div className="pt-20">
-        <div className="px-6 md:px-[120px] py-6">
+      <div className="pt-[64px] md:pt-[80px]">
+        <Section className="py-6">
           <Link
             href="/join-us"
             className="inline-flex items-center gap-2 font-mono text-sm font-normal text-[#001f33] uppercase hover:opacity-80 transition-opacity"
@@ -54,7 +54,7 @@ export default async function OpportunityPage({
             </svg>
             Back to Positions
           </Link>
-        </div>
+        </Section>
 
         <Section className="py-12 md:py-20">
           <div className="flex flex-col gap-8 md:gap-12 items-start max-w-[1200px] mx-auto">
@@ -191,7 +191,7 @@ export default async function OpportunityPage({
           </div>
         </Section>
 
-        <div className="px-6 md:px-[120px] py-6 border-t border-[#a3a3a3]">
+        <Section className="py-6 border-t border-[#a3a3a3]">
           <Link
             href="/join-us"
             className="inline-flex items-center gap-2 font-mono text-sm font-normal text-[#001f33] uppercase hover:opacity-80 transition-opacity"
@@ -213,7 +213,7 @@ export default async function OpportunityPage({
             </svg>
             Back to Positions
           </Link>
-        </div>
+        </Section>
       </div>
 
       <Footer />
