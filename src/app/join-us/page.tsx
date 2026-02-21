@@ -126,11 +126,11 @@ export default function JoinUsPage() {
               <div className="bg-[#001f33] px-5 lg:px-[120px] py-10 md:py-16 max-w-[1200px] mx-auto">
                 <div className="flex flex-col gap-4 md:gap-6 items-start text-white">
                   <h2 className="font-sans text-2xl md:text-[36px] font-normal leading-[1.1] tracking-[-0.72px]">
-                    Don't see a position that fits?
+                    Don&apos;t see a position that fits?
                   </h2>
                   <p className="font-sans text-base md:text-lg font-normal leading-[1.4] tracking-[-0.18px] max-w-[600px]">
-                    We're always interested in hearing from exceptional
-                    candidates. If you're passionate about explainable AI and
+                    We&apos;re always interested in hearing from exceptional
+                    candidates. If you&apos;re passionate about explainable AI and
                     want to contribute to our mission, feel free to reach out.
                   </p>
                   <a

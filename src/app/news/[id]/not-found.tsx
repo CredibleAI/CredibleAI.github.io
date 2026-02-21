@@ -13,7 +13,7 @@ export default function NotFound() {
           Article Not Found
         </h1>
         <p className="font-sans text-lg md:text-xl font-normal leading-[1.4] text-[#001f33] mb-8 text-center max-w-[600px]">
-          The news article you're looking for doesn't exist or has been removed.
+          The news article you&apos;re looking for doesn&apos;t exist or has been removed.
         </p>
         <Link
           href="/news"

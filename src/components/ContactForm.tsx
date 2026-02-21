@@ -42,7 +42,7 @@ export default function ContactForm() {
         message: "Thank you for your message! We'll get back to you soon.",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: "error",
         message: "Something went wrong. Please try again later.",

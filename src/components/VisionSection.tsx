@@ -33,14 +33,14 @@ export default function VisionSection() {
             this technological mediocrity. Our ambition is to expose the
             internal logic of such systems, highlight their limitations, and
             provide real tools for control. To us, explainability is not a
-            "feature" — it's a means to improve models and a gateway to new
+            &quot;feature&quot; — it&apos;s a means to improve models and a gateway to new
             scientific knowledge.
           </p>
           <p>
             Our specialization is in combining explainability and controlability
             of AI systems used in high-stakes, socially responsible domains —
-            such as medicine, education, and bioinformatics. Where prediction
-            alone isn't enough, and decisions must be grounded in knowledge that
+            such as medicine, education, and bioinformatics.             Where prediction
+            alone isn&apos;t enough, and decisions must be grounded in knowledge that
             can be trusted.
           </p>
         </div>

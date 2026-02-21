@@ -27,16 +27,16 @@ export default function MissionSection() {
         </div>
         <div className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33] w-full">
           <p className="mb-0">
-            In a world dominated by algorithms that operate like "black boxes" — so complex that even their creators can't fully explain how or why
+            In a world dominated by algorithms that operate like &quot;black boxes&quot; — so complex that even their creators can&apos;t fully explain how or why
             they make decisions — the Centre for Credible AI (CCAI) was founded.
-            This is a centre that isn't afraid to question prevailing paradigms,
+            This is a centre that isn&apos;t afraid to question prevailing paradigms,
             with a clear mission: to make artificial intelligence truly
             verifiable, explainable, and controllable.
           </p>
           <p>
             We specialize in Explainable Artificial Intelligence (XAI) — a
             field that keeps asking questions where most have already accepted
-            the answers. We're not just interested in building bigger and faster
+            the answers. We&apos;re not just interested in building bigger and faster
             models. We care about whether they can be understood and improved —
             because understanding is the foundation of trust, and trust is the
             prerequisite for progress.

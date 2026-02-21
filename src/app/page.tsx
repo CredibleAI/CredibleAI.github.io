@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Section from "@/components/Section";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import MissionSection from "@/components/MissionSection";

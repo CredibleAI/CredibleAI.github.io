@@ -26,10 +26,10 @@ export default function PartnerSection() {
           <div className="flex flex-col gap-[10px] items-start w-full">
             <p className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33]">
               The Fraunhofer-Gesellschaft, headquartered in Germany, is one of
-              the world's leading organizations for applied research. It plays a
+              the world&apos;s leading organizations for applied research. It plays a
               major role in innovation by prioritizing research on cutting-edge
               technologies and the transfer of results to industry to strengthen
-              Germany's industrial base and for the benefit of society as a
+              Germany&apos;s industrial base and for the benefit of society as a
               whole. Since its founding as a nonprofit organization in 1949,
               Fraunhofer has held a unique position in the German research and
               innovation ecosystem.

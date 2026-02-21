@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { NavigationItem } from "@/types";
 import { useState, useEffect } from "react";
 import { socialLinks } from "@/constants/navigation";
@@ -78,11 +79,9 @@ function ArrowRightIcon({ className }: { className?: string }) {
 
 export default function Navbar({ items, activeItem }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
       if (window.innerWidth >= 768) {
         setIsMobileMenuOpen(false);
       }
@@ -108,11 +107,12 @@ export default function Navbar({ items, activeItem }: NavbarProps) {
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 border-b-[0.5px] border-[#a3a3a3] bg-white">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between px-5 lg:px-[120px] py-0 h-[48px] md:h-[64px]">
-          <Link href="/" className="hover:opacity-80 transition-opacity flex items-center">
-            <img 
-              src="/images/Logo-hor.svg" 
-              alt="CCAI Logo" 
-              className="h-[20px] md:h-[22.527px] w-auto object-contain"
+          <Link href="/" className="hover:opacity-80 transition-opacity flex items-center h-[20px] md:h-[22.527px] relative w-[120px] md:w-[140px]">
+            <Image
+              src="/images/Logo-hor.svg"
+              alt="CCAI Logo"
+              fill
+              className="object-contain object-left"
             />
           </Link>
           {/* Desktop Navigation */}
@@ -148,11 +148,12 @@ export default function Navbar({ items, activeItem }: NavbarProps) {
         <div className="fixed inset-0 z-[100] bg-[#001f33] flex flex-col">
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-5 py-5 h-[48px] border-b border-[rgba(255,255,255,0.2)] flex-shrink-0">
-            <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-              <img 
-                src="/images/Logo-hor.svg" 
-                alt="CCAI Logo" 
-                className="h-[20px] w-auto object-contain brightness-0 invert"
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="relative h-[20px] w-[120px] block">
+              <Image
+                src="/images/Logo-hor.svg"
+                alt="CCAI Logo"
+                fill
+                className="object-contain object-left brightness-0 invert"
               />
             </Link>
             <button

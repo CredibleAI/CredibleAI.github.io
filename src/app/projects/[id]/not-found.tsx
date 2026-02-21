@@ -12,7 +12,7 @@ export default function NotFound() {
           Project Not Found
         </h1>
         <p className="font-sans text-lg text-[#001f33]">
-          The project you're looking for doesn't exist.
+          The project you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link
           href="/projects"
