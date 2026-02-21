@@ -24,9 +24,9 @@ export default function OpportunityCard({ opportunity }: OpportunityCardProps) {
   return (
     <Link
       href={`/join-us/${opportunity.id}`}
-      className={`flex flex-col ${opportunity.imageUrl ? "md:flex-row" : ""} gap-4 md:gap-6 border-b border-[#a3a3a3] px-6 md:px-[120px] py-6 md:py-10 hover:bg-gray-50 transition-colors group`}
+      className={`flex flex-col ${opportunity.imageUrl ? "md:flex-row" : ""} gap-4 md:gap-6 border-b border-[#a3a3a3] py-6 md:py-10 hover:bg-gray-50 transition-colors group w-full`}
     >
-      <div className="flex flex-1 flex-col gap-4 md:gap-6 text-[#001f33]">
+      <div className="flex flex-1 flex-col gap-4 md:gap-6 text-[#001f33] min-w-0">
         <div className="flex flex-col gap-3 md:gap-[19px] leading-[1.1]">
           <div className="flex gap-3 md:gap-4 items-center flex-wrap">
             {opportunity.type && (

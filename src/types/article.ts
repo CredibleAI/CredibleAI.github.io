@@ -99,5 +99,7 @@ export interface Article {
   gallery?: GalleryImage[];
   publishedDate?: string;
   updatedDate?: string;
+  /** Optional URL for the primary publication (e.g. paper on OpenReview or arXiv). */
+  paperUrl?: string;
 }
 

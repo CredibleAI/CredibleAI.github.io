@@ -9,7 +9,7 @@ export default function ContactPage() {
       <Navbar items={navigationItems} activeItem="/contact" />
 
       {/* Main Content Section */}
-      <div className="pt-20">
+      <div className="pt-[64px] md:pt-[80px]">
         <Section className="py-12 md:py-24 lg:py-[180px]">
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-[24px] items-start max-w-[1200px] mx-auto">
             {/* Left Column - Contact Information */}

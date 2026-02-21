@@ -25,23 +25,22 @@ export default function NewsPage() {
       
       {/* Main Content */}
       <div className="pt-[64px] md:pt-[80px] min-h-[calc(100vh-200px)]">
-        {/* News List */}
-        <div className="flex flex-col items-center">
-          {displayedNews.map((newsItem) => (
-            <NewsCard key={newsItem.id} news={newsItem} />
-          ))}
-          
-          {/* Load More Button - only show if there are more news */}
-          {hasMoreNews && (
-            <button 
-              onClick={handleLoadMore}
-              className="bg-[#001f33] px-4 py-3 flex gap-2 items-center justify-center my-8 md:my-12 hover:bg-[#003355] transition-colors"
-            >
-              <p className="font-mono text-[14px] font-normal leading-[1.1] text-white text-center">
-                LOAD MORE
-              </p>
-            </button>
-          )}
+        <div className="mx-auto max-w-[1440px] px-5 lg:px-[120px]">
+          <div className="flex flex-col items-center">
+            {displayedNews.map((newsItem) => (
+              <NewsCard key={newsItem.id} news={newsItem} />
+            ))}
+            {hasMoreNews && (
+              <button
+                onClick={handleLoadMore}
+                className="bg-[#001f33] px-4 py-3 flex gap-2 items-center justify-center my-8 md:my-12 hover:bg-[#003355] transition-colors"
+              >
+                <p className="font-mono text-[14px] font-normal leading-[1.1] text-white text-center">
+                  LOAD MORE
+                </p>
+              </button>
+            )}
+          </div>
         </div>
       </div>
 

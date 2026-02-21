@@ -18,13 +18,13 @@ export const spotlightLinks = [
 ];
 
 export const socialLinks = [
-  { platform: "LinkedIn", href: "https://www.linkedin.com/company/106999413/admin/dashboard/" },
+  { platform: "LinkedIn", href: "https://www.linkedin.com/company/centre-credible-ai" },
   { platform: "Twitter", href: "https://x.com/ccaiwut" },
 ];
 
 export const partners = [
-  "Warsaw University of Technology",
-  "Foundation for Polish Science",
+  { name: "Warsaw University of Technology", href: "https://www.pw.edu.pl" },
+  { name: "Foundation for Polish Science", href: "https://www.fnp.org.pl" },
 ];
 
 export const legalLinks = [
