@@ -22,6 +22,19 @@ export const leaders: TeamLeader[] = [
     },
   },
   {
+    id: "tomasz-steifer",
+    name: "Tomasz Steifer",
+    title: "Team Leader",
+    imageUrl: "/images/team/steifer.webp",
+    imageAlt: "Tomasz Steifer",
+    tags: ["THEORY", "ML", "AI"],
+    description:
+      "Tomasz Steifer is a researcher working at the interface of machine learning, artificial intelligence, and theoretical computer science. He investigates the fundamental capabilities and limitations of modern ML/AI architectures, developing mathematically grounded frameworks that explain when these systems can learn, where they must fail, and how to design models that are more powerful, controllable, and predictable.",
+    teamName: "THEO-XAI: Theoretical foundations of AI",
+    teamDescription:
+      "We focus on the mathematical foundations of modern machine learning and artificial intelligence. Our goal is to precisely characterize what current ML/AI architectures can and cannot do, and to design new structures that improve robustness, interpretability, and reliability in high-stakes applications by turning questions about randomness, decision-making, and agency into concrete, analyzable models.",
+  },
+  {
     id: "blue-xai-leader",
     name: "To be announced",
     title: "",
