@@ -30,22 +30,9 @@ export const leaders: TeamLeader[] = [
     tags: ["THEORY", "ML", "AI"],
     description:
       "Tomasz Steifer is a researcher working at the interface of machine learning, artificial intelligence, and theoretical computer science. He investigates the fundamental capabilities and limitations of modern ML/AI architectures, developing mathematically grounded frameworks that explain when these systems can learn, where they must fail, and how to design models that are more powerful, controllable, and predictable.",
-    teamName: "THEO-XAI: Theoretical foundations of AI",
-    teamDescription:
-      "We focus on the mathematical foundations of modern machine learning and artificial intelligence. Our goal is to precisely characterize what current ML/AI architectures can and cannot do, and to design new structures that improve robustness, interpretability, and reliability in high-stakes applications by turning questions about randomness, decision-making, and agency into concrete, analyzable models.",
-  },
-  {
-    id: "blue-xai-leader",
-    name: "To be announced",
-    title: "",
-    imageUrl: "",
-    imageAlt: "To be announced",
-    tags: [],
-    description: "More information about this team leader will be available soon.",
     teamName: "BLUE-XAI: Human-centered explainable AI",
     teamDescription:
       "We focus on assessing the trustworthiness and societal impact of large language models (LLMs) and other AI systems in human-facing applications. Our goal is to advance human-centered XAI by developing methods to evaluate user trust, define ethical requirements, and design interactions that foster transparency, accountability, and cognitive alignment between intelligent systems and their users.",
-    isUnannounced: true,
   },
   {
     id: "bio-xai-leader",
