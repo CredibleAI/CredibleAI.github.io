@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Section from "@/components/Section";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 import { navigationItems } from "@/constants/navigation";
 
 export default function CentreForCredibleAIPage() {
@@ -30,18 +29,6 @@ export default function CentreForCredibleAIPage() {
                 <p className="mb-4">
                   The project has received funding in the amount of PLN
                   29,971,105.00 for the period 2025–2029.
-                </p>
-                <p className="mb-0">
-                  Detailed information about the project is available{" "}
-                  <Link
-                    href="https://credible-ai.org/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-4 hover:opacity-80 transition-opacity"
-                  >
-                    here
-                  </Link>
-                  .
                 </p>
               </div>
             </div>
