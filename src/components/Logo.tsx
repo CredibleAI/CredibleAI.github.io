@@ -4,9 +4,11 @@ interface LogoProps {
   className?: string;
   variant?: "default" | "white";
   variantMobile?: "short" | "full";
+  width?: number;
+  fullWidth?: boolean;
 }
 
-export default function Logo({ className = "", variant = "default", variantMobile }: LogoProps) {
+export default function Logo({ className = "", variant = "default", variantMobile, width, fullWidth }: LogoProps) {
   const shortLogoSrc = "/images/logo.svg";
 
   return (
@@ -55,7 +57,7 @@ export default function Logo({ className = "", variant = "default", variantMobil
       )}
       {/* Default: show the short logo */}
       {!variantMobile && (
-        <div className={`relative flex items-center ${className || "h-8"}`} style={{ width: "92.855px" }}>
+        <div className={`relative flex items-center ${className || "h-8"}`} style={{ width: fullWidth ? "100%" : (width ? `${width}px` : "92.855px") }}>
           <Image
             src={shortLogoSrc}
             alt="CCAI Logo"

@@ -13,6 +13,7 @@ export const spotlightLinks = [
   { label: "Home", href: "/" },
   { label: "Team", href: "/about" },
   { label: "News", href: "/news" },
+  { label: "Centre for Credible AI", href: "/centre-for-credible-ai" },
   { label: "Join Us", href: "/join-us" },
   { label: "Contact", href: "/contact" },
 ];

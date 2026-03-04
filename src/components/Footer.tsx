@@ -103,10 +103,10 @@ export default function Footer() {
       </div>
 
       {/* Desktop Layout - tablet: wrap cleanly; desktop: single row */}
-      <div className="hidden md:flex mx-auto max-w-[1440px] gap-10 lg:gap-20 px-5 lg:px-[120px] py-10 lg:py-20 flex-wrap lg:flex-nowrap min-w-0 w-full">
+      <div className="hidden md:flex mx-auto max-w-[1440px] gap-10 lg:gap-20 px-5 lg:px-[120px] py-10 lg:py-20 flex-wrap min-w-0 w-full">
         {/* Left Column - Logo and Copyright */}
         <div className="flex flex-col gap-20 pb-0 pt-1 shrink-0 min-w-0">
-          <Logo className="h-[60px]" />
+          <Logo className="flex-1 min-h-0" fullWidth />
           <div className="font-mono text-sm font-normal uppercase leading-[1.1] text-[#001f33]">
             <p className="mb-0">Centre for Credible Artificial Intelligence</p>
             <p className="mb-0">Warsaw University of Technology</p>
@@ -188,6 +188,25 @@ export default function Footer() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-[1440px] px-5 lg:px-[120px] pb-10 lg:pb-20 border-t border-[#a3a3a3] pt-10 lg:pt-20">
+        <div className="font-mono text-sm font-normal leading-[1.4] text-[#001f33] max-w-[900px]">
+          <p className="mb-2">
+            The Centre was established in connection with the implementation
+            of the project entitled "Centre for Credible Artificial
+            Intelligence", funded under the International Research Agendas
+            action within the European Funds for Modern Economy (MAB FENG)
+            programme of the Foundation for Polish Science.
+          </p>
+          <p className="mb-2">
+            The project has received funding in the amount of PLN 29,971,105.00
+            for the period 2025-2029.
+          </p>
+          <Link href="/centre-for-credible-ai" className="uppercase hover:underline">
+            Click to get detailed information about the project
+          </Link>
         </div>
       </div>
     </footer>
