@@ -54,7 +54,7 @@ export const researchers: TeamMember[] = [
   {
     id: "bartosz-naskreci",
     name: "dr Bartosz Naskręcki",
-    imageUrl: "/images/team/naskreci.webp",
+    imageUrl: "/images/team/naskrecki.webp",
     imageAlt: "dr Bartosz Naskręcki",
     tags: ["generative models", "interpretability", "formal methods in mathematics and programming"],
     socialLinks: {
