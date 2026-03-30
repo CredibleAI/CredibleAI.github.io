@@ -100,6 +100,14 @@ export default function AboutPage() {
                     className="object-contain object-center"
                   />
                 </div>
+                <div className="relative h-[80px] md:h-[103.93px] w-[278.32px] md:w-full md:flex-1 md:min-w-[200px] md:max-w-[360.852px]">
+                  <Image
+                    src="/images/partners/partner-4.webp"
+                    alt="KP Labs logo"
+                    fill
+                    className="object-contain object-center"
+                  />
+                </div>
               </div>
             </div>
           </div>
