@@ -131,6 +131,78 @@ export default async function OpportunityPage({
                     </ul>
                   </div>
                 )}
+
+                {(opportunity.applyUrl ||
+                  opportunity.applyEmail ||
+                  opportunity.applyInstructions ||
+                  (opportunity.requiredDocuments &&
+                    opportunity.requiredDocuments.length > 0) ||
+                  opportunity.applyReference ||
+                  opportunity.externalPostingUrl) && (
+                  <div className="flex flex-col gap-3">
+                    <h2 className="font-sans text-xl md:text-2xl font-normal leading-[1.2] tracking-[-0.4px] text-[#001f33]">
+                      How to apply
+                    </h2>
+                    {opportunity.applyInstructions && (
+                      <p className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]">
+                        {opportunity.applyInstructions}
+                      </p>
+                    )}
+                    {opportunity.applyReference && (
+                      <p className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]">
+                        Reference: {opportunity.applyReference}
+                      </p>
+                    )}
+                    {opportunity.requiredDocuments &&
+                      opportunity.requiredDocuments.length > 0 && (
+                        <div className="flex flex-col gap-2">
+                          <p className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]">
+                            Required documents:
+                          </p>
+                          <ul className="list-disc pl-5 space-y-2">
+                            {opportunity.requiredDocuments.map((item, index) => (
+                              <li
+                                key={index}
+                                className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]"
+                              >
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    <div className="flex flex-col gap-2">
+                      {opportunity.applyUrl && (
+                        <a
+                          href={opportunity.applyUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="bg-[#001f33] text-white px-6 py-3 font-mono text-xs md:text-sm font-normal text-center hover:bg-opacity-90 transition-colors inline-block w-fit"
+                        >
+                          Apply now
+                        </a>
+                      )}
+                      {opportunity.applyEmail && (
+                        <a
+                          href={`mailto:${opportunity.applyEmail}`}
+                          className="bg-[#001f33] text-white px-6 py-3 font-mono text-xs md:text-sm font-normal text-center hover:bg-opacity-90 transition-colors inline-block w-fit"
+                        >
+                          Apply by email
+                        </a>
+                      )}
+                      {opportunity.externalPostingUrl && (
+                        <a
+                          href={opportunity.externalPostingUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-mono text-xs md:text-sm font-normal text-[#001f33] underline underline-offset-2"
+                        >
+                          View official posting
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="flex flex-col gap-6 w-full md:w-1/3">

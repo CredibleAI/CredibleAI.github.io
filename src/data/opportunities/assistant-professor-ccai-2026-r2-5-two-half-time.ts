@@ -38,4 +38,24 @@ export const assistantProfessorCcai2026R25TwoHalfTime: OpportunityData = {
   ],
   contactEmail: "sekretariat.ccai@pw.edu.pl",
   referenceNumber: "CCAI_2026_R2_5",
+  applyEmail: "sekretariat.ccai@pw.edu.pl",
+  applyInstructions:
+    "Submit your application by email before the deadline. Include the required documents and use the recruitment reference in your message.",
+  requiredDocuments: [
+    "Application letter to the Vice-Rector for General Affairs",
+    "CV",
+    "Personal questionnaire",
+    "Copy of the diploma of higher education confirming the obtained master's degree or an equivalent degree",
+    "Certified copy of the PhD diploma",
+    "List of research, teaching, and organizational output and achievements",
+    "Other documents certifying additional qualifications",
+    "Acknowledgement of WUT as a primary place of employment, as defined in the Law on Higher Education and Science",
+    "Declaration of full capacity to perform acts in law",
+    "Declaration of enjoying full civil rights",
+    "Declaration of not being convicted by a valid sentence for an intentional crime or an intentional tax offence",
+    "Declaration of no disciplinary penalty as defined in Article 276 section 1 items 7 and 8 of the Law on Higher Education and Science of 20 July 2018",
+  ],
+  applyReference: "CCAI/2026/R2/5",
+  externalPostingUrl:
+    "https://www.bip.pw.edu.pl/Praca-w-Politechnice/Dla-nauczycieli/Adiunkt-M-K-2-stanowiska-pol-etatu-Centrum-Wiarygodnej-Sztucznej-Inteligencji",
 };

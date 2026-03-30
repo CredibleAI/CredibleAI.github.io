@@ -41,4 +41,15 @@ export const juniorResearcherCcai2026R16: OpportunityData = {
   ],
   contactEmail: "sekretariat.ccai@pw.edu.pl",
   referenceNumber: "CCAI_2026_R1_6",
+  applyUrl:
+    "https://system.erecruiter.pl/FormTemplates/RecruitmentForm.aspx?WebID=10f07975f1634aa4aa522da514a29d74",
+  applyInstructions:
+    "Apply through the recruitment form before the deadline and include a scientific CV and cover letter.",
+  requiredDocuments: [
+    "Scientific CV containing a list of publications, innovations, software solutions, and contact details of previous supervisors for reference purposes",
+    "Cover letter",
+  ],
+  applyReference: "CCAI/2026/R1/6",
+  externalPostingUrl:
+    "https://www.bip.pw.edu.pl/Praca-w-Politechnice/Dla-nie-nauczycieli/Mlodszy-badacz-mlodsza-badaczka-Centrum-Wiarygodnej-Sztucznej-Inteligencji",
 };

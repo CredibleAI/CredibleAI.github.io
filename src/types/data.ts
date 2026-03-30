@@ -32,4 +32,10 @@ export interface OpportunityData extends BaseContentItem {
   referenceNumber?: string;
   startDate?: string;
   organization?: string;
+  applyUrl?: string;
+  applyEmail?: string;
+  applyInstructions?: string;
+  requiredDocuments?: string[];
+  applyReference?: string;
+  externalPostingUrl?: string;
 }
