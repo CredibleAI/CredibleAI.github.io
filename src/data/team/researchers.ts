@@ -244,9 +244,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "swiechowski",
-    name: "Maciej Świechowski",
+    name: "dr inż. Maciej Świechowski",
     imageUrl: "/images/team/swiechowski.webp",
-    imageAlt: "Maciej Świechowski",
+    imageAlt: "dr inż. Maciej Świechowski",
     tags: [
       "DECISION-MAKING AI",
       "COMPUTATIONAL INTELLIGENCE",
