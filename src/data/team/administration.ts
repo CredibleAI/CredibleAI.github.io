@@ -6,8 +6,12 @@ export const administration: TeamMember[] = [
     name: "Hanna Góźdź",
     imageUrl: "/images/team/gozdz.webp",
     imageAlt: "Hanna Góźdź",
-    tags: [],
-    socialLinks: {},
+    tags: ["communication", "promotion"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/hanna-góźdź-0a159b284/",
+      website: "https://www.hannagozdz.com",
+      email: "gozdzhannah@gmail.com",
+    },
   },
   {
     id: "ewa-maszke",

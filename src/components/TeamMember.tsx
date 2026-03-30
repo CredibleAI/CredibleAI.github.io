@@ -93,6 +93,22 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
               />
             </Link>
           )}
+          {member.socialLinks.researchGate && member.socialLinks.researchGate.trim() !== "" && (
+            <Link
+              href={member.socialLinks.researchGate}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-5 h-5 relative shrink-0"
+            >
+              <span className="sr-only">ResearchGate</span>
+              <Image
+                src="/images/icons/website-icon.svg"
+                alt="ResearchGate"
+                fill
+                className="object-contain"
+              />
+            </Link>
+          )}
           {member.socialLinks.twitter && member.socialLinks.twitter.trim() !== "" && (
             <Link
               href={member.socialLinks.twitter}

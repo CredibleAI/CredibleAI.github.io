@@ -44,7 +44,7 @@ export const assistantProfessorCcai2026R25TwoHalfTime: OpportunityData = {
   requiredDocuments: [
     "Application letter to the Vice-Rector for General Affairs",
     "CV",
-    "Personal questionnaire",
+    "Candidate's personal information form (personal questionnaire):\nhttps://www.bip.pw.edu.pl/Praca-w-Politechnice/Wzory-dokumentow/Candidate-s-personal-information",
     "Copy of the diploma of higher education confirming the obtained master's degree or an equivalent degree",
     "Certified copy of the PhD diploma",
     "List of research, teaching, and organizational output and achievements",

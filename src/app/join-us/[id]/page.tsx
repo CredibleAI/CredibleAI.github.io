@@ -20,6 +20,27 @@ interface OpportunityPageProps {
 export default async function OpportunityPage({
   params,
 }: OpportunityPageProps) {
+  const renderTextWithLinks = (text: string) => {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlRegex);
+    return parts.map((part, index) => {
+      if (/^https?:\/\//.test(part)) {
+        return (
+          <a
+            key={`${part}-${index}`}
+            href={part}
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-2"
+          >
+            {part}
+          </a>
+        );
+      }
+      return <span key={`${part}-${index}`}>{part}</span>;
+    });
+  };
+
   const { id } = await params;
   const opportunity = opportunities.find((o) => o.id === id);
 
@@ -163,9 +184,9 @@ export default async function OpportunityPage({
                             {opportunity.requiredDocuments.map((item, index) => (
                               <li
                                 key={index}
-                                className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]"
+                                className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33] whitespace-pre-wrap"
                               >
-                                {item}
+                                {renderTextWithLinks(item)}
                               </li>
                             ))}
                           </ul>

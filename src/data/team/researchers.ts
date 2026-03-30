@@ -235,22 +235,6 @@ export const researchers: TeamMember[] = [
     },
   },
   {
-    id: "maszke",
-    name: "Ewa Maszke",
-    imageUrl: "/images/team/maszke.webp",
-    imageAlt: "Ewa Maszke",
-    tags: [],
-    socialLinks: {},
-  },
-  {
-    id: "straszke",
-    name: "Paweł Straszke",
-    imageUrl: "/images/team/straszke.webp",
-    imageAlt: "Paweł Straszke",
-    tags: [],
-    socialLinks: {},
-  },
-  {
     id: "suszynski",
     name: "Piotr Suszyński",
     imageUrl: "/images/team/suszynski.webp",
@@ -263,7 +247,18 @@ export const researchers: TeamMember[] = [
     name: "Maciej Świechowski",
     imageUrl: "/images/team/swiechowski.webp",
     imageAlt: "Maciej Świechowski",
-    tags: [],
-    socialLinks: {},
+    tags: [
+      "DECISION-MAKING AI",
+      "COMPUTATIONAL INTELLIGENCE",
+      "MEDICAL APPLICATIONS",
+      "AI IN INDUSTRY",
+    ],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/maciej-%C5%9Bwiechowski-6053a21ab/",
+      googleScholar: "https://scholar.google.pl/citations?user=VR1gtbMAAAAJ&hl=en",
+      researchGate: "https://www.researchgate.net/profile/Maciej-Swiechowski",
+      email: "maciej.swiechowski@pw.edu.pl",
+      website: "https://www.cyberiada.eu/",
+    },
   },
 ];

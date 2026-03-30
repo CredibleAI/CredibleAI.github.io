@@ -8,6 +8,7 @@ export interface TeamMember {
   socialLinks?: {
     linkedin?: string;
     googleScholar?: string;
+    researchGate?: string;
     twitter?: string;
     email?: string;
     website?: string;
@@ -34,6 +35,7 @@ export interface TeamLeader {
   socialLinks?: {
     linkedin?: string;
     googleScholar?: string;
+    researchGate?: string;
     twitter?: string;
     email?: string;
     website?: string;
