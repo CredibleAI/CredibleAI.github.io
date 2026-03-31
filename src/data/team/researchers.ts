@@ -130,8 +130,12 @@ export const researchers: TeamMember[] = [
     name: "Paweł Struski",
     imageUrl: "/images/team/struski.webp",
     imageAlt: "Paweł Struski",
-    tags: [],
-    socialLinks: {},
+    tags: ["economics", "LLMs", "agentic AI"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/pawel-struski-aa089b9b/",
+      website: "https://pawel-struski.github.io/",
+      email: "p.struski@uw.edu.pl",
+    },
   },
   {
     id: "tomasz-wekslej",
@@ -183,7 +187,7 @@ export const researchers: TeamMember[] = [
     name: "Michał Włodarczyk",
     imageUrl: "/images/team/wlodarczyk.webp",
     imageAlt: "Michał Włodarczyk",
-    tags: ["representations", "inr", "computer vision", "robotics"],
+    tags: ["neural fields", "computer vision", "robotics"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/michal-jan-wlodarczyk",
       website: "https://mwlodarzc.github.io",
@@ -239,8 +243,11 @@ export const researchers: TeamMember[] = [
     name: "Piotr Suszyński",
     imageUrl: "/images/team/suszynski.webp",
     imageAlt: "Piotr Suszyński",
-    tags: [],
-    socialLinks: {},
+    tags: ["bioinformatics", "genetic association testing", "XAI"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/piotrsuszynski",
+      email: "mailto:piotr.suszynski.dokt@pw.edu.pl",
+    },
   },
   {
     id: "swiechowski",
