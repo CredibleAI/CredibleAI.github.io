@@ -30,9 +30,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "jacek-rogala",
-    name: "Jacek Rogala PhD",
+    name: "Jacek Rogala, PhD",
     imageUrl: "/images/team/rogala.webp",
-    imageAlt: "Jacek Rogala PhD",
+    imageAlt: "Jacek Rogala, PhD",
     tags: ["biomedical applications"],
     socialLinks: {
       email: "mailto:rogala.jacek@gmail.com",
@@ -41,9 +41,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "inez-okulska",
-    name: "Inez Okulska PhD",
+    name: "Inez Okulska, PhD",
     imageUrl: "/images/team/okulska.webp",
-    imageAlt: "Inez Okulska PhD",
+    imageAlt: "Inez Okulska, PhD",
     tags: ["agentic AI", "LLM", "NLP", "semantics", "linguistics"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/inezokulska/",
@@ -53,9 +53,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "bartosz-naskreci",
-    name: "Bartosz Naskręcki PhD",
+    name: "Bartosz Naskręcki, PhD",
     imageUrl: "/images/team/naskrecki.webp",
-    imageAlt: "Bartosz Naskręcki PhD",
+    imageAlt: "Bartosz Naskręcki, PhD",
     tags: ["generative models", "interpretability", "formal methods in mathematics and programming"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bartosz-naskręcki-60222593",
@@ -67,9 +67,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "kamil-ksiazek",
-    name: "Kamil Książek PhD",
+    name: "Kamil Książek, PhD",
     imageUrl: "/images/team/ksiazek.webp",
-    imageAlt: "Kamil Książek PhD",
+    imageAlt: "Kamil Książek, PhD",
     tags: ["biomedical AI", "meta learning", "continual learning", "computer vision"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/kamil-ksi%C4%85%C5%BCek-6a7098191/",
@@ -78,9 +78,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "hubert-baniecki",
-    name: "Hubert Baniecki MSc Eng.",
+    name: "Hubert Baniecki",
     imageUrl: "/images/team/baniecki.webp",
-    imageAlt: "Hubert Baniecki MSc Eng.",
+    imageAlt: "Hubert Baniecki",
     tags: ["interpretability", "tbd"],
     socialLinks: {
       website: "https://hbaniecki.com",
@@ -90,9 +90,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "vladimir-zaigrajew",
-    name: "Vladimir Zaigrajew MSc Eng.",
+    name: "Vladimir Zaigrajew",
     imageUrl: "/images/team/zaigrajew.webp",
-    imageAlt: "Vladimir Zaigrajew MSc Eng.",
+    imageAlt: "Vladimir Zaigrajew",
     tags: ["representation learning", "interpretability", "mechanistic interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/vladimirzaigrajew/",
@@ -102,9 +102,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "bartek-sobieski",
-    name: "Bartek Sobieski MSc Eng.",
+    name: "Bartek Sobieski",
     imageUrl: "/images/team/sobieski.webp",
-    imageAlt: "Bartek Sobieski MSc Eng.",
+    imageAlt: "Bartek Sobieski",
     tags: ["generative models", "interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bartłomiej-sobieski/",
@@ -115,9 +115,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "bartek-kochanski",
-    name: "Bartek Kochański MSc Eng.",
+    name: "Bartek Kochański",
     imageUrl: "/images/team/kochanski.webp",
-    imageAlt: "Bartek Kochański MSc Eng.",
+    imageAlt: "Bartek Kochański",
     tags: ["computer-aided diagnosis", "biomarkers", "AI in radiology", "research commercialization"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bkochanski/",
@@ -127,17 +127,17 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "pawel-struski",
-    name: "Paweł Struski MSc Eng.",
+    name: "Paweł Struski",
     imageUrl: "/images/team/struski.webp",
-    imageAlt: "Paweł Struski MSc Eng.",
+    imageAlt: "Paweł Struski",
     tags: [],
     socialLinks: {},
   },
   {
     id: "tomasz-wekslej",
-    name: "Tomek Weksej MSc Eng.",
+    name: "Tomek Weksej",
     imageUrl: "/images/team/weksej.webp",
-    imageAlt: "Tomek Weksej MSc Eng.",
+    imageAlt: "Tomek Weksej",
     tags: ["mechanistic interpretability", "concept-based interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/tweks/",
@@ -146,9 +146,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "jan-piotrowski",
-    name: "Jan Piotrowski MSc Eng.",
+    name: "Jan Piotrowski",
     imageUrl: "/images/team/piotrowski.webp",
-    imageAlt: "Jan Piotrowski MSc Eng.",
+    imageAlt: "Jan Piotrowski",
     tags: ["NLP", "LLM", "mechanistic interpretability", "agentic AI"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/jan-piotrowski-23553719b/",
@@ -160,9 +160,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "dawid-pludowski",
-    name: "Dawid Płudowski MSc Eng.",
+    name: "Dawid Płudowski",
     imageUrl: "/images/team/pludowski.webp",
-    imageAlt: "Dawid Płudowski MSc Eng.",
+    imageAlt: "Dawid Płudowski",
     tags: ["mechanistic interpretability", "time series"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/dawid-płudowski-2a2303256/",
@@ -172,17 +172,17 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "agata-kaczmarek",
-    name: "Agata Kaczmarek MSc Eng.",
+    name: "Agata Kaczmarek",
     imageUrl: "/images/team/kaczmarek.webp",
-    imageAlt: "Agata Kaczmarek MSc Eng.",
+    imageAlt: "Agata Kaczmarek",
     tags: [],
     socialLinks: {},
   },
   {
     id: "michal-wlodarczyk",
-    name: "Michał Włodarczyk MSc Eng.",
+    name: "Michał Włodarczyk",
     imageUrl: "/images/team/wlodarczyk.webp",
-    imageAlt: "Michał Włodarczyk MSc Eng.",
+    imageAlt: "Michał Włodarczyk",
     tags: ["representations", "inr", "computer vision", "robotics"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/michal-jan-wlodarczyk",
@@ -193,9 +193,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "pawel-gelar",
-    name: "Paweł Gelar MSc Eng.",
+    name: "Paweł Gelar",
     imageUrl: "/images/team/gelar.webp",
-    imageAlt: "Paweł Gelar MSc Eng.",
+    imageAlt: "Paweł Gelar",
     tags: ["computer vision", "mechanistic interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/pawel-gelar/",
@@ -204,9 +204,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "jakub-grzywaczewski",
-    name: "Jakub Grzywaczewski MSc Eng.",
+    name: "Jakub Grzywaczewski",
     imageUrl: "/images/team/grzywaczewski.webp",
-    imageAlt: "Jakub Grzywaczewski MSc Eng.",
+    imageAlt: "Jakub Grzywaczewski",
     tags: ["generative models", "attributions"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/jakub-grzywaczewski-5b6801236/",
@@ -215,9 +215,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "jakub-rymarski",
-    name: "Jakub Rymarski MSc Eng.",
+    name: "Jakub Rymarski",
     imageUrl: "/images/team/rymarski.webp",
-    imageAlt: "Jakub Rymarski MSc Eng.",
+    imageAlt: "Jakub Rymarski",
     tags: ["generative models", "biomedical applications"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/jakub-rymarski/",
@@ -226,9 +226,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "klara-bas",
-    name: "Klara Baś MSc Eng.",
+    name: "Klara Baś",
     imageUrl: "/images/team/klara-bas.webp",
-    imageAlt: "Klara Baś MSc Eng.",
+    imageAlt: "Klara Baś",
     tags: ["quantitative imaging", "bayesian inference", "uncertainty estimation"],
     socialLinks: {
       linkedin: "https://uk.linkedin.com/in/klara-ba%C5%9B-35971131b",
@@ -236,17 +236,17 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "suszynski",
-    name: "Piotr Suszyński MSc Eng.",
+    name: "Piotr Suszyński",
     imageUrl: "/images/team/suszynski.webp",
-    imageAlt: "Piotr Suszyński MSc Eng.",
+    imageAlt: "Piotr Suszyński",
     tags: [],
     socialLinks: {},
   },
   {
     id: "swiechowski",
-    name: "Maciej Świechowski PhD",
+    name: "Maciej Świechowski, PhD",
     imageUrl: "/images/team/swiechowski.webp",
-    imageAlt: "Maciej Świechowski PhD",
+    imageAlt: "Maciej Świechowski, PhD",
     tags: [
       "DECISION-MAKING AI",
       "COMPUTATIONAL INTELLIGENCE",
