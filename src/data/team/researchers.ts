@@ -30,9 +30,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "jacek-rogala",
-    name: "Jacek Rogala, PhD",
+    name: "Dr. Jacek Rogala",
     imageUrl: "/images/team/rogala.webp",
-    imageAlt: "Jacek Rogala, PhD",
+    imageAlt: "Dr. Jacek Rogala",
     tags: ["biomedical applications"],
     socialLinks: {
       email: "mailto:rogala.jacek@gmail.com",
@@ -41,9 +41,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "inez-okulska",
-    name: "Inez Okulska, PhD",
+    name: "Dr. Inez Okulska",
     imageUrl: "/images/team/okulska.webp",
-    imageAlt: "Inez Okulska, PhD",
+    imageAlt: "Dr. Inez Okulska",
     tags: ["agentic AI", "LLM", "NLP", "semantics", "linguistics"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/inezokulska/",
@@ -53,9 +53,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "bartosz-naskreci",
-    name: "Bartosz Naskręcki, PhD",
+    name: "Dr. Bartosz Naskręcki",
     imageUrl: "/images/team/naskrecki.webp",
-    imageAlt: "Bartosz Naskręcki, PhD",
+    imageAlt: "Dr. Bartosz Naskręcki",
     tags: ["generative models", "interpretability", "formal methods in mathematics and programming"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bartosz-naskręcki-60222593",
@@ -67,9 +67,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "kamil-ksiazek",
-    name: "Kamil Książek, PhD",
+    name: "Dr. Kamil Książek",
     imageUrl: "/images/team/ksiazek.webp",
-    imageAlt: "Kamil Książek, PhD",
+    imageAlt: "Dr. Kamil Książek",
     tags: ["biomedical AI", "meta learning", "continual learning", "computer vision"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/kamil-ksi%C4%85%C5%BCek-6a7098191/",
@@ -251,9 +251,9 @@ export const researchers: TeamMember[] = [
   },
   {
     id: "swiechowski",
-    name: "Maciej Świechowski, PhD",
+    name: "Dr. Maciej Świechowski",
     imageUrl: "/images/team/swiechowski.webp",
-    imageAlt: "Maciej Świechowski, PhD",
+    imageAlt: "Dr. Maciej Świechowski",
     tags: [
       "DECISION-MAKING AI",
       "COMPUTATIONAL INTELLIGENCE",
