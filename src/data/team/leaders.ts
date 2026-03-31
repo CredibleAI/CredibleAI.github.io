@@ -23,10 +23,10 @@ export const leaders: TeamLeader[] = [
   },
   {
     id: "tomasz-steifer",
-    name: "PhD Tomasz Steifer",
+    name: "Tomasz Steifer PhD",
     title: "Team Leader",
     imageUrl: "/images/team/steifer.webp",
-    imageAlt: "PhD Tomasz Steifer",
+    imageAlt: "Tomasz Steifer PhD",
     tags: ["learning theory", "logic", "expressivity"],
     description:
       "Tomasz Steifer is a researcher working at the interface of machine learning, artificial intelligence, and theoretical computer science. He investigates the fundamental capabilities and limitations of modern ML/AI architectures, developing mathematically grounded frameworks that explain when these systems can learn, where they must fail, and how to design models that are more powerful, controllable, and predictable.",
