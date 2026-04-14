@@ -29,23 +29,23 @@ export const leaders: TeamLeader[] = [
     imageAlt: "Dr. Tomasz Steifer",
     tags: ["learning theory", "logic", "expressivity"],
     description:
-      "Tomasz Steifer is a researcher working at the interface of machine learning, artificial intelligence, and theoretical computer science. He investigates the fundamental capabilities and limitations of modern ML/AI architectures, developing mathematically grounded frameworks that explain when these systems can learn, where they must fail, and how to design models that are more powerful, controllable, and predictable.",
+      "Dr. Tomasz Steifer is a researcher working at the interface of machine learning, artificial intelligence, and theoretical computer science. He investigates the fundamental capabilities and limitations of modern ML/AI architectures, developing mathematically grounded frameworks that explain when these systems can learn, where they must fail, and how to design models that are more powerful, controllable, and predictable.",
     teamName: "BLUE-XAI: Human-centered explainable AI",
     teamDescription:
       "We focus on assessing the trustworthiness and societal impact of large language models (LLMs) and other AI systems in human-facing applications. Our goal is to advance human-centered XAI by developing methods to evaluate user trust, define ethical requirements, and design interactions that foster transparency, accountability, and cognitive alignment between intelligent systems and their users.",
   },
   {
-    id: "bio-xai-leader",
-    name: "To be announced",
-    title: "",
-    imageUrl: "",
-    imageAlt: "To be announced",
-    tags: [],
-    description: "More information about this team leader will be available soon.",
+    id: "damian-wojtowicz",
+    name: "Dr. Damian Wójtowicz",
+    title: "Team Leader",
+    imageUrl: "/images/team/wojtowicz.png",
+    imageAlt: "Dr. Damian Wójtowicz",
+    tags: ["genomics", "machine learning", "cancer"],
+    description:
+      "Dr. Damian Wójtowicz is a researcher bridging computer science and molecular biology, specializing in mathematical, computational, and machine learning methods to decode the mechanisms underlying human health and disease. His research integrates genomic and molecular data to reveal how DNA damage and repair processes, genomic variations, and non-canonical DNA structures shape cancer development, providing interpretable insights that may inform future therapeutic approaches.",
     teamName: "BIO-XAI: Explainable AI for Life Sciences",
     teamDescription:
       "We focus on developing explainable AI methods tailored to the needs of life sciences, with particular emphasis on genomics and molecular modeling. Our goal is to unlock new scientific insights by combining structural genomics, generative AI, and explainable machine learning, enabling biologically grounded analysis of high-dimensional data.",
-    isUnannounced: true,
   },
   {
     id: "phys-xai-leader",
