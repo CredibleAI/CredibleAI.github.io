@@ -33,6 +33,10 @@ export const leaders: TeamLeader[] = [
     teamName: "BLUE-XAI: Human-centered explainable AI",
     teamDescription:
       "We focus on assessing the trustworthiness and societal impact of large language models (LLMs) and other AI systems in human-facing applications. Our goal is to advance human-centered XAI by developing methods to evaluate user trust, define ethical requirements, and design interactions that foster transparency, accountability, and cognitive alignment between intelligent systems and their users.",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/tomasz-steifer-713a3b84/",
+      website: "http://steifer.pl/",
+    },
   },
   {
     id: "damian-wojtowicz",
@@ -46,6 +50,11 @@ export const leaders: TeamLeader[] = [
     teamName: "BIO-XAI: Explainable AI for Life Sciences",
     teamDescription:
       "We focus on developing explainable AI methods tailored to the needs of life sciences, with particular emphasis on genomics and molecular modeling. Our goal is to unlock new scientific insights by combining structural genomics, generative AI, and explainable machine learning, enabling biologically grounded analysis of high-dimensional data.",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/damianwojtowicz/",
+      website: "https://www.mimuw.edu.pl/~dami/",
+      email: "damian.wojtowicz@pw.edu.pl",
+    },
   },
   {
     id: "phys-xai-leader",
