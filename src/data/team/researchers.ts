@@ -1,6 +1,24 @@
 import { TeamMember } from "@/types/team";
 
-export const researchers: TeamMember[] = [
+function getResearcherRank(name: string): number {
+  if (/^prof\./i.test(name)) return 0;
+  if (/^dr\./i.test(name)) return 1;
+  return 2;
+}
+
+function getSurname(name: string): string {
+  const withoutTitle = name.replace(/^(Prof\.|Dr\.|prof\.)\s+/i, "").trim();
+  const parts = withoutTitle.split(/\s+/);
+  return parts[parts.length - 1] ?? withoutTitle;
+}
+
+function compareResearchers(a: TeamMember, b: TeamMember): number {
+  const rankDiff = getResearcherRank(a.name) - getResearcherRank(b.name);
+  if (rankDiff !== 0) return rankDiff;
+  return getSurname(a.name).localeCompare(getSurname(b.name), "pl");
+}
+
+const researchersUnsorted: TeamMember[] = [
   {
     id: "jacek-tabor",
     name: "Prof. Jacek Tabor",
@@ -269,3 +287,5 @@ export const researchers: TeamMember[] = [
     },
   },
 ];
+
+export const researchers = [...researchersUnsorted].sort(compareResearchers);
