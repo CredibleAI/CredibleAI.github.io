@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ArticleBlock } from "@/types/article";
+import RichText from "./RichText";
 
 interface ArticleBuilderProps {
   blocks: ArticleBlock[];
@@ -34,7 +35,7 @@ export default function ArticleBuilder({ blocks }: ArticleBuilderProps) {
             return (
               <div key={block.id} className="flex flex-col gap-4">
                 <p className="font-sans text-base md:text-xl font-normal leading-[1.6] tracking-[-0.16px] md:tracking-[-0.2px] text-[#001f33]">
-                  {block.text}
+                  <RichText text={block.text} />
                 </p>
               </div>
             );
@@ -82,7 +83,7 @@ export default function ArticleBuilder({ blocks }: ArticleBuilderProps) {
               >
                 {block.items.map((item, index) => (
                   <li key={index} className="mb-0">
-                    {item}
+                    <RichText text={item} />
                   </li>
                 ))}
               </ListTag>
