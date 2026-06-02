@@ -58,15 +58,22 @@ export const leaders: TeamLeader[] = [
   },
   {
     id: "phys-xai-leader",
-    name: "To be announced",
-    title: "",
-    imageUrl: "",
-    imageAlt: "To be announced",
-    tags: [],
-    description: "More information about this team leader will be available soon.",
+    name: "Prof. Julian Sienkiewicz",
+    title: "Team Leader",
+    imageUrl: "/images/team/julian-sienkiewicz.png",
+    imageAlt: "Prof. Julian Sienkiewicz",
+    tags: ["complexity science", "statistical physics", "agent-based modeling", "ML", "NLP"],
+    description:
+      "Prof. Julian Sienkiewicz is a physicist specializing in complexity science, with a focus on modelling online social behavior through statistical physics and agent-based approaches. His work explores how concepts from physics can inspire new machine learning methods, and how ML and NLP can advance research in complex systems.",
     teamName: "PHYS-XAI: Physics-aligned explainable AI",
     teamDescription:
       "We focus on developing AI systems whose behavior is reliable, and consistent with known physical laws. Our goal is to advance physics-aligned XAI by creating methods that assess whether model predictions respect fundamental principles—such as symmetry constraints or system dynamics—ensuring that AI remains grounded in the structure of the real world, especially in scientific and engineering applications.",
-    isUnannounced: true,
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/julek-sienkiewicz-873829",
+      website: "https://jsienkiewicz.pl",
+      email: "mailto:julian.sienkiewicz@pw.edu.pl",
+      twitter: "https://x.com/julasms",
+      googleScholar: "https://scholar.google.pl/citations?user=mIwu11QAAAAJ",
+    },
   },
 ];
