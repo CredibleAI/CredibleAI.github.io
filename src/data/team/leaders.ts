@@ -62,7 +62,7 @@ export const leaders: TeamLeader[] = [
     title: "Team Leader",
     imageUrl: "/images/team/julian-sienkiewicz.png",
     imageAlt: "Prof. Julian Sienkiewicz",
-    tags: ["complexity science", "statistical physics", "agent-based modeling", "ML", "NLP"],
+    tags: ["COMPLEXITY", "SOCIOPHYSICS", "PINNS"],
     description:
       "Prof. Julian Sienkiewicz is a physicist specializing in complexity science, with a focus on modelling online social behavior through statistical physics and agent-based approaches. His work explores how concepts from physics can inspire new machine learning methods, and how ML and NLP can advance research in complex systems.",
     teamName: "PHYS-XAI: Physics-aligned explainable AI",

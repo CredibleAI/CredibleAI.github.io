@@ -33,20 +33,6 @@ const researchersUnsorted: TeamMember[] = [
     },
   },
   {
-    id: "julian-sienkiewicz",
-    name: "Prof. Julian Sienkiewicz",
-    imageUrl: "/images/team/sienkiewicz.webp",
-    imageAlt: "Prof. Julian Sienkiewicz",
-    tags: ["complexity", "sociophysics", "PINNs"],
-    socialLinks: {
-      linkedin: "https://www.linkedin.com/in/julek-sienkiewicz-873829",
-      website: "https://jsienkiewicz.pl",
-      email: "mailto:julian.sienkiewicz@pw.edu.pl",
-      twitter: "https://x.com/julasms",
-      googleScholar: "https://scholar.google.pl/citations?user=mIwu11QAAAAJ",
-    },
-  },
-  {
     id: "jacek-rogala",
     name: "Dr. Jacek Rogala",
     imageUrl: "/images/team/rogala.webp",
