@@ -142,7 +142,7 @@ export const ricaFellowships2026: Article = {
     {
       id: "apply-deadline",
       type: "paragraph",
-      text: "Applications for the programme can be submitted by 7 June via the [google form](https://forms.gle/rs2MwbtxFqJTMjfXA)",
+      text: "Applications for the programme can be submitted by 14 June. [Apply here](https://bazakonkurencyjnosci.funduszeeuropejskie.gov.pl/ogloszenia/280302)",
     },
     {
       id: "qa-heading",
