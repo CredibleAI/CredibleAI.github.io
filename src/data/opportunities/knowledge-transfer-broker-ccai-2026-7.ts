@@ -12,7 +12,7 @@ export const knowledgeTransferBrokerCcai20267: OpportunityData = {
   type: "Research Support",
   location: "Warsaw, Poland",
   employmentType: "Part-time",
-  workload: "10–20 hours per week (0.5 FTE)",
+  workload: "20 hours per week",
   contractType: "Temporary contract",
   salaryRange: "100,000–130,000 PLN gross per year (0.5 FTE)",
   deadline: "2026-06-15",
