@@ -4,8 +4,10 @@ import { assistantProfessorCcai20260320Primary } from "./assistant-professor-cca
 import { assistantProfessorCcai2026R25TwoHalfTime } from "./assistant-professor-ccai-2026-r2-5-two-half-time";
 import { juniorResearcherCcai2026R14 } from "./junior-researcher-ccai-2026-r1-4";
 import { juniorResearcherCcai2026R16 } from "./junior-researcher-ccai-2026-r1-6";
+import { knowledgeTransferBrokerCcai20267 } from "./knowledge-transfer-broker-ccai-2026-7";
 
 export const opportunities: OpportunityData[] = [
+  knowledgeTransferBrokerCcai20267,
   assistantProfessorCcai2026R25TwoHalfTime,
   assistantProfessorCcai20260320Primary,
   assistantProfessorCcai20260306Primary,
@@ -21,4 +23,5 @@ export {
   assistantProfessorCcai2026R25TwoHalfTime,
   juniorResearcherCcai2026R14,
   juniorResearcherCcai2026R16,
+  knowledgeTransferBrokerCcai20267,
 };
