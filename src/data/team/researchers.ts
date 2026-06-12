@@ -81,6 +81,29 @@ const researchersUnsorted: TeamMember[] = [
     },
   },
   {
+    id: "maciej-szymkowski",
+    name: "Dr. Maciej Szymkowski",
+    imageUrl: "/images/team/maciej-szymkowski.png",
+    imageAlt: "Dr. Maciej Szymkowski",
+    tags: ["Biomedical AI", "Medical Applications", "Computer Vision", "Interpretability"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/maciej-szymkowski-ph-d-75481a228/",
+      email: "mailto:maciej.szymkowski@pw.edu.pl",
+      googleScholar: "https://scholar.google.com/citations?user=PIMu5SsAAAAJ&hl=pl",
+    },
+  },
+  {
+    id: "agata-wijata",
+    name: "Dr. Agata Wijata",
+    imageUrl: "/images/team/agata-wijata.png",
+    imageAlt: "Dr. Agata Wijata",
+    tags: ["biomedical AI", "medical applications", "computer vision", "interpretability"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/agata-wijata-17766594",
+      googleScholar: "https://scholar.google.com/citations?user=xweuhWMAAAAJ&hl=pl",
+    },
+  },
+  {
     id: "hubert-baniecki",
     name: "Hubert Baniecki",
     imageUrl: "/images/team/baniecki.webp",
