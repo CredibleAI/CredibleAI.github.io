@@ -165,17 +165,6 @@ const researchersUnsorted: TeamMember[] = [
     },
   },
   {
-    id: "tomasz-wekslej",
-    name: "Tomek Weksej",
-    imageUrl: "/images/team/weksej.webp",
-    imageAlt: "Tomek Weksej",
-    tags: ["mechanistic interpretability", "concept-based interpretability"],
-    socialLinks: {
-      linkedin: "https://www.linkedin.com/in/tweks/",
-      email: "mailto:tomek.weksej@gmail.com",
-    },
-  },
-  {
     id: "jan-piotrowski",
     name: "Jan Piotrowski",
     imageUrl: "/images/team/piotrowski.webp",
@@ -253,16 +242,6 @@ const researchersUnsorted: TeamMember[] = [
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/jakub-rymarski/",
       email: "mailto:jakub.rymarski.stud@pw.edu.pl",
-    },
-  },
-  {
-    id: "klara-bas",
-    name: "Klara Baś",
-    imageUrl: "/images/team/klara-bas.webp",
-    imageAlt: "Klara Baś",
-    tags: ["quantitative imaging", "bayesian inference", "uncertainty estimation"],
-    socialLinks: {
-      linkedin: "https://uk.linkedin.com/in/klara-ba%C5%9B-35971131b",
     },
   },
   {

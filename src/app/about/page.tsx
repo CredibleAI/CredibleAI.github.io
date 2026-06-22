@@ -63,7 +63,7 @@ export default function AboutPage() {
               
               {/* Supporters - Fifth */}
               {teamSections
-                .filter((section) => section.title === "supporters")
+                .filter((section) => section.title === "supporters" && section.members.length > 0)
                 .map((section) => (
                   <TeamSection
                     key={section.title}
