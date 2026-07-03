@@ -1,0 +1,61 @@
+import { OpportunityData } from "@/types/data";
+
+export const assistantProfessorCcai2026R211: OpportunityData = {
+  id: "assistant-professor-ccai-2026-r2-11",
+  title: "Assistant Professor (M/F) - Centre for Credible AI (CCAI/2026/R2/11)",
+  subtitle: "Published: July 2026",
+  description:
+    "Warsaw University of Technology is recruiting an Assistant Professor (postdoctoral researcher, R2) for the Centre for Credible AI in a full-time role focused on machine learning and explainable AI in biomedical and life-science applications.",
+  imageUrl: "",
+  imageAlt: "",
+  type: "Assistant Professor",
+  location: "Warsaw, Poland",
+  employmentType: "Full-time",
+  workload: "1 FTE (40 hours per week)",
+  contractType: "Employment contract (umowa o pracę)",
+  salaryRange: "170,000–210,000 PLN gross per year (+6% annual increase)",
+  organization: "Warsaw University of Technology - Centre for Credible AI",
+  detailedDescription:
+    "The position is funded under the project “Centre for Credible AI at the Warsaw University of Technology”, financed through the FENG MAB programme (contract no. FENG.02.01-IP.05-0058/24). The selected candidate will work at the interface of machine learning, explainable AI, and biomedical data analysis, designing methods for modeling, exploration, and analysis of large-scale, high-dimensional biological and medical datasets. The role combines independent research with interdisciplinary collaboration and mentoring of junior researchers within the Centre for Credible AI.",
+  responsibilities: [
+    "Designing and applying machine learning methods, including modern explainable AI approaches, in biomedical sciences",
+    "Documenting research results in scientific publications and internal reports",
+    "Collaborating with interdisciplinary teams on modeling, exploration, integration, and analysis of biological and medical data",
+    "Participating in the preparation and implementation of research projects financed from national and international sources (e.g. NCN, Horizon Europe, ESA PECS)",
+  ],
+  requirements: [
+    "PhD in computer science, mathematics, bioinformatics, physics, artificial intelligence, machine learning, or a related discipline obtained no more than five years prior to the application date (extensions apply for documented research interruptions and parental leave as defined in the competition rules)",
+    "Proven experience in designing methods for modeling, exploration, and analysis of biological and/or medical data, in particular large-scale, high-dimensional biomedical datasets",
+    "Documented experience in research work on machine learning models with applications in the life-science domain",
+    "Experience in developing tools for processing multidimensional data, visualizing results, and automating computational experiments",
+    "Ability to conduct independent research and work effectively in a team, including readiness for interdisciplinary collaboration and mentoring or supporting junior researchers",
+    "Very good command of English",
+  ],
+  benefits: [
+    "Full-time research appointment at the Centre for Credible AI at Warsaw University of Technology",
+    "Participation in an interdisciplinary project spanning computer science, artificial intelligence, and biomedical sciences",
+    "Access to state-of-the-art computational equipment and international collaborations",
+    "Comprehensive support system fostering professional development at Warsaw University of Technology",
+    "Competitive annual salary with annual increase",
+  ],
+  contactEmail: "sekretariat.ccai@pw.edu.pl",
+  referenceNumber: "CCAI/2026/R2/11",
+  applyEmail: "sekretariat.ccai@pw.edu.pl",
+  applyReference: "CCAI/2026/R2/11",
+  applyInstructions:
+    "Submit your application by email to sekretariat.ccai@pw.edu.pl with reference number CCAI/2026/R2/11 and attach all required competition documents. Document templates: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Wzory-dokumentow",
+  requiredDocuments: [
+    "Letter of application to the Vice-Rector for General Affairs",
+    "CV",
+    "Personal questionnaire for the candidate: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Wzory-dokumentow/Candidate-s-personal-information",
+    "Copy of the diploma of higher education confirming the obtained master's degree or an equivalent degree",
+    "Certified copy of PhD diploma",
+    "List of research, teaching, and organizational output and achievements",
+    "Other documents certifying additional qualifications",
+    "Declaration of full capacity to perform acts in law",
+    "Declaration of enjoying full civil rights",
+    "Declaration of not being convicted by a valid sentence for an intentional crime or an intentional tax offence",
+    "Declaration of no disciplinary penalty as defined in Article 276 section 1 items 7 and 8 of the Law on Higher Education and Science of 20 July 2018",
+  ],
+  externalPostingUrl: "https://credibleai.eu/",
+};
