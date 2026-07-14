@@ -27,7 +27,6 @@ export const assistantProfessorCcai2026R211: OpportunityData = {
     "PhD in computer science, mathematics, bioinformatics, physics, artificial intelligence, machine learning, or a related discipline obtained no more than five years prior to the application date (extensions apply for documented research interruptions and parental leave as defined in the competition rules)",
     "Proven experience in designing methods for modeling, exploration, and analysis of biological and/or medical data, in particular large-scale, high-dimensional biomedical datasets",
     "Documented experience in research work on machine learning models with applications in the life-science domain",
-    "Experience in developing tools for processing multidimensional data, visualizing results, and automating computational experiments",
     "Ability to conduct independent research and work effectively in a team, including readiness for interdisciplinary collaboration and mentoring or supporting junior researchers",
     "Very good command of English",
   ],
