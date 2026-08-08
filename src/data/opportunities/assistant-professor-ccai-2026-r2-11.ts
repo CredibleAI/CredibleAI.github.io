@@ -3,7 +3,7 @@ import { OpportunityData } from "@/types/data";
 export const assistantProfessorCcai2026R211: OpportunityData = {
   id: "assistant-professor-ccai-2026-r2-11",
   title: "Assistant Professor (M/F) - Centre for Credible AI (CCAI/2026/R2/11)",
-  subtitle: "Published: July 2026",
+  subtitle: "Published: July 20, 2026",
   description:
     "Warsaw University of Technology is recruiting an Assistant Professor (postdoctoral researcher, R2) for the Centre for Credible AI in a full-time role focused on machine learning and explainable AI in biomedical and life-science applications.",
   imageUrl: "",
@@ -14,6 +14,8 @@ export const assistantProfessorCcai2026R211: OpportunityData = {
   workload: "1 FTE (40 hours per week)",
   contractType: "Employment contract (umowa o pracę)",
   salaryRange: "170,000–210,000 PLN gross per year (+6% annual increase)",
+  deadline: "2026-08-19",
+  startDate: "2026-07-20",
   organization: "Warsaw University of Technology - Centre for Credible AI",
   detailedDescription:
     "The position is funded under the project “Centre for Credible AI at the Warsaw University of Technology”, financed through the FENG MAB programme (contract no. FENG.02.01-IP.05-0058/24). The selected candidate will work at the interface of machine learning, explainable AI, and biomedical data analysis, designing methods for modeling, exploration, and analysis of large-scale, high-dimensional biological and medical datasets. The role combines independent research with interdisciplinary collaboration and mentoring of junior researchers within the Centre for Credible AI.",
@@ -42,7 +44,7 @@ export const assistantProfessorCcai2026R211: OpportunityData = {
   applyEmail: "sekretariat.ccai@pw.edu.pl",
   applyReference: "CCAI/2026/R2/11",
   applyInstructions:
-    "Submit your application by email to sekretariat.ccai@pw.edu.pl with reference number CCAI/2026/R2/11 and attach all required competition documents. Document templates: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Wzory-dokumentow",
+    "Submit your application by email to sekretariat.ccai@pw.edu.pl with reference number CCAI/2026/R2/11 and attach all required competition documents. Documents are accepted from the day the competition was announced, 20 July 2026, until 19 August 2026, and the competition will be adjudicated by 4 September 2026. Recruitment is a four-stage procedure: pre-selection, evaluation of scientific achievements and professional experience, interviews, and final selection by an independent committee following OTM-R principles. Warsaw University of Technology reserves the right to conclude the competition without selecting a candidate. Official posting: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Dla-nauczycieli/Adiunkt-M-K-Centrum-Wiarygodnej-Sztucznej-Inteligencji3 Document templates: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Wzory-dokumentow",
   requiredDocuments: [
     "Letter of application to the Vice-Rector for General Affairs",
     "CV",
@@ -56,5 +58,5 @@ export const assistantProfessorCcai2026R211: OpportunityData = {
     "Declaration of not being convicted by a valid sentence for an intentional crime or an intentional tax offence",
     "Declaration of no disciplinary penalty as defined in Article 276 section 1 items 7 and 8 of the Law on Higher Education and Science of 20 July 2018",
   ],
-  externalPostingUrl: "https://credibleai.eu/",
+  externalPostingUrl: "https://euraxess.ec.europa.eu/jobs/454161",
 };

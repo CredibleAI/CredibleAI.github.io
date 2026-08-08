@@ -1,0 +1,55 @@
+import { OpportunityData } from "@/types/data";
+
+export const assistantProfessorCcai2026R213: OpportunityData = {
+  id: "assistant-professor-ccai-2026-r2-13",
+  title: "Assistant Professor (M/F) - Centre for Credible AI (CCAI/2026/R2/13)",
+  subtitle: "Published: August 5, 2026",
+  description:
+    "Warsaw University of Technology is recruiting two Assistant Professors (postdoctoral researchers, R2) for the Centre for Credible AI in full-time roles focused on the exploration and analysis of AI models, in particular attention mechanisms, with applications in the space sector.",
+  imageUrl: "",
+  imageAlt: "",
+  type: "Assistant Professor",
+  location: "Warsaw, Poland",
+  employmentType: "Full-time",
+  workload: "1 FTE (40 hours per week)",
+  contractType: "Temporary contract",
+  salaryRange: "170,000-210,000 PLN gross per year (+6% annual increase)",
+  deadline: "2026-09-04",
+  organization: "Warsaw University of Technology - Centre for Credible AI",
+  detailedDescription:
+    "The position is funded under the project \"Centre for Credible AI at the Warsaw University of Technology\", financed through the FENG MAB programme (contract no. FENG.02.01-IP.05-0058/24). The selected candidates will design methods for the exploration and analysis of AI models, with particular emphasis on attention mechanisms, and will apply them to research problems in the space sector. The role combines independent research with interdisciplinary collaboration within the Centre for Credible AI.",
+  requirements: [
+    "PhD in mathematics, physics, computer science, natural sciences, artificial intelligence, or a related discipline obtained no more than five years prior to the application date (extensions apply for documented research interruptions and parental leave as defined in the competition rules)",
+    "Proven experience in designing methods for the exploration and analysis of AI models, in particular attention mechanisms",
+    "Documented experience in research work on AI models with applications in the space sector or similar (previous cooperation with the European Space Agency is welcome)",
+    "Ability to conduct independent research and work effectively in a team, including readiness for interdisciplinary collaboration and mentoring or supporting junior researchers",
+    "Documented scientific publications relevant to the scope of the project",
+    "Very good command of English, written and spoken",
+  ],
+  benefits: [
+    "Full-time research appointment at the Centre for Credible AI at Warsaw University of Technology",
+    "Participation in an interdisciplinary project funded under the FENG MAB programme",
+    "Warsaw University of Technology values the growth, well-being, and creativity of its employees and provides a comprehensive support system that fosters professional development. Full catalogue of benefits: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Pracuj-z-nami-w-PW/Catalogue-about-benefits-for-work-candidates",
+    "Competitive annual salary with a 6% annual increase",
+  ],
+  contactEmail: "sekretariat.ccai@pw.edu.pl",
+  referenceNumber: "CCAI/2026/R2/13",
+  applyEmail: "sekretariat.ccai@pw.edu.pl",
+  applyReference: "CCAI/2026/R2/13",
+  applyInstructions:
+    "Submit your application by email to sekretariat.ccai@pw.edu.pl before the deadline (4 September 2026, 23:59 Europe/Warsaw), with the subject \"Assistant Professor (Postdoctoral Researcher)\" and reference number CCAI/2026/R2/13, attaching all required competition documents. Documents are accepted from the day the competition was announced, 5 August 2026, until 4 September 2026, and the competition will be adjudicated by 30 September 2026. Recruitment is a four-stage procedure: pre-selection, evaluation of scientific achievements and professional experience, interviews, and final selection by an independent committee following OTM-R principles. Warsaw University of Technology reserves the right to conclude the competition without selecting a candidate. Official posting: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Dla-nauczycieli/Adiunkt-M-K-Centrum-Wiarygodnej-Sztucznej-Inteligencji4 Document templates: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Wzory-dokumentow",
+  requiredDocuments: [
+    "Letter of application to the Vice-Rector for General Affairs",
+    "CV",
+    "Personal questionnaire for the candidate: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Wzory-dokumentow/Candidate-s-personal-information",
+    "Copy of the diploma of higher education confirming the obtained master's degree or an equivalent degree",
+    "Certified copy of PhD diploma",
+    "List of research, teaching, and organizational output and achievements",
+    "Other documents certifying additional qualifications",
+    "Declaration of full capacity to perform acts in law",
+    "Declaration of enjoying full civil rights",
+    "Declaration of not being convicted by a valid sentence for an intentional crime or an intentional tax offence",
+    "Declaration of no disciplinary penalty as defined in Article 276 section 1 items 7 and 8 of the Law on Higher Education and Science of 20 July 2018",
+  ],
+  externalPostingUrl: "https://www.euraxess.pl/jobs/458813",
+};
