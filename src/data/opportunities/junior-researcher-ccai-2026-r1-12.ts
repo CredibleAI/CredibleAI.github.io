@@ -3,7 +3,7 @@ import { OpportunityData } from "@/types/data";
 export const juniorResearcherCcai2026R112: OpportunityData = {
   id: "junior-researcher-ccai-2026-r1-12",
   title:
-    "Junior Researcher (doctoral student) (M/F) - Centre for Credible AI (CCAI/2026/R1/12)",
+    "Junior Researcher – 0.5 FTE (doctoral student) (M/F) - Centre for Credible AI (CCAI/2026/R1/12)",
   subtitle: "Published: July 17, 2026",
   description:
     "Warsaw University of Technology is recruiting three Junior Researchers (doctoral students) at 0.5 FTE for the Centre for Credible AI, responsible for the development, testing, and maintenance of research software supporting artificial intelligence projects.",
