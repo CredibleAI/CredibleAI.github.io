@@ -19,7 +19,9 @@ export const administration: TeamMember[] = [
     imageUrl: "/images/team/maszke.webp",
     imageAlt: "Ewa Maszke",
     tags: ["finance", "accounting"],
-    socialLinks: {},
+    socialLinks: {
+      email: "ewa.maszke@pw.edu.pl",
+    },
   },
   {
     id: "agata-balak",
@@ -27,7 +29,9 @@ export const administration: TeamMember[] = [
     imageUrl: "/images/team/balak.webp",
     imageAlt: "Agata Balak",
     tags: ["research administration", "grants"],
-    socialLinks: {},
+    socialLinks: {
+      email: "agata.balak@pw.edu.pl",
+    },
   },
   {
     id: "hanna-piotrowska",
@@ -43,6 +47,8 @@ export const administration: TeamMember[] = [
     imageUrl: "/images/team/chmielecka.jpeg",
     imageAlt: "Magdalena Chmielecka",
     tags: ["human resources", "recruitment"],
-    socialLinks: {},
+    socialLinks: {
+      email: "magdalena.chmielecka@pw.edu.pl",
+    },
   },
 ];
