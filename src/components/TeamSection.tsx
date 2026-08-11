@@ -1,20 +1,29 @@
 import TeamMemberCard from "./TeamMember";
 import TeamLeaderCard from "./TeamLeaderCard";
 import AlumniList from "./AlumniList";
-import { TeamSection as TeamSectionType, TeamLeader } from "@/types/team";
+import FocusLeaderCard from "./FocusLeaderCard";
+import { TeamSection as TeamSectionType, TeamLeader, FocusLeader } from "@/types/team";
 
 interface TeamSectionProps {
   section: TeamSectionType;
   isWrapped?: boolean;
   isLeaders?: boolean;
   isAlumni?: boolean;
+  isFocusLeaders?: boolean;
 }
 
-export default function TeamSection({ section, isWrapped = false, isLeaders = false, isAlumni = false }: TeamSectionProps) {
+export default function TeamSection({
+  section,
+  isWrapped = false,
+  isLeaders = false,
+  isAlumni = false,
+  isFocusLeaders = false,
+}: TeamSectionProps) {
   // Format section title for display
   const formatTitle = (title: string) => {
     if (title === "leaders") return "Team Leaders";
     if (title === "administration") return "Administration";
+    if (title === "focus leaders") return "Focus Leaders";
     if (title === "collaborators") return "Collaborators";
     if (title === "alumni") return "Alumni";
     return title.charAt(0).toUpperCase() + title.slice(1);
@@ -33,6 +42,16 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
             <TeamLeaderCard
               key={member.id}
               leader={member as TeamLeader}
+              showBorder={index > 0}
+            />
+          ))}
+        </div>
+      ) : isFocusLeaders ? (
+        <div className="flex flex-col gap-6 md:gap-8 items-start w-full mt-[30px]">
+          {section.members.map((member, index) => (
+            <FocusLeaderCard
+              key={member.id}
+              leader={member as unknown as FocusLeader}
               showBorder={index > 0}
             />
           ))}

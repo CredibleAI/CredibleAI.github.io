@@ -39,6 +39,28 @@ export interface TeamSection {
   members: TeamMember[];
 }
 
+// A focus leader owns one research domain and describes it in a single line.
+export interface FocusLeader {
+  id: string;
+  name: string;
+  imageUrl: string;
+  imageAlt: string;
+  tags: string[];
+  /** The domain this person leads, one per leader, e.g. "Medical Imaging". */
+  focusArea: string;
+  /** One-line summary of what the focus is about. */
+  focusDescription: string;
+  isUnannounced?: boolean;
+  socialLinks?: {
+    linkedin?: string;
+    googleScholar?: string;
+    researchGate?: string;
+    twitter?: string;
+    email?: string;
+    website?: string;
+  };
+}
+
 // Extended interface for team leaders on home page
 export interface TeamLeader {
   id: string;
