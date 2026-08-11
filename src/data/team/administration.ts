@@ -36,10 +36,14 @@ export const administration: TeamMember[] = [
   {
     id: "hanna-piotrowska",
     name: "Hanna Piotrowska",
-    imageUrl: "/images/team/piotrowska.webp",
+    imageUrl: "/images/team/piotrowska.jpg",
     imageAlt: "Hanna Piotrowska",
     tags: ["visual identity", "graphic design"],
-    socialLinks: {},
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/hanna-piotrowska-2536214b/",
+      email: "hello@hannapiotrowska.com",
+      website: "https://www.behance.net/hannapio",
+    },
   },
   {
     id: "magdalena-chmielecka",
