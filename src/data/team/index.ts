@@ -1,6 +1,7 @@
 import { directors } from "./directors";
 import { administration } from "./administration";
 import { leaders } from "./leaders";
+import { focusLeaders } from "./focus-leaders";
 import { researchers } from "./researchers";
 import { supporters } from "./supporters";
 import { compareByTitleThenSurname } from "./sorting";
@@ -52,6 +53,10 @@ export const teamSections: TeamSection[] = [
     members: leaders,
   },
   {
+    title: "focus leaders",
+    members: focusLeaders,
+  },
+  {
     title: "researchers",
     members: coreResearchers,
   },
@@ -73,6 +78,7 @@ export {
   directors,
   administration,
   leaders,
+  focusLeaders,
   researchers,
   supporters,
 };
