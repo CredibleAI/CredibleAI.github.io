@@ -18,7 +18,7 @@ export const administration: TeamMember[] = [
     name: "Ewa Maszke",
     imageUrl: "/images/team/maszke.webp",
     imageAlt: "Ewa Maszke",
-    tags: [],
+    tags: ["finance", "accounting"],
     socialLinks: {},
   },
   {
@@ -26,7 +26,7 @@ export const administration: TeamMember[] = [
     name: "Agata Balak",
     imageUrl: "/images/team/balak.webp",
     imageAlt: "Agata Balak",
-    tags: [],
+    tags: ["research administration", "grants"],
     socialLinks: {},
   },
   {
@@ -34,7 +34,15 @@ export const administration: TeamMember[] = [
     name: "Hanna Piotrowska",
     imageUrl: "/images/team/piotrowska.webp",
     imageAlt: "Hanna Piotrowska",
-    tags: [],
+    tags: ["visual identity", "graphic design"],
+    socialLinks: {},
+  },
+  {
+    id: "magdalena-chmielecka",
+    name: "Magdalena Chmielecka",
+    imageUrl: "/images/team/chmielecka.jpeg",
+    imageAlt: "Magdalena Chmielecka",
+    tags: ["human resources", "recruitment"],
     socialLinks: {},
   },
 ];
