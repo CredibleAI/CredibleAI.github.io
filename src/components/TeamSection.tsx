@@ -1,18 +1,22 @@
 import TeamMemberCard from "./TeamMember";
 import TeamLeaderCard from "./TeamLeaderCard";
+import AlumniList from "./AlumniList";
 import { TeamSection as TeamSectionType, TeamLeader } from "@/types/team";
 
 interface TeamSectionProps {
   section: TeamSectionType;
   isWrapped?: boolean;
   isLeaders?: boolean;
+  isAlumni?: boolean;
 }
 
-export default function TeamSection({ section, isWrapped = false, isLeaders = false }: TeamSectionProps) {
+export default function TeamSection({ section, isWrapped = false, isLeaders = false, isAlumni = false }: TeamSectionProps) {
   // Format section title for display
   const formatTitle = (title: string) => {
     if (title === "leaders") return "Team Leaders";
     if (title === "administration") return "Administration";
+    if (title === "collaborators") return "Collaborators";
+    if (title === "alumni") return "Alumni";
     return title.charAt(0).toUpperCase() + title.slice(1);
   };
 
@@ -21,7 +25,9 @@ export default function TeamSection({ section, isWrapped = false, isLeaders = fa
       <p className="font-sans text-[32px] md:text-[48px] font-normal leading-[1.2] md:leading-[1.1] tracking-[-0.32px] md:tracking-[-0.96px] text-[#001f33] w-full md:h-[53px] flex items-center">
         {formatTitle(section.title)}
       </p>
-      {isLeaders ? (
+      {isAlumni ? (
+        <AlumniList members={section.members} />
+      ) : isLeaders ? (
         <div className="flex flex-col gap-[30px] items-center w-full mt-[30px]">
           {section.members.map((member, index) => (
             <TeamLeaderCard
