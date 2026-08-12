@@ -6,6 +6,21 @@ import Image from "next/image";
 import { teamSections } from "@/data/team";
 import { navigationItems } from "@/constants/navigation";
 
+/**
+ * Display order for the team page. Sections render in this order and hide
+ * themselves when empty, so adding one is a single line here plus a matching
+ * entry in `teamSections`. Note that `directors` is deliberately absent: it
+ * exists in the data but has never been shown on the site.
+ */
+const SECTION_ORDER: { title: string; props: Record<string, boolean> }[] = [
+  { title: "leaders", props: { isLeaders: true } },
+  { title: "researchers", props: { isWrapped: true } },
+  { title: "collaborators", props: { isWrapped: true } },
+  { title: "administration", props: { isWrapped: true } },
+  { title: "supporters", props: { isWrapped: true } },
+  { title: "alumni", props: { isAlumni: true } },
+];
+
 export default function AboutPage() {
   return (
     <div className="relative min-h-screen bg-white">
@@ -28,49 +43,13 @@ export default function AboutPage() {
 
             {/* Team Sections */}
             <div className="flex flex-col gap-[80px] items-start w-full">
-              {/* Team Leaders - First */}
-              {teamSections
-                .filter((section) => section.title === "leaders")
-                .map((section) => (
-                  <TeamSection
-                    key={section.title}
-                    section={section}
-                    isLeaders={true}
-                  />
-                ))}
-              
-              {/* Researchers - Third */}
-              {teamSections
-                .filter((section) => section.title === "researchers")
-                .map((section) => (
-                  <TeamSection
-                    key={section.title}
-                    section={section}
-                    isWrapped={true}
-                  />
-                ))}
-              
-              {/* Administration - Fourth */}
-              {teamSections
-                .filter((section) => section.title === "administration")
-                .map((section) => (
-                  <TeamSection
-                    key={section.title}
-                    section={section}
-                    isWrapped={true}
-                  />
-                ))}
-              
-              {/* Supporters - Fifth */}
-              {teamSections
-                .filter((section) => section.title === "supporters" && section.members.length > 0)
-                .map((section) => (
-                  <TeamSection
-                    key={section.title}
-                    section={section}
-                    isWrapped={true}
-                  />
-                ))}
+              {SECTION_ORDER.map(({ title, props }) => {
+                const section = teamSections.find((s) => s.title === title);
+                if (!section || section.members.length === 0) return null;
+                return (
+                  <TeamSection key={title} section={section} {...props} />
+                );
+              })}
             </div>
 
             {/* Partners Section */}

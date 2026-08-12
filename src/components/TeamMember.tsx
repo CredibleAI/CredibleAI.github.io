@@ -44,6 +44,11 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
         <p className={`font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px] ${isUnannounced ? "text-[#a3a3a3] italic" : ""}`}>
           {member.name}
         </p>
+        {!isUnannounced && member.role && (
+          <p className="font-mono text-sm font-normal leading-[1.1] text-[#001f33]/60">
+            {member.role}
+          </p>
+        )}
       </div>
       {!isUnannounced && member.tags.length > 0 && (
         <div className="flex gap-1 items-center flex-wrap max-w-full">

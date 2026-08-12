@@ -1,22 +1,5 @@
 import { TeamMember } from "@/types/team";
-
-function getResearcherRank(name: string): number {
-  if (/^prof\./i.test(name)) return 0;
-  if (/^dr\./i.test(name)) return 1;
-  return 2;
-}
-
-function getSurname(name: string): string {
-  const withoutTitle = name.replace(/^(Prof\.|Dr\.|prof\.)\s+/i, "").trim();
-  const parts = withoutTitle.split(/\s+/);
-  return parts[parts.length - 1] ?? withoutTitle;
-}
-
-function compareResearchers(a: TeamMember, b: TeamMember): number {
-  const rankDiff = getResearcherRank(a.name) - getResearcherRank(b.name);
-  if (rankDiff !== 0) return rankDiff;
-  return getSurname(a.name).localeCompare(getSurname(b.name), "pl");
-}
+import { compareByTitleThenSurname } from "./sorting";
 
 const researchersUnsorted: TeamMember[] = [
   {
@@ -35,6 +18,7 @@ const researchersUnsorted: TeamMember[] = [
   {
     id: "jacek-rogala",
     name: "Dr. Jacek Rogala",
+    affiliation: "external",
     imageUrl: "/images/team/rogala.webp",
     imageAlt: "Dr. Jacek Rogala",
     tags: ["biomedical applications"],
@@ -83,6 +67,7 @@ const researchersUnsorted: TeamMember[] = [
   {
     id: "maciej-szymkowski",
     name: "Dr. Maciej Szymkowski",
+    status: "alumni",
     imageUrl: "/images/team/maciej-szymkowski.png",
     imageAlt: "Dr. Maciej Szymkowski",
     tags: ["Biomedical AI", "Medical Applications", "Computer Vision", "Interpretability"],
@@ -143,6 +128,7 @@ const researchersUnsorted: TeamMember[] = [
   {
     id: "bartek-kochanski",
     name: "Bartek Kochański",
+    status: "alumni",
     imageUrl: "/images/team/kochanski.webp",
     imageAlt: "Bartek Kochański",
     tags: ["computer-aided diagnosis", "biomarkers", "AI in radiology", "research commercialization"],
@@ -203,7 +189,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Michał Włodarczyk",
     imageUrl: "/images/team/wlodarczyk.webp",
     imageAlt: "Michał Włodarczyk",
-    tags: ["neural fields", "computer vision", "robotics"],
+    tags: ["robotics", "computer vision", "agentic systems"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/michal-jan-wlodarczyk",
       website: "https://mwlodarzc.github.io",
@@ -274,6 +260,101 @@ const researchersUnsorted: TeamMember[] = [
       website: "https://www.cyberiada.eu/",
     },
   },
+  // Former researchers, restored from commit a8549e6 which deleted them
+  // outright. They now carry `status: "alumni"` instead, so the history stays
+  // on the site rather than only in git.
+  {
+    id: "tomasz-wekslej",
+    name: "Tomek Weksej",
+    status: "alumni",
+    imageUrl: "/images/team/weksej.webp",
+    imageAlt: "Tomek Weksej",
+    tags: ["mechanistic interpretability", "concept-based interpretability"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/tweks/",
+      email: "tomek.weksej@gmail.com",
+    },
+  },
+  {
+    id: "klara-bas",
+    name: "Dr. Klara Baś",
+    status: "alumni",
+    imageUrl: "/images/team/klara-bas.webp",
+    imageAlt: "Dr. Klara Baś",
+    tags: ["quantitative imaging", "bayesian inference", "uncertainty estimation"],
+    socialLinks: {
+      linkedin: "https://uk.linkedin.com/in/klara-ba%C5%9B-35971131b",
+    },
+  },
+  // Interns. Marked external so they group under Collaborators; the section
+  // already conveys that they are not core researchers, so their cards carry no
+  // extra marker. Photos are not supplied yet: each imageUrl points at the path
+  // the file should land on, and the card falls back to a generic avatar.
+  {
+    id: "antoni-kingston",
+    name: "Antoni Kingston",
+    affiliation: "external",
+    imageUrl: "/images/team/kingston.jpg",
+    imageAlt: "Antoni Kingston",
+    tags: [],
+    socialLinks: {},
+  },
+  {
+    id: "franciszek-bernat",
+    name: "Franciszek Bernat",
+    affiliation: "external",
+    imageUrl: "/images/team/bernat.jpg",
+    imageAlt: "Franciszek Bernat",
+    tags: [],
+    socialLinks: {},
+  },
+  {
+    id: "pawel-olejnik",
+    name: "Paweł Olejnik",
+    affiliation: "external",
+    imageUrl: "/images/team/olejnik.jpg",
+    imageAlt: "Paweł Olejnik",
+    tags: [],
+    socialLinks: {},
+  },
+  {
+    id: "agnieszka-prudlo",
+    name: "Agnieszka Prudło",
+    affiliation: "external",
+    imageUrl: "/images/team/prudlo.jpg",
+    imageAlt: "Agnieszka Prudło",
+    tags: [],
+    socialLinks: {},
+  },
+  {
+    id: "gustaw-wencel",
+    name: "Gustaw Wencel",
+    affiliation: "external",
+    imageUrl: "/images/team/wencel.jpg",
+    imageAlt: "Gustaw Wencel",
+    tags: [],
+    socialLinks: {},
+  },
+  {
+    id: "piotr-lukawski",
+    name: "Piotr Łukawski",
+    affiliation: "external",
+    imageUrl: "/images/team/lukawski.jpg",
+    imageAlt: "Piotr Łukawski",
+    tags: [],
+    socialLinks: {},
+  },
+  {
+    id: "marcin-jachmann",
+    name: "Marcin Jachmann",
+    affiliation: "external",
+    imageUrl: "/images/team/jachmann.jpg",
+    imageAlt: "Marcin Jachmann",
+    tags: [],
+    socialLinks: {},
+  },
 ];
 
-export const researchers = [...researchersUnsorted].sort(compareResearchers);
+export const researchers = [...researchersUnsorted].sort(
+  compareByTitleThenSurname,
+);
