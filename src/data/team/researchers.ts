@@ -127,10 +127,10 @@ const researchersUnsorted: TeamMember[] = [
   },
   {
     id: "bartek-kochanski",
-    name: "Bartek Kochański",
+    name: "Bartosz Kochański",
     status: "alumni",
     imageUrl: "/images/team/kochanski.webp",
-    imageAlt: "Bartek Kochański",
+    imageAlt: "Bartosz Kochański",
     tags: ["computer-aided diagnosis", "biomarkers", "AI in radiology", "research commercialization"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bkochanski/",
@@ -297,7 +297,11 @@ const researchersUnsorted: TeamMember[] = [
     imageUrl: "/images/team/kingston.jpg",
     imageAlt: "Antoni Kingston",
     tags: [],
-    socialLinks: {},
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/antoni-kingston-389814304/",
+      email: "kingstonantoni2003@gmail.com",
+      website: "https://antonikingston.github.io/",
+    },
   },
   {
     id: "franciszek-bernat",
@@ -324,7 +328,10 @@ const researchersUnsorted: TeamMember[] = [
     imageUrl: "/images/team/prudlo.jpg",
     imageAlt: "Agnieszka Prudło",
     tags: [],
-    socialLinks: {},
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/agnieszka-prud%C5%82o-b68945421/",
+      email: "ap448359@students.mimuw.edu.pl",
+    },
   },
   {
     id: "gustaw-wenzel",
@@ -342,7 +349,10 @@ const researchersUnsorted: TeamMember[] = [
     imageUrl: "/images/team/lukawski.jpg",
     imageAlt: "Piotr Łukawski",
     tags: [],
-    socialLinks: {},
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/piotr-stanislaw-lukawski/",
+      email: "piotr.stanislaw.lukawski.contact@gmail.com",
+    },
   },
   {
     id: "marcin-jachmann",
@@ -351,7 +361,10 @@ const researchersUnsorted: TeamMember[] = [
     imageUrl: "/images/team/jachmann.jpg",
     imageAlt: "Marcin Jachmann",
     tags: [],
-    socialLinks: {},
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/marcinjachmann/",
+      email: "marcin.jachmann@gmail.com",
+    },
   },
 ];
 
