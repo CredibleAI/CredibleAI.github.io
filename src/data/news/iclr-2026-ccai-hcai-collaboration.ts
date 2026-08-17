@@ -11,8 +11,11 @@ export const iclr2026CcaiHcaiCollaboration: Article = {
     alt: "ICLR 2026 – CCAI and HCAI collaboration accepted",
   },
   author: "CCAI Team",
-  category: "Research",
+  category: "Announcements",
   publishedDate: "2026-01-01",
+  kind: "announcement",
+  venue: "ICLR 2026",
+  links: [{ label: "OpenReview", url: "https://openreview.net/forum?id=FF14TqjU3e" }],
   paperUrl: "https://openreview.net/forum?id=FF14TqjU3e",
   content: [
     {

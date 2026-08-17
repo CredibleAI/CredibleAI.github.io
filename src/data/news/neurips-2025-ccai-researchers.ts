@@ -11,8 +11,11 @@ export const neurips2025CcaiResearchers: Article = {
     alt: "NeurIPS 2025 – CCAI researchers present at conference",
   },
   author: "CCAI Team",
-  category: "Research",
+  category: "Announcements",
   publishedDate: "2025-12-07",
+  kind: "announcement",
+  venue: "NeurIPS 2025",
+  links: [{ label: "OpenReview", url: "https://openreview.net/forum?id=cipx3rwfWp" }],
   paperUrl: "https://openreview.net/forum?id=cipx3rwfWp",
   content: [
     {

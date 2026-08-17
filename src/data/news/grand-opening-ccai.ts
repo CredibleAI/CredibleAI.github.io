@@ -13,7 +13,7 @@ export const grandOpeningCcai: Article = {
     alt: "Grand Opening ceremony of the Centre for Credible Artificial Intelligence",
   },
   author: "CCAI Team",
-  category: "Event",
+  category: "Announcements",
   content: [
     {
       id: "intro",

@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ArticleBuilder from "@/components/ArticleBuilder";
 import Gallery from "@/components/Gallery";
+import PublicationHeader from "@/components/PublicationHeader";
+import BibtexBlock from "@/components/BibtexBlock";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -27,6 +29,8 @@ export default async function NewsArticlePage({
   if (!article) {
     notFound();
   }
+
+  const isPublication = article.kind === "publication";
 
   return (
     <div className="relative min-h-screen bg-white">
@@ -91,8 +95,11 @@ export default async function NewsArticlePage({
                 </p>
               )}
 
-              {/* Read Publication Button */}
-              {article.paperUrl ? (
+              {/* Publications get the academic header; everything else keeps
+                  the single button. */}
+              {isPublication ? (
+                <PublicationHeader article={article} />
+              ) : article.paperUrl ? (
                 <a
                   href={article.paperUrl}
                   target="_blank"
@@ -132,8 +139,9 @@ export default async function NewsArticlePage({
                   {article.description}
                 </p>
               )}
-              {/* Read Publication Button */}
-              {article.paperUrl ? (
+              {isPublication ? (
+                <PublicationHeader article={article} />
+              ) : article.paperUrl ? (
                 <a
                   href={article.paperUrl}
                   target="_blank"
@@ -174,6 +182,12 @@ export default async function NewsArticlePage({
             {article.gallery && article.gallery.length > 0 && (
               <div className="mt-12 md:mt-16 pt-12 md:pt-16 border-t border-[#a3a3a3]">
                 <Gallery images={article.gallery} title="Photo Gallery" />
+              </div>
+            )}
+
+            {article.bibtex && (
+              <div className="mt-12 md:mt-16 pt-12 md:pt-16 border-t border-[#a3a3a3]">
+                <BibtexBlock bibtex={article.bibtex} />
               </div>
             )}
           </div>

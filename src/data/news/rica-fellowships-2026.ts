@@ -11,7 +11,7 @@ export const ricaFellowships2026: Article = {
     alt: "RICA Fellowships 2026 poster",
   },
   author: "CCAI Team",
-  category: "Programs",
+  category: "Announcements",
   publishedDate: "2026-05-26",
   content: [
     {
