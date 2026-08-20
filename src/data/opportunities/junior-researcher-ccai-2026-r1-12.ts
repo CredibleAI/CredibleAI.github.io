@@ -15,7 +15,7 @@ export const juniorResearcherCcai2026R112: OpportunityData = {
   workload: "20 hours per week (0.5 FTE)",
   contractType: "Temporary contract (6 months, with possibility of extension)",
   salaryRange: "140,000-170,000 PLN gross per year (FTE basis, +6% annual increase)",
-  deadline: "2026-08-16",
+  deadline: "2026-09-04",
   startDate: "2026-07-17",
   organization: "Warsaw University of Technology - Centre for Credible AI",
   detailedDescription:
@@ -51,7 +51,7 @@ export const juniorResearcherCcai2026R112: OpportunityData = {
     "https://system.erecruiter.pl/FormTemplates/RecruitmentForm.aspx?WebID=d995e8a456de4cdabde7778dc6521612",
   applyReference: "CCAI/2026/R1/12",
   applyInstructions:
-    "Apply through the eRecruiter application form linked below before the deadline (16 August 2026, 23:59 Europe/Warsaw). Candidate competences are assessed in accordance with the Code of Conduct for Recruitment and Selection Committees of Warsaw University of Technology and the principles of Open, Transparent and Merit-based Recruitment (OTM-R), taking into account the general selection criteria for candidates (R1). Please note that only selected candidates will be contacted. Official posting: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Dla-nie-nauczycieli/Mlodszy-badacz-0-5-etatu-M-K-Centrum-Wiarygodnej-Sztucznej-Inteligencji3",
+    "Apply through the eRecruiter application form linked below before the deadline (4 September 2026, 23:59 Europe/Warsaw). Candidate competences are assessed in accordance with the Code of Conduct for Recruitment and Selection Committees of Warsaw University of Technology and the principles of Open, Transparent and Merit-based Recruitment (OTM-R), taking into account the general selection criteria for candidates (R1). Please note that only selected candidates will be contacted. Official posting: https://www.bip.pw.edu.pl/Praca-w-Politechnice/Dla-nie-nauczycieli/Mlodszy-badacz-0-5-etatu-M-K-Centrum-Wiarygodnej-Sztucznej-Inteligencji3",
   requiredDocuments: [
     "Scientific CV containing a list of publications, innovations, software solutions, and contact details of previous supervisors for reference purposes",
     "Cover letter",
