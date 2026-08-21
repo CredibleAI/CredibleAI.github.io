@@ -310,7 +310,10 @@ const researchersUnsorted: TeamMember[] = [
     imageUrl: "/images/team/bernat.jpg",
     imageAlt: "Franciszek Bernat",
     tags: [],
-    socialLinks: {},
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/franciszek-bernat-0353a83a0/",
+      email: "franciszekbern1@gmail.com",
+    },
   },
   {
     id: "pawel-olejnik",
@@ -319,7 +322,10 @@ const researchersUnsorted: TeamMember[] = [
     imageUrl: "/images/team/olejnik.jpg",
     imageAlt: "Paweł Olejnik",
     tags: [],
-    socialLinks: {},
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/pw-olejnik/",
+      email: "pw.olejnik@student.uw.edu.pl",
+    },
   },
   {
     id: "agnieszka-prudlo",
@@ -364,6 +370,29 @@ const researchersUnsorted: TeamMember[] = [
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/marcinjachmann/",
       email: "marcin.jachmann@gmail.com",
+    },
+  },
+  {
+    id: "uliana-bykova",
+    name: "Uliana Bykova",
+    affiliation: "external",
+    imageUrl: "/images/team/bykova.jpg",
+    imageAlt: "Uliana Bykova",
+    tags: [],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/uliana-bykova-mle/",
+      email: "u.bykova@student.uw.edu.pl",
+    },
+  },
+  {
+    id: "szymon-czajkowski",
+    name: "Szymon Czajkowski",
+    imageUrl: "/images/team/czajkowski.jpg",
+    imageAlt: "Szymon Czajkowski",
+    tags: [],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/szczajkowski/",
+      email: "szymon.czajkowski@pw.edu.pl",
     },
   },
 ];
