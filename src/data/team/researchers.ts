@@ -321,7 +321,7 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/olejnik.jpg",
     imageAlt: "Paweł Olejnik",
-    tags: [],
+    tags: ["biomedical AI", "interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/pw-olejnik/",
       email: "pw.olejnik@student.uw.edu.pl",
@@ -333,7 +333,7 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/prudlo.jpg",
     imageAlt: "Agnieszka Prudło",
-    tags: [],
+    tags: ["bioinformatics", "biomedical applications"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/agnieszka-prud%C5%82o-b68945421/",
       email: "ap448359@students.mimuw.edu.pl",
@@ -378,7 +378,7 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/bykova.jpg",
     imageAlt: "Uliana Bykova",
-    tags: [],
+    tags: ["computer vision", "biomedical AI"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/uliana-bykova-mle/",
       email: "u.bykova@student.uw.edu.pl",
