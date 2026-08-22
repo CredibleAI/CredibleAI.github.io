@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Section from "@/components/Section";
 import Footer from "@/components/Footer";
 import NewsCard from "@/components/NewsCard";
-import { news, newsCategories } from "@/data/news";
+import { news } from "@/data/news";
 import { navigationItems } from "@/constants/navigation";
 
 const ITEMS_PER_PAGE = 5;
@@ -33,25 +33,19 @@ function matchesQuery(article: (typeof news)[number], query: string): boolean {
 
 export default function NewsPage() {
   const [displayCount, setDisplayCount] = useState(ITEMS_PER_PAGE);
-  const [category, setCategory] = useState<string | null>(null);
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(
-    () =>
-      news.filter(
-        (article) =>
-          (!category || article.category === category) &&
-          matchesQuery(article, query),
-      ),
-    [category, query],
+    () => news.filter((article) => matchesQuery(article, query)),
+    [query],
   );
 
   const displayed = filtered.slice(0, displayCount);
   const hasMore = displayCount < filtered.length;
 
-  // Any change to the filters should start the list from the top again.
-  const resetAnd = (fn: () => void) => {
-    fn();
+  // A new search should start the list from the top again.
+  const search = (value: string) => {
+    setQuery(value);
     setDisplayCount(ITEMS_PER_PAGE);
   };
 
@@ -76,43 +70,14 @@ export default function NewsPage() {
               </p>
             </div>
 
-            {/* Search sits beside the chips on desktop, below them when narrow. */}
-            <div className="flex flex-col md:flex-row gap-4 md:gap-6 md:items-center w-full">
-              <div className="flex gap-3 md:gap-4 items-center flex-wrap">
-                <button
-                  onClick={() => resetAnd(() => setCategory(null))}
-                  className={`px-4 md:px-6 py-2 md:py-3 font-mono text-xs md:text-sm font-normal border transition-colors ${
-                    category === null
-                      ? "bg-[#001f33] text-white border-[#001f33]"
-                      : "bg-white text-[#001f33] border-[#001f33] hover:bg-gray-50"
-                  }`}
-                >
-                  All
-                </button>
-                {newsCategories.map((name) => (
-                  <button
-                    key={name}
-                    onClick={() => resetAnd(() => setCategory(name))}
-                    className={`px-4 md:px-6 py-2 md:py-3 font-mono text-xs md:text-sm font-normal border transition-colors ${
-                      category === name
-                        ? "bg-[#001f33] text-white border-[#001f33]"
-                        : "bg-white text-[#001f33] border-[#001f33] hover:bg-gray-50"
-                    }`}
-                  >
-                    {name}
-                  </button>
-                ))}
-              </div>
-
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => resetAnd(() => setQuery(e.target.value))}
-                placeholder="Search by title, author, venue or tag"
-                aria-label="Search news"
-                className="w-full max-w-[520px] border border-[#a3a3a3] px-4 py-3 font-sans text-base text-[#001f33] placeholder:text-[#001f33]/45 focus:outline-none focus:border-[#001f33]"
-              />
-            </div>
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => search(e.target.value)}
+              placeholder="Search by title, author, venue or tag"
+              aria-label="Search news"
+              className="w-full max-w-[520px] border border-[#a3a3a3] px-4 py-3 font-sans text-base text-[#001f33] placeholder:text-[#001f33]/45 focus:outline-none focus:border-[#001f33]"
+            />
           </div>
         </Section>
 
