@@ -28,36 +28,9 @@ export const aiForScienceAiAsAMathematician: Article = {
       text: "On 22 May 2026, the Centre for Credible AI hosted AI as a Mathematician, a session in the AI for Science series, at Rektorska 4 in Warsaw. The session was led by Przemek Chojecki of ulam.ai and Bartosz Naskręcki of Adam Mickiewicz University in Poznań and the Centre for Credible AI.",
     },
     {
-      id: "proof-heading",
-      type: "heading",
-      level: 2,
-      text: "What Is a Mathematical Proof?",
-    },
-    {
-      id: "proof-content",
+      id: "talks",
       type: "paragraph",
-      text: "The first part of the session traced how mathematics arrived at the modern notion of a formal proof, a typed term whose type matches the theorem statement and whose every step is checked by a kernel. Euclid's proof of the infinitude of primes served as the worked example, and the history was divided into three eras of formality.",
-    },
-    {
-      id: "proof-eras",
-      type: "list",
-      items: [
-        "Before 1900, a proof is a convincing chain of reasoning, evaluated by the community.",
-        "From 1900 to 2000, Hilbert's program, Gödel, Church, and AUTOMATH (de Bruijn, 1968).",
-        "From 2000 onwards, interactive proof assistants such as Coq, Isabelle, and Lean 4 with Mathlib.",
-      ],
-      ordered: false,
-    },
-    {
-      id: "workflows-heading",
-      type: "heading",
-      level: 2,
-      text: "Mathematics, AI and Formal Proof Workflows",
-    },
-    {
-      id: "workflows-content",
-      type: "paragraph",
-      text: "The second part looked at how machine learning, formal proof systems and frontier reasoning are converging on the same problem, with Stanford's 2026 symposium framing AI and formal methods as twin revolutions reshaping mathematical practice. The speakers closed with a case study of a hybrid human and machine workflow, in which 36 of 36 paper primitives were sealed across 134 git commits, with six tools cooperating and one person responsible for scope and sign-off.",
+      text: "The talks covered what counts as a proof once a machine has to check it, the interactive proof assistants that make this possible, and the ways machine learning and formal methods are converging on the same problems. The speakers closed with a case study of a workflow combining human and machine work.",
     },
     {
       id: "questions-heading",
