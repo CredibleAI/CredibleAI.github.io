@@ -5,9 +5,9 @@ export const icml2026CcaiSeoul: Article = {
   title: "Two CCAI Papers Presented at ICML 2026 in Seoul",
   subtitle: "jul 11, 2026",
   description:
-    "Hubert Baniecki, Bartłomiej Sobieski and Jakub Grzywaczewski from the Centre for Credible AI took part in the International Conference on Machine Learning (ICML 2026), held in Seoul, South Korea, where two papers co-authored at the Centre were presented.",
+    "Hubert Baniecki, Bartłomiej Sobieski and Jakub Grzywaczewski from the Centre for Credible AI took part in the International Conference on Machine Learning (ICML 2026), held in Seoul, South Korea, where they presented two papers they co-authored.",
   heroImage: {
-    src: "/images/news/icml-2026-3.jpg",
+    src: "/images/news/icml-2026-hero.jpg",
     alt: "CCAI researchers at the ICML 2026 lettering in the COEX centre, Seoul",
   },
   author: "CCAI Team",
@@ -25,7 +25,7 @@ export const icml2026CcaiSeoul: Article = {
     {
       id: "context",
       type: "paragraph",
-      text: "ICML is one of the leading international conferences in machine learning, bringing together researchers from academia and industry. Two papers co-authored at the Centre were presented during the poster sessions.",
+      text: "ICML is one of the leading international conferences in machine learning, bringing together researchers from academia and industry. They presented two papers they co-authored during the poster sessions.",
     },
     {
       id: "sybil-heading",
@@ -72,6 +72,12 @@ export const icml2026CcaiSeoul: Article = {
       thumbnailSrc: "/images/news/icml-2026-2.jpg",
       fullSrc: "/images/news/icml-2026-2.jpg",
       alt: "The Auditing Sybil poster at ICML 2026",
+    },
+    {
+      id: "icml-2026-3",
+      thumbnailSrc: "/images/news/icml-2026-3.jpg",
+      fullSrc: "/images/news/icml-2026-3.jpg",
+      alt: "CCAI researchers at the ICML 2026 lettering in the COEX centre",
     },
     {
       id: "icml-2026-4",
