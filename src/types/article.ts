@@ -82,6 +82,28 @@ export interface GalleryImage {
   caption?: string;
 }
 
+/**
+ * Publications render an academic project-page header (authors, affiliations,
+ * venue, link row, BibTeX); announcements keep the plain article layout.
+ * Defaults to "announcement" when omitted.
+ */
+export type ArticleKind = "publication" | "announcement";
+
+export interface PublicationAuthor {
+  name: string;
+  /** Indices into `Article.affiliations`, rendered as superscripts. */
+  affiliations?: number[];
+  url?: string;
+  /** Marks equal contribution or corresponding author with a star. */
+  isCorresponding?: boolean;
+}
+
+/** One button in a publication's link row, e.g. Paper, arXiv, Code, Poster. */
+export interface ArticleLink {
+  label: string;
+  url: string;
+}
+
 // Full article structure
 export interface Article {
   id: string;
@@ -101,5 +123,14 @@ export interface Article {
   updatedDate?: string;
   /** Optional URL for the primary publication (e.g. paper on OpenReview or arXiv). */
   paperUrl?: string;
+  kind?: ArticleKind;
+  authors?: PublicationAuthor[];
+  /** Institution names; authors reference these by index. */
+  affiliations?: string[];
+  /** Conference or journal, e.g. "ICLR 2026". */
+  venue?: string;
+  /** Supersedes `paperUrl` when present, allowing several labelled sources. */
+  links?: ArticleLink[];
+  bibtex?: string;
 }
 

@@ -13,6 +13,9 @@ export const auditingLungCancerRiskPredictionSnap: Article = {
   author: "CCAI Team",
   category: "Research",
   publishedDate: "2026-02-01",
+  kind: "publication",
+  venue: "ICML 2026",
+  links: [{ label: "arXiv", url: "https://arxiv.org/abs/2602.02560" }],
   paperUrl: "https://arxiv.org/abs/2602.02560",
   content: [
     {

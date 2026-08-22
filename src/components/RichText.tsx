@@ -4,7 +4,9 @@ type Token =
   | { type: "text"; text: string }
   | { type: "link"; label: string; href: string };
 
-const TOKEN_REGEX = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)|(https?:\/\/[^\s)\]]+)/g;
+/** Markdown links take an absolute URL or a root-relative path; bare URLs must be absolute. */
+const TOKEN_REGEX =
+  /\[([^\]]+)\]\(((?:https?:\/\/|\/)[^)\s]+)\)|(https?:\/\/[^\s)\]]+)/g;
 
 function tokenize(text: string): Token[] {
   const tokens: Token[] = [];
@@ -43,12 +45,13 @@ export default function RichText({ text }: RichTextProps) {
     <>
       {tokens.map((token, index) => {
         if (token.type === "link") {
+          const isExternal = token.href.startsWith("http");
           return (
             <a
               key={index}
               href={token.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
               className="font-medium text-[#001f33] underline decoration-2 underline-offset-[3px] decoration-[#001f33] hover:bg-[#001f33] hover:text-white hover:decoration-white transition-colors break-words"
             >
               {token.label}
