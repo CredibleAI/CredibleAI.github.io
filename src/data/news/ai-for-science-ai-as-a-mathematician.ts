@@ -5,7 +5,7 @@ export const aiForScienceAiAsAMathematician: Article = {
   title: "AI for Science: AI as a Mathematician",
   subtitle: "may 22, 2026",
   description:
-    "Przemek Chojecki and Bartosz Naskręcki led an AI for Science session at the Centre on formal proofs, proof assistants, and the role of AI systems in mathematical practice.",
+    "Przemek Chojecki and our own Bartosz Naskręcki led an AI for Science session at the Centre on formal proofs, proof assistants, and the role of AI systems in mathematical practice.",
   heroImage: {
     src: "/images/news/ai-for-science-poster.jpg",
     alt: "AI for Science poster: AI as a Mathematician, 22 May, Rektorska 4, with Przemek Chojecki and Bartosz Naskręcki",
@@ -25,7 +25,7 @@ export const aiForScienceAiAsAMathematician: Article = {
     {
       id: "intro",
       type: "paragraph",
-      text: "On 22 May 2026, the Centre for Credible AI hosted AI as a Mathematician, a session in the AI for Science series, at Rektorska 4 in Warsaw. The session was led by Przemek Chojecki of ulam.ai and Bartosz Naskręcki of Adam Mickiewicz University in Poznań and the Centre for Credible AI.",
+      text: "On 22 May 2026, the Centre for Credible AI hosted AI as a Mathematician, a session in the AI for Science series, at Rektorska 4 in Warsaw. The session was led by Przemek Chojecki of ulam.ai and by our own Bartosz Naskręcki, a researcher at the Centre for Credible AI and at Adam Mickiewicz University in Poznań.",
     },
     {
       id: "talks",
