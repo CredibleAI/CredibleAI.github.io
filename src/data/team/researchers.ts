@@ -345,8 +345,11 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/wenzel.jpg",
     imageAlt: "Gustaw Wenzel",
-    tags: [],
-    socialLinks: {},
+    tags: ["agentic AI", "mathematical optimization"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/gustaw-wenzel-0779233b4/",
+      email: "gustaw.wenzel@gmail.com",
+    },
   },
   {
     id: "piotr-lukawski",
