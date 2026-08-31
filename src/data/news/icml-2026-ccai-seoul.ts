@@ -74,6 +74,12 @@ export const icml2026CcaiSeoul: Article = {
       alt: "The Auditing Sybil poster at ICML 2026",
     },
     {
+      id: "icml-2026-6",
+      thumbnailSrc: "/images/news/icml-2026-6.jpg",
+      fullSrc: "/images/news/icml-2026-6.jpg",
+      alt: "Hubert Baniecki at the survival models poster at ICML 2026",
+    },
+    {
       id: "icml-2026-3",
       thumbnailSrc: "/images/news/icml-2026-3.jpg",
       fullSrc: "/images/news/icml-2026-3.jpg",
