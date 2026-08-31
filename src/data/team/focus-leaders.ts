@@ -16,7 +16,7 @@ export const focusLeaders: FocusLeader[] = [
     tags: ["hyperspectral imaging", "computer vision", "interpretability"],
     focusArea: "Earth Observation & Space AI",
     focusDescription:
-      "We focus on running AI on board satellites, analysing hyperspectral data under hard limits on power and downlink. Our goal is to make onboard analysis dependable enough to act on.",
+      "We focus on AI running on board satellites, under hard limits on power and downlink. Our goal is analysis dependable enough to act on.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/agata-wijata-17766594",
       googleScholar: "https://scholar.google.com/citations?user=xweuhWMAAAAJ&hl=pl",
@@ -30,7 +30,7 @@ export const focusLeaders: FocusLeader[] = [
     tags: ["diffusion models", "attributions", "medical imaging"],
     focusArea: "Generative Interpretability of Vision Models",
     focusDescription:
-      "We focus on explaining vision models by generating interventions rather than reading off correlations. Our goal is to turn explanation into evidence that holds up under audit, especially in medical imaging.",
+      "We focus on explaining vision models by generating interventions rather than correlations. Our goal is explanation that holds up under audit.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bartłomiej-sobieski/",
       googleScholar: "https://scholar.google.com/citations?user=ZDCPqL8AAAAJ&hl=en",
@@ -46,7 +46,7 @@ export const focusLeaders: FocusLeader[] = [
     tags: ["representation learning", "concept discovery"],
     focusArea: "Mechanistic Interpretability of Vision-Language Models",
     focusDescription:
-      "We focus on the internal structure of vision-language models and the concepts they encode. Our goal is to move interpretability from what a model attends to towards how it decides.",
+      "We focus on the internal structure of vision-language models. Our goal is to explain not what they attend to, but how they decide.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/vladimirzaigrajew/",
       googleScholar: "https://scholar.google.com/citations?user=7XKIBvgAAAAJ&hl=en",
@@ -61,7 +61,7 @@ export const focusLeaders: FocusLeader[] = [
     tags: ["meta learning", "continual learning", "biomedical AI"],
     focusArea: "Foundations of Vision & Multimodal Models",
     focusDescription:
-      "We focus on how vision and multimodal models build and retain representations as the data shifts. Our goal is to give applied work at the Centre foundations that hold once deployed.",
+      "We focus on how vision and multimodal models build and retain representations. Our goal is foundations that hold once the data shifts.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/kamil-ksi%C4%85%C5%BCek-6a7098191/",
       googleScholar: "https://scholar.google.com/citations?user=i0N4lY8AAAAJ&hl=pl",
