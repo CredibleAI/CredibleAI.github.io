@@ -1,9 +1,11 @@
 import { FocusLeader } from "@/types/team";
 
-// The `focusArea` names are the ones the Centre settled on. The
-// `focusDescription` texts follow the two-sentence shape used by
-// `teamDescription` in leaders.ts, and are drafts until each leader supplies
-// their own copy.
+// The `focusArea` names are the ones the Centre settled on.
+//
+// WARNING: every `focusDescription` below is lorem ipsum placeholder text and
+// must not be deployed. Replace each one with copy from the leader, keeping
+// the two-sentence shape used by `teamDescription` in leaders.ts and roughly
+// the present length, which is what keeps the grid cells even.
 //
 // Keep `tags` free of the term already used as `focusArea`, so the keywords
 // add information rather than repeating the focus.
@@ -16,10 +18,24 @@ export const focusLeaders: FocusLeader[] = [
     tags: ["hyperspectral imaging", "computer vision", "interpretability"],
     focusArea: "Earth Observation & Space AI",
     focusDescription:
-      "We focus on AI running on board satellites, under hard limits on power and downlink. Our goal is analysis dependable enough to act on.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua, ut enim ad minim veniam.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/agata-wijata-17766594",
       googleScholar: "https://scholar.google.com/citations?user=xweuhWMAAAAJ&hl=pl",
+    },
+  },
+  {
+    id: "kamil-ksiazek",
+    name: "Dr. Kamil Książek",
+    imageUrl: "/images/team/ksiazek.webp",
+    imageAlt: "Dr. Kamil Książek",
+    tags: ["meta learning", "continual learning", "biomedical AI"],
+    focusArea: "Foundations of Vision & Multimodal Models",
+    focusDescription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. Laudantium totam rem aperiam eaque ipsa quae ab illo inventore.",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/kamil-ksi%C4%85%C5%BCek-6a7098191/",
+      googleScholar: "https://scholar.google.com/citations?user=i0N4lY8AAAAJ&hl=pl",
     },
   },
   {
@@ -30,7 +46,7 @@ export const focusLeaders: FocusLeader[] = [
     tags: ["diffusion models", "attributions", "medical imaging"],
     focusArea: "Generative Interpretability of Vision Models",
     focusDescription:
-      "We focus on explaining vision models by generating interventions rather than correlations. Our goal is explanation that holds up under audit.",
+      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/bartłomiej-sobieski/",
       googleScholar: "https://scholar.google.com/citations?user=ZDCPqL8AAAAJ&hl=en",
@@ -46,25 +62,11 @@ export const focusLeaders: FocusLeader[] = [
     tags: ["representation learning", "concept discovery"],
     focusArea: "Mechanistic Interpretability of Vision-Language Models",
     focusDescription:
-      "We focus on the internal structure of vision-language models. Our goal is to explain not what they attend to, but how they decide.",
+      "Cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/vladimirzaigrajew/",
       googleScholar: "https://scholar.google.com/citations?user=7XKIBvgAAAAJ&hl=en",
       email: "vladimir.zaigrajew.dokt@pw.edu.pl",
-    },
-  },
-  {
-    id: "kamil-ksiazek",
-    name: "Dr. Kamil Książek",
-    imageUrl: "/images/team/ksiazek.webp",
-    imageAlt: "Dr. Kamil Książek",
-    tags: ["meta learning", "continual learning", "biomedical AI"],
-    focusArea: "Foundations of Vision & Multimodal Models",
-    focusDescription:
-      "We focus on how vision and multimodal models build and retain representations. Our goal is foundations that hold once the data shifts.",
-    socialLinks: {
-      linkedin: "https://www.linkedin.com/in/kamil-ksi%C4%85%C5%BCek-6a7098191/",
-      googleScholar: "https://scholar.google.com/citations?user=i0N4lY8AAAAJ&hl=pl",
     },
   },
 ];
