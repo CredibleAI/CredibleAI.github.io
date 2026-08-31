@@ -76,11 +76,19 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
           {leader.name}
         </p>
 
-        {/* Mono uppercase, so the focus labels the person instead of reading as
-            a second name at the same weight. */}
-        <p className="font-mono text-sm md:text-base font-normal uppercase leading-[1.4] tracking-[0.3px] text-[#001f33]">
-          {leader.focusArea}
-        </p>
+        {/* Same pairing as TEAM and `teamName` on TeamLeaderCard: a filled chip
+            says what the line is, so the focus can be set in sans without
+            competing with the name above it. */}
+        <div className="flex flex-col gap-[10px] items-start w-full mt-[6px]">
+          <div className="bg-[#001f33] px-[5px] py-[3px] flex items-center justify-center shrink-0">
+            <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
+              FOCUS
+            </p>
+          </div>
+          <p className="font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px] text-[#001f33]">
+            {leader.focusArea}
+          </p>
+        </div>
 
         <p className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33] mt-[2px]">
           {leader.focusDescription}
