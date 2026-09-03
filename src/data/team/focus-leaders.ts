@@ -15,10 +15,10 @@ export const focusLeaders: FocusLeader[] = [
     name: "Dr. Agata Wijata",
     imageUrl: "/images/team/agata-wijata.png",
     imageAlt: "Dr. Agata Wijata",
-    tags: ["hyperspectral imaging", "computer vision", "interpretability"],
+    tags: ["earth observation", "satellite imagery", "hyperspectral data", "spatial analytics", "remote sensing"],
     focusArea: "Earth Observation & Space AI",
     focusDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Et dolore magna aliqua, ut enim ad minim veniam.",
+      "Developing trustworthy and transferable AI solutions for Earth observation, hyperspectral imaging, and multi-sensor spatial data analysis. Focusing on satellite remote sensing, environmental monitoring, and robust multimodal computer vision models for real-world impact.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/agata-wijata-17766594",
       googleScholar: "https://scholar.google.com/citations?user=xweuhWMAAAAJ&hl=pl",
@@ -29,10 +29,10 @@ export const focusLeaders: FocusLeader[] = [
     name: "Dr. Kamil Książek",
     imageUrl: "/images/team/ksiazek.webp",
     imageAlt: "Dr. Kamil Książek",
-    tags: ["meta learning", "continual learning", "biomedical AI"],
+    tags: ["vision foundation models", "medical data", "multimodal systems", "object detection"],
     focusArea: "Foundations of Vision & Multimodal Models",
     focusDescription:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. Laudantium totam rem aperiam eaque ipsa quae ab illo inventore.",
+      "Making complex vision foundation models explainable and transparent. Transforming multimodal medical data across video, time series and tabular data into robust tools supporting clinical decisions. Leveraging object detection, pose estimation, and emotion recognition for deep behavioral and physical analysis.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/kamil-ksi%C4%85%C5%BCek-6a7098191/",
       googleScholar: "https://scholar.google.com/citations?user=i0N4lY8AAAAJ&hl=pl",

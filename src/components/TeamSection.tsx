@@ -47,7 +47,7 @@ export default function TeamSection({
           ))}
         </div>
       ) : isFocusLeaders ? (
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-x-10 xl:gap-y-11 items-start w-full mt-[30px]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-16 items-start w-full mt-[30px]">
           {section.members.map((member) => (
             <FocusLeaderCard
               key={member.id}
