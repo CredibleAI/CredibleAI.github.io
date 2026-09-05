@@ -79,9 +79,9 @@ const researchersUnsorted: TeamMember[] = [
   },
   {
     id: "agata-wijata",
-    name: "Dr. Agata Wijata",
+    name: "Dr. Agata M. Wijata",
     imageUrl: "/images/team/agata-wijata.png",
-    imageAlt: "Dr. Agata Wijata",
+    imageAlt: "Dr. Agata M. Wijata",
     tags: ["biomedical AI", "medical applications", "computer vision", "interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/agata-wijata-17766594",
@@ -155,7 +155,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Jan Piotrowski",
     imageUrl: "/images/team/piotrowski.webp",
     imageAlt: "Jan Piotrowski",
-    tags: ["NLP", "LLM", "mechanistic interpretability", "agentic AI"],
+    tags: ["NLP", "LLM", "agentic AI", "mechanistic interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/jan-piotrowski-23553719b/",
       website: "https://jfpio.github.io/",
@@ -169,7 +169,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Dawid Płudowski",
     imageUrl: "/images/team/pludowski.webp",
     imageAlt: "Dawid Płudowski",
-    tags: ["mechanistic interpretability", "time series"],
+    tags: ["time series", "mechanistic interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/dawid-płudowski-2a2303256/",
       email: "mailto:dawid.pludowski@gmail.com",
@@ -181,8 +181,11 @@ const researchersUnsorted: TeamMember[] = [
     name: "Agata Kaczmarek",
     imageUrl: "/images/team/kaczmarek.webp",
     imageAlt: "Agata Kaczmarek",
-    tags: [],
-    socialLinks: {},
+    tags: ["space AI", "hackathons", "ML competitions"],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/agata-kaczmarek-090aa9182/",
+      googleScholar: "https://scholar.google.com/citations?hl=en&user=HPel5HgAAAAJ",
+    },
   },
   {
     id: "michal-wlodarczyk",
@@ -235,7 +238,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Piotr Suszyński",
     imageUrl: "/images/team/suszynski.webp",
     imageAlt: "Piotr Suszyński",
-    tags: ["bioinformatics", "genetic association testing", "XAI"],
+    tags: ["bioinformatics", "XAI", "genetic association testing"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/piotrsuszynski",
       email: "mailto:piotr.suszynski.dokt@pw.edu.pl",
@@ -296,7 +299,7 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/kingston.jpg",
     imageAlt: "Antoni Kingston",
-    tags: [],
+    tags: ["representational geometry", "world models"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/antoni-kingston-389814304/",
       email: "kingstonantoni2003@gmail.com",
@@ -309,7 +312,7 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/bernat.jpg",
     imageAlt: "Franciszek Bernat",
-    tags: [],
+    tags: ["agentic systems", "meta-science"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/franciszek-bernat-0353a83a0/",
       email: "franciszekbern1@gmail.com",
@@ -357,7 +360,7 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/lukawski.jpg",
     imageAlt: "Piotr Łukawski",
-    tags: [],
+    tags: ["interpretability", "agentic systems", "human-AI interaction"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/piotr-stanislaw-lukawski/",
       email: "piotr.stanislaw.lukawski.contact@gmail.com",
@@ -369,7 +372,7 @@ const researchersUnsorted: TeamMember[] = [
     affiliation: "external",
     imageUrl: "/images/team/jachmann.jpg",
     imageAlt: "Marcin Jachmann",
-    tags: [],
+    tags: ["LLM", "computer vision", "mechanistic interpretability", "model architectures"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/marcinjachmann/",
       email: "marcin.jachmann@gmail.com",
@@ -392,7 +395,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Szymon Czajkowski",
     imageUrl: "/images/team/czajkowski.jpg",
     imageAlt: "Szymon Czajkowski",
-    tags: [],
+    tags: ["NLP", "LLM", "agentic AI"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/szczajkowski/",
       email: "szymon.czajkowski@pw.edu.pl",

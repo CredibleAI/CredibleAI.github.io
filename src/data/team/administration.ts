@@ -28,7 +28,7 @@ export const administration: TeamMember[] = [
     name: "Agata Balak",
     imageUrl: "/images/team/balak.webp",
     imageAlt: "Agata Balak",
-    tags: ["research administration", "grants"],
+    tags: ["grants", "research administration"],
     socialLinks: {
       email: "agata.balak@pw.edu.pl",
     },

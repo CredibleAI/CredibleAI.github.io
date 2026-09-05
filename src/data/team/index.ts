@@ -1,6 +1,8 @@
 import { directors } from "./directors";
 import { administration } from "./administration";
 import { leaders } from "./leaders";
+import { commercialization } from "./broker";
+import { focusLeaders } from "./focus-leaders";
 import { researchers } from "./researchers";
 import { supporters } from "./supporters";
 import { compareByTitleThenSurname } from "./sorting";
@@ -12,13 +14,19 @@ const isActive = (m: TeamMember) => (m.status ?? "active") === "active";
 const isAlumni = (m: TeamMember) => m.status === "alumni";
 const isCore = (m: TeamMember) => (m.affiliation ?? "core") === "core";
 
+const focusLeaderIds = new Set(focusLeaders.map((m) => m.id));
+
 /**
  * One roster in, three display groups out. To move somebody, edit their
  * `affiliation` or `status` where they already are; do not move the entry
  * between files, which is how people end up rendered twice.
+ *
+ * Focus leaders are dropped here rather than deleted from `researchers.ts`, so
+ * their entry stays the single source for name, photo and links, and a person
+ * appears exactly once on the page.
  */
 export const coreResearchers = researchers.filter(
-  (m) => isActive(m) && isCore(m),
+  (m) => isActive(m) && isCore(m) && !focusLeaderIds.has(m.id),
 );
 
 /**
@@ -52,6 +60,14 @@ export const teamSections: TeamSection[] = [
     members: leaders,
   },
   {
+    title: "commercialization managers",
+    members: commercialization,
+  },
+  {
+    title: "focus leaders",
+    members: focusLeaders,
+  },
+  {
     title: "researchers",
     members: coreResearchers,
   },
@@ -73,6 +89,8 @@ export {
   directors,
   administration,
   leaders,
+  commercialization,
+  focusLeaders,
   researchers,
   supporters,
 };
