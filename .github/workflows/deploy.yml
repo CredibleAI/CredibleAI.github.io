@@ -4,6 +4,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
+  # Expired positions drop off the Join Us page at build time, so the site has to
+  # rebuild on its own for that to happen without a push. 04:00 UTC is 05:00 or
+  # 06:00 in Warsaw, safely past the local midnight a deadline runs to.
+  schedule:
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 permissions:
