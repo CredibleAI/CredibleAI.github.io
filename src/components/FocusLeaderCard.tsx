@@ -79,7 +79,7 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
 
         {/* Mono uppercase, so the focus labels the person instead of reading as
             a second name at the same weight. */}
-        <p className="font-mono text-sm md:text-base font-normal uppercase leading-[1.4] tracking-[0.3px] text-[#001f33] whitespace-pre-line">
+        <p className="font-mono text-sm md:text-base font-normal uppercase leading-[1.4] tracking-[0.3px] text-[#001f33] whitespace-normal text-balance md:whitespace-pre-line md:text-wrap">
           {leader.focusArea}
         </p>
 
