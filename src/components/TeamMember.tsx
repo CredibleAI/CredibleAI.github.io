@@ -51,15 +51,15 @@ export default function TeamMemberCard({ member }: TeamMemberProps) {
         )}
       </div>
       {!isUnannounced && member.tags.length > 0 && (
-        <div className="flex gap-1 items-center flex-wrap max-w-full">
+        <div className="flex gap-1 items-start flex-wrap max-w-[204px]">
           {member.tags.map((tag, index) => (
-            <div
-              key={index}
-              className="bg-[#001f33] inline-flex gap-[10px] items-center justify-start px-[6px] py-[4px] max-w-[220px] w-auto min-w-0"
-            >
-              <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase whitespace-normal break-words text-left min-w-0">
+            <div key={index} className="max-w-[204px] min-w-0">
+              {/* The background sits on the inline span and the line height is tight
+                  enough that wrapped lines touch, so a long keyword stays one shape
+                  rather than reading as two keywords. */}
+              <span className="bg-[#001f33] box-decoration-clone px-[6px] py-[4px] leading-[24px] font-mono text-sm font-normal text-white uppercase">
                 {tag}
-              </p>
+              </span>
             </div>
           ))}
         </div>
