@@ -80,7 +80,7 @@ const researchersUnsorted: TeamMember[] = [
   {
     id: "agata-wijata",
     name: "Dr. Agata M. Wijata",
-    imageUrl: "/images/team/agata-wijata.png",
+    imageUrl: "/images/team/agata-wijata.webp",
     imageAlt: "Dr. Agata M. Wijata",
     tags: ["biomedical AI", "medical applications", "computer vision", "interpretability"],
     socialLinks: {
