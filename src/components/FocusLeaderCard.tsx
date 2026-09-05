@@ -28,9 +28,9 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
   const isUnannounced = leader.isUnannounced;
 
   return (
-    <div className="grid grid-cols-[auto_1fr] gap-x-5 md:gap-x-6 gap-y-3 items-start w-full">
+    <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-5 md:gap-x-6 gap-y-3 items-start w-full">
       {/* Portrait, same 204px / 3:4 geometry as the researcher cards */}
-      <div className="w-[140px] sm:w-[170px] md:w-[204px]">
+      <div className="w-full max-w-[204px] md:w-[204px]">
         {isUnannounced || !leader.imageUrl ? (
           <div className="aspect-[3/4] w-full bg-[#f5f5f5] flex items-center justify-center">
             <span className="text-[100px] font-sans text-[#a3a3a3] select-none leading-none">
@@ -79,7 +79,7 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
 
         {/* Mono uppercase, so the focus labels the person instead of reading as
             a second name at the same weight. */}
-        <p className="font-mono text-sm md:text-base font-normal uppercase leading-[1.4] tracking-[0.3px] text-[#001f33] whitespace-pre-line">
+        <p className="font-mono text-sm md:text-base font-normal uppercase leading-[1.4] tracking-[0.3px] text-[#001f33] whitespace-normal text-balance md:whitespace-pre-line md:text-wrap">
           {leader.focusArea}
         </p>
 
@@ -91,7 +91,7 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
 
       {/* Keywords and links span both columns, so they close the card instead of trailing the note. */}
       {!isUnannounced && (
-        <div className="col-span-2 flex flex-col gap-[9px] items-start">
+        <div className="col-span-1 md:col-span-2 flex flex-col gap-[9px] items-start">
           {leader.tags.length > 0 && (
             <div className="flex gap-1 items-center flex-wrap">
               {leader.tags.map((tag) => (
