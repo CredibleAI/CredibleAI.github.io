@@ -28,9 +28,9 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
   const isUnannounced = leader.isUnannounced;
 
   return (
-    <div className="flex gap-5 md:gap-6 items-start w-full">
+    <div className="grid grid-cols-[auto_1fr] gap-x-5 md:gap-x-6 gap-y-3 items-start w-full">
       {/* Portrait, same 204px / 3:4 geometry as the researcher cards */}
-      <div className="shrink-0 w-[140px] sm:w-[170px] md:w-[204px]">
+      <div className="w-[140px] sm:w-[170px] md:w-[204px]">
         {isUnannounced || !leader.imageUrl ? (
           <div className="aspect-[3/4] w-full bg-[#f5f5f5] flex items-center justify-center">
             <span className="text-[100px] font-sans text-[#a3a3a3] select-none leading-none">
@@ -66,7 +66,8 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
         )}
       </div>
 
-      <div className="flex flex-col gap-[7px] items-start min-w-0 flex-1">
+      {/* Even 12px gaps from xl, which still sum to the 272px portrait: 24 + 12 + 44.8 + 12 + 7x25.6. */}
+      <div className="flex flex-col gap-[7px] xl:gap-3 items-start min-w-0">
         {/* Same type as the name on TeamLeaderCard */}
         <p
           className={`font-sans text-xl font-normal leading-[1.2] tracking-[-0.2px] ${
@@ -78,53 +79,55 @@ export default function FocusLeaderCard({ leader }: FocusLeaderCardProps) {
 
         {/* Mono uppercase, so the focus labels the person instead of reading as
             a second name at the same weight. */}
-        <p className="font-mono text-sm md:text-base font-normal uppercase leading-[1.4] tracking-[0.3px] text-[#001f33]">
+        <p className="font-mono text-sm md:text-base font-normal uppercase leading-[1.4] tracking-[0.3px] text-[#001f33] whitespace-pre-line">
           {leader.focusArea}
         </p>
 
-        <p className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33] mt-[2px]">
+        <p className="font-sans text-base font-normal leading-[1.6] tracking-[-0.16px] text-[#001f33] mt-[2px] xl:mt-0">
           {leader.focusDescription}
         </p>
 
-        {!isUnannounced && (
-          <div className="flex flex-col gap-[9px] items-start mt-1">
-            {leader.tags.length > 0 && (
-              <div className="flex gap-1 items-center flex-wrap">
-                {leader.tags.map((tag) => (
-                  <div
-                    key={tag}
-                    className="bg-[#001f33] px-[5px] py-[3px] flex items-center justify-center"
-                  >
-                    <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
-                      {tag}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {leader.socialLinks && (
-              <div className="flex gap-3 items-center">
-                {SOCIAL_ICONS.map(({ key, label, icon, mailto }) => {
-                  const value = leader.socialLinks?.[key];
-                  if (!value || value.trim() === "") return null;
-                  return (
-                    <Link
-                      key={key}
-                      href={mailto ? `mailto:${value}` : value}
-                      {...(mailto ? {} : { target: "_blank", rel: "noopener noreferrer" })}
-                      className="w-5 h-5 relative shrink-0"
-                    >
-                      <span className="sr-only">{label}</span>
-                      <Image src={icon} alt={label} fill className="object-contain" />
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-        )}
       </div>
+
+      {/* Keywords and links span both columns, so they close the card instead of trailing the note. */}
+      {!isUnannounced && (
+        <div className="col-span-2 flex flex-col gap-[9px] items-start">
+          {leader.tags.length > 0 && (
+            <div className="flex gap-1 items-center flex-wrap">
+              {leader.tags.map((tag) => (
+                <div
+                  key={tag}
+                  className="bg-[#001f33] px-[5px] py-[3px] flex items-center justify-center"
+                >
+                  <p className="font-mono text-sm font-normal leading-[1.1] text-white uppercase">
+                    {tag}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {leader.socialLinks && (
+            <div className="flex gap-3 items-center">
+              {SOCIAL_ICONS.map(({ key, label, icon, mailto }) => {
+                const value = leader.socialLinks?.[key];
+                if (!value || value.trim() === "") return null;
+                return (
+                  <Link
+                    key={key}
+                    href={mailto ? `mailto:${value}` : value}
+                    {...(mailto ? {} : { target: "_blank", rel: "noopener noreferrer" })}
+                    className="w-5 h-5 relative shrink-0"
+                  >
+                    <span className="sr-only">{label}</span>
+                    <Image src={icon} alt={label} fill className="object-contain" />
+                  </Link>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
