@@ -61,6 +61,35 @@ export interface FocusLeader {
   };
 }
 
+/**
+ * Somebody who moves research out of the Centre and into companies. The section
+ * gives one person the full column width, so the shape carries a lead paragraph
+ * and a short breakdown of the job, which a card cannot hold. Written as an
+ * array from the start, since this will not stay a section of one.
+ */
+export interface BrokerProfile {
+  id: string;
+  name: string;
+  imageUrl: string;
+  imageAlt: string;
+  role: string;
+  /** What this person does, in the third person, as on a team leader card. */
+  description: string;
+  /** One line, where a leader card carries the name of the research team. */
+  missionTitle: string;
+  /** What the role is for, which is the Centre's reason to have it at all. */
+  mission: string;
+  tags: string[];
+  socialLinks?: {
+    linkedin?: string;
+    googleScholar?: string;
+    researchGate?: string;
+    twitter?: string;
+    email?: string;
+    website?: string;
+  };
+}
+
 // Extended interface for team leaders on home page
 export interface TeamLeader {
   id: string;

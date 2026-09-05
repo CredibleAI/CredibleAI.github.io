@@ -1,6 +1,7 @@
 import { directors } from "./directors";
 import { administration } from "./administration";
 import { leaders } from "./leaders";
+import { commercialization } from "./broker";
 import { focusLeaders } from "./focus-leaders";
 import { researchers } from "./researchers";
 import { supporters } from "./supporters";
@@ -59,6 +60,10 @@ export const teamSections: TeamSection[] = [
     members: leaders,
   },
   {
+    title: "commercialization managers",
+    members: commercialization,
+  },
+  {
     title: "focus leaders",
     members: focusLeaders,
   },
@@ -84,6 +89,7 @@ export {
   directors,
   administration,
   leaders,
+  commercialization,
   focusLeaders,
   researchers,
   supporters,

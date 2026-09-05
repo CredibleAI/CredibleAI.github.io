@@ -14,6 +14,7 @@ import { navigationItems } from "@/constants/navigation";
  */
 const SECTION_ORDER: { title: string; props: Record<string, boolean> }[] = [
   { title: "leaders", props: { isLeaders: true } },
+  { title: "commercialization managers", props: { isBroker: true } },
   { title: "focus leaders", props: { isFocusLeaders: true } },
   { title: "researchers", props: { isWrapped: true } },
   { title: "collaborators", props: { isWrapped: true } },
