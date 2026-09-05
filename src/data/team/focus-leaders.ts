@@ -17,7 +17,7 @@ export const focusLeaders: FocusLeader[] = [
   {
     id: "agata-wijata",
     name: "Dr. Agata M. Wijata",
-    imageUrl: "/images/team/agata-wijata.png",
+    imageUrl: "/images/team/agata-wijata.webp",
     imageAlt: "Dr. Agata M. Wijata",
     tags: ["earth observation", "satellite imagery", "hyperspectral data", "spatial analytics", "remote sensing", "onboard autonomy"],
     focusArea: "Earth Observation\nand Space AI",

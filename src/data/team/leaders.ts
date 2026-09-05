@@ -42,7 +42,7 @@ export const leaders: TeamLeader[] = [
     id: "damian-wojtowicz",
     name: "Dr. Damian Wójtowicz",
     title: "Team Leader",
-    imageUrl: "/images/team/wojtowicz.png",
+    imageUrl: "/images/team/wojtowicz.webp",
     imageAlt: "Dr. Damian Wójtowicz",
     tags: ["genomics", "machine learning", "cancer"],
     description:
