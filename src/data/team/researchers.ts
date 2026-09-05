@@ -155,7 +155,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Jan Piotrowski",
     imageUrl: "/images/team/piotrowski.webp",
     imageAlt: "Jan Piotrowski",
-    tags: ["NLP", "LLM", "mechanistic interpretability", "agentic AI"],
+    tags: ["NLP", "LLM", "agentic AI", "mechanistic interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/jan-piotrowski-23553719b/",
       website: "https://jfpio.github.io/",
@@ -169,7 +169,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Dawid Płudowski",
     imageUrl: "/images/team/pludowski.webp",
     imageAlt: "Dawid Płudowski",
-    tags: ["mechanistic interpretability", "time series"],
+    tags: ["time series", "mechanistic interpretability"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/dawid-płudowski-2a2303256/",
       email: "mailto:dawid.pludowski@gmail.com",
@@ -238,7 +238,7 @@ const researchersUnsorted: TeamMember[] = [
     name: "Piotr Suszyński",
     imageUrl: "/images/team/suszynski.webp",
     imageAlt: "Piotr Suszyński",
-    tags: ["bioinformatics", "genetic association testing", "XAI"],
+    tags: ["bioinformatics", "XAI", "genetic association testing"],
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/piotrsuszynski",
       email: "mailto:piotr.suszynski.dokt@pw.edu.pl",
