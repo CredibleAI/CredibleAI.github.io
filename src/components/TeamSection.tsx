@@ -26,7 +26,7 @@ export default function TeamSection({
   const formatTitle = (title: string) => {
     if (title === "leaders") return "Team Leaders";
     if (title === "administration") return "Administration";
-    if (title === "commercialization managers") return "Commercialization Managers";
+    if (title === "collaboration and partnerships") return "Collaboration and Partnerships";
     if (title === "focus leaders") return "Focus Leaders";
     if (title === "collaborators") return "Collaborators";
     if (title === "alumni") return "Alumni";
