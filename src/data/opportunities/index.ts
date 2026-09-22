@@ -5,7 +5,7 @@ import { juniorResearcherCcai2026R112 } from "./junior-researcher-ccai-2026-r1-1
 import { juniorResearcherCcai2026R18 } from "./junior-researcher-ccai-2026-r1-8";
 import { juniorResearcherCcai2026R110 } from "./junior-researcher-ccai-2026-r1-10";
 
-const registered: OpportunityData[] = [
+export const allOpportunities: OpportunityData[] = [
   assistantProfessorCcai2026R213,
   assistantProfessorCcai2026R211,
   juniorResearcherCcai2026R112,
@@ -31,7 +31,8 @@ const isCurrent = (o: OpportunityData) => {
   return Date.now() <= closes + GRACE_DAYS * 24 * 60 * 60 * 1000;
 };
 
-export const opportunities: OpportunityData[] = registered.filter(isCurrent);
+export const opportunities: OpportunityData[] =
+  allOpportunities.filter(isCurrent);
 
 export const hasOpportunities = opportunities.length > 0;
 

@@ -4,11 +4,16 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { opportunities } from "@/data/opportunities";
+import { allOpportunities } from "@/data/opportunities";
 import { navigationItems } from "@/constants/navigation";
 
+/**
+ * Expired postings keep their page, unlisted, so old links still resolve. The
+ * static export also refuses a dynamic route whose params come out empty, which
+ * is what happens once every deadline has passed.
+ */
 export async function generateStaticParams() {
-  return opportunities.map((opportunity) => ({
+  return allOpportunities.map((opportunity) => ({
     id: opportunity.id,
   }));
 }
@@ -42,7 +47,7 @@ export default async function OpportunityPage({
   };
 
   const { id } = await params;
-  const opportunity = opportunities.find((o) => o.id === id);
+  const opportunity = allOpportunities.find((o) => o.id === id);
 
   if (!opportunity) {
     notFound();
@@ -99,41 +104,43 @@ export default async function OpportunityPage({
                   </p>
                 )}
 
-                {opportunity.responsibilities && opportunity.responsibilities.length > 0 && (
-                  <div className="flex flex-col gap-3">
-                    <h2 className="font-sans text-xl md:text-2xl font-normal leading-[1.2] tracking-[-0.4px] text-[#001f33]">
-                      Responsibilities
-                    </h2>
-                    <ul className="list-disc pl-5 space-y-2">
-                      {opportunity.responsibilities.map((item, index) => (
-                        <li
-                          key={index}
-                          className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]"
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                {opportunity.responsibilities &&
+                  opportunity.responsibilities.length > 0 && (
+                    <div className="flex flex-col gap-3">
+                      <h2 className="font-sans text-xl md:text-2xl font-normal leading-[1.2] tracking-[-0.4px] text-[#001f33]">
+                        Responsibilities
+                      </h2>
+                      <ul className="list-disc pl-5 space-y-2">
+                        {opportunity.responsibilities.map((item, index) => (
+                          <li
+                            key={index}
+                            className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]"
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
 
-                {opportunity.requirements && opportunity.requirements.length > 0 && (
-                  <div className="flex flex-col gap-3">
-                    <h2 className="font-sans text-xl md:text-2xl font-normal leading-[1.2] tracking-[-0.4px] text-[#001f33]">
-                      Requirements
-                    </h2>
-                    <ul className="list-disc pl-5 space-y-2">
-                      {opportunity.requirements.map((item, index) => (
-                        <li
-                          key={index}
-                          className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]"
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                {opportunity.requirements &&
+                  opportunity.requirements.length > 0 && (
+                    <div className="flex flex-col gap-3">
+                      <h2 className="font-sans text-xl md:text-2xl font-normal leading-[1.2] tracking-[-0.4px] text-[#001f33]">
+                        Requirements
+                      </h2>
+                      <ul className="list-disc pl-5 space-y-2">
+                        {opportunity.requirements.map((item, index) => (
+                          <li
+                            key={index}
+                            className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33]"
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
 
                 {opportunity.benefits && opportunity.benefits.length > 0 && (
                   <div className="flex flex-col gap-3">
@@ -181,14 +188,16 @@ export default async function OpportunityPage({
                             Required documents:
                           </p>
                           <ul className="list-disc pl-5 space-y-2">
-                            {opportunity.requiredDocuments.map((item, index) => (
-                              <li
-                                key={index}
-                                className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33] whitespace-pre-wrap"
-                              >
-                                {renderTextWithLinks(item)}
-                              </li>
-                            ))}
+                            {opportunity.requiredDocuments.map(
+                              (item, index) => (
+                                <li
+                                  key={index}
+                                  className="font-sans text-base md:text-lg font-normal leading-[1.6] text-[#001f33] whitespace-pre-wrap"
+                                >
+                                  {renderTextWithLinks(item)}
+                                </li>
+                              ),
+                            )}
                           </ul>
                         </div>
                       )}
@@ -244,7 +253,9 @@ export default async function OpportunityPage({
                   </h2>
                   <div className="flex flex-col gap-2 font-sans text-sm md:text-base text-[#001f33]">
                     {opportunity.organization && (
-                      <p className="font-semibold">{opportunity.organization}</p>
+                      <p className="font-semibold">
+                        {opportunity.organization}
+                      </p>
                     )}
                     {opportunity.type && <p>Type: {opportunity.type}</p>}
                     {opportunity.referenceNumber && (
@@ -253,18 +264,24 @@ export default async function OpportunityPage({
                     {opportunity.employmentType && (
                       <p>Employment type: {opportunity.employmentType}</p>
                     )}
-                    {opportunity.workload && <p>Workload: {opportunity.workload}</p>}
+                    {opportunity.workload && (
+                      <p>Workload: {opportunity.workload}</p>
+                    )}
                     {opportunity.contractType && (
                       <p>Contract type: {opportunity.contractType}</p>
                     )}
-                    {opportunity.location && <p>Location: {opportunity.location}</p>}
+                    {opportunity.location && (
+                      <p>Location: {opportunity.location}</p>
+                    )}
                     {opportunity.salaryRange && (
                       <p>Salary range: {opportunity.salaryRange}</p>
                     )}
                     {opportunity.startDate && (
                       <p>Start date: {opportunity.startDate}</p>
                     )}
-                    {opportunity.deadline && <p>Deadline: {opportunity.deadline}</p>}
+                    {opportunity.deadline && (
+                      <p>Deadline: {opportunity.deadline}</p>
+                    )}
                     {opportunity.contactEmail && (
                       <p>Contact: {opportunity.contactEmail}</p>
                     )}
