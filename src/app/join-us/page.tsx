@@ -36,7 +36,7 @@ export default function JoinUsPage() {
                 join us
               </p>
               <h1 className="font-sans text-3xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.96px] text-[#001f33]">
-                No Open Positions Right Now
+                No open positions right now
               </h1>
               <p className="font-sans text-base md:text-xl font-normal leading-[1.4] tracking-[-0.2px] text-[#001f33]/70">
                 We have no open positions at the moment. Please check back soon
