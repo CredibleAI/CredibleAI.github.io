@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { useMemo, useState } from "react";
 import Navbar from "@/components/Navbar";
@@ -36,15 +36,16 @@ export default function JoinUsPage() {
                 join us
               </p>
               <h1 className="font-sans text-3xl md:text-[48px] font-normal leading-[1.1] tracking-[-0.96px] text-[#001f33]">
-                Positions Opening Shortly
+                No Open Positions Right Now
               </h1>
               <p className="font-sans text-base md:text-xl font-normal leading-[1.4] tracking-[-0.2px] text-[#001f33]/70">
-                We are preparing exciting opportunities for passionate
-                researchers, students, and professionals to join our mission of
-                making AI understandable, verifiable, and controllable.
+                We have no open positions at the moment. Please check back soon
+                for new opportunities to join our mission of making AI
+                understandable, verifiable, and controllable.
               </p>
               <p className="font-sans text-base md:text-lg font-normal leading-[1.4] text-[#001f33]/70">
-                Check back soon for open positions.
+                If you would like to work with us, we are always glad to hear
+                from you.
               </p>
               <a
                 href="/contact"
@@ -130,8 +131,9 @@ export default function JoinUsPage() {
                   </h2>
                   <p className="font-sans text-base md:text-lg font-normal leading-[1.4] tracking-[-0.18px] max-w-[600px]">
                     We&apos;re always interested in hearing from exceptional
-                    candidates. If you&apos;re passionate about explainable AI and
-                    want to contribute to our mission, feel free to reach out.
+                    candidates. If you&apos;re passionate about explainable AI
+                    and want to contribute to our mission, feel free to reach
+                    out.
                   </p>
                   <a
                     href="/contact"
