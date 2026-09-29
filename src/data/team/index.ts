@@ -60,7 +60,7 @@ export const teamSections: TeamSection[] = [
     members: leaders,
   },
   {
-    title: "commercialization managers",
+    title: "collaboration and partnerships",
     members: commercialization,
   },
   {

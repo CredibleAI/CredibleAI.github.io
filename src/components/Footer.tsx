@@ -195,8 +195,8 @@ export default function Footer() {
         <div className="font-mono text-sm font-normal leading-[1.4] text-[#001f33] max-w-[900px]">
           <p className="mb-2">
             The Centre was established in connection with the implementation
-            of the project entitled "Centre for Credible Artificial
-            Intelligence", funded under the International Research Agendas
+            of the project entitled &quot;Centre for Credible Artificial
+            Intelligence&quot;, funded under the International Research Agendas
             action within the European Funds for Modern Economy (MAB FENG)
             programme of the Foundation for Polish Science.
           </p>
