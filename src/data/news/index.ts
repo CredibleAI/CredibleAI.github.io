@@ -6,8 +6,10 @@ import { auditingLungCancerRiskPredictionSnap } from "./auditing-lung-cancer-ris
 import { ricaFellowships2026 } from "./rica-fellowships-2026";
 import { aiForScienceAiAsAMathematician } from "./ai-for-science-ai-as-a-mathematician";
 import { icml2026CcaiSeoul } from "./icml-2026-ccai-seoul";
+import { economicForumKarpacz2026 } from "./economic-forum-karpacz-2026";
 
 const allNews: Article[] = [
+  economicForumKarpacz2026,
   icml2026CcaiSeoul,
   aiForScienceAiAsAMathematician,
   ricaFellowships2026,
@@ -43,4 +45,5 @@ export {
   ricaFellowships2026,
   aiForScienceAiAsAMathematician,
   icml2026CcaiSeoul,
+  economicForumKarpacz2026,
 };
