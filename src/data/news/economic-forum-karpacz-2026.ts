@@ -118,12 +118,6 @@ export const economicForumKarpacz2026: Article = {
       alt: "CCAI researchers standing in front of the 35th Economic Forum photo wall",
     },
     {
-      id: "economic-forum-2026-3",
-      thumbnailSrc: "/images/news/economic-forum-2026-3.jpg",
-      fullSrc: "/images/news/economic-forum-2026-3.jpg",
-      alt: "Agata M. Wijata moderating the panel on AI in space technology in the Warsaw University of Technology zone",
-    },
-    {
       id: "economic-forum-2026-4",
       thumbnailSrc: "/images/news/economic-forum-2026-4.jpg",
       fullSrc: "/images/news/economic-forum-2026-4.jpg",
