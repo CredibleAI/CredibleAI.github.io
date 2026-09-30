@@ -154,12 +154,6 @@ export const economicForumKarpacz2026: Article = {
       alt: "Tomasz Steifer, Bartosz Naskręcki and Daniel Grzonka on the panel on AI agents",
     },
     {
-      id: "economic-forum-2026-10",
-      thumbnailSrc: "/images/news/economic-forum-2026-10.jpg",
-      fullSrc: "/images/news/economic-forum-2026-10.jpg",
-      alt: "The What's Up (with) AI panel in the University of Warsaw zone, with the list of speakers on the screen",
-    },
-    {
       id: "economic-forum-2026-11",
       thumbnailSrc: "/images/news/economic-forum-2026-11.jpg",
       fullSrc: "/images/news/economic-forum-2026-11.jpg",
@@ -212,12 +206,6 @@ export const economicForumKarpacz2026: Article = {
       thumbnailSrc: "/images/news/economic-forum-2026-19.jpg",
       fullSrc: "/images/news/economic-forum-2026-19.jpg",
       alt: "Kamil Książek and Aleksandra Tomaszewska during the panel on AI in finance",
-    },
-    {
-      id: "economic-forum-2026-20",
-      thumbnailSrc: "/images/news/economic-forum-2026-20.jpg",
-      fullSrc: "/images/news/economic-forum-2026-20.jpg",
-      alt: "The debate on the VAT system in the main Forum programme, moderated by Aleksandra Prorok",
     },
     {
       id: "economic-forum-2026-21",
